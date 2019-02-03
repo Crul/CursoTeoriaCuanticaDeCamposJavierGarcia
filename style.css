@@ -1,0 +1,382 @@
+html, body {
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 85%;
+  margin: 0;
+  padding: 0;
+  background-color: #d6d6d6;
+  min-height: 10000px; /* reset in JS after load */
+}
+body {
+  margin-bottom: 50%;
+}
+
+::selection {
+  color: #fff;
+  background: #1e445d;
+}
+::-moz-selection {
+  color: #fff;
+  background: #1e445d;
+}
+
+.only-for-print {
+  display: none;
+  font-size: 14px;
+}
+
+ol,
+ol > li {
+  margin: 2px;
+}
+
+h1 {
+  font-size: 140%;
+  font-weight: normal;
+  background-color: #6b2026;
+  color: #fcf0f2;
+  padding: 9px;
+  margin: 0;
+}
+  h1 a {
+    color: #fcf0f2;
+  }
+  h1 a:hover {
+    color: #fff;
+  }
+
+h3 {
+  float: right;
+  margin: -30px 0 0 0;
+  font-size: 90%;
+  font-weight: normal;
+  color: #6b2026;
+  padding: 6px;
+  text-align: right;
+}
+  h3 a {
+    color: #fcf0f2;
+  }
+  h3 a:hover {
+    color: #fff;
+  }
+
+#topContent {
+  background-color: #fcf0f2;
+  display: table;
+  width: 100%;
+}
+
+  #topContent a.no-formula {
+    background-color: #ffffff88;
+    margin: 8px 20px 18px 20px;
+    font-size: 125%;
+    text-align: center;
+  }
+    #topContent a.no-formula:hover {
+      background-color: #00f;
+      color: #fff;
+    }
+
+#menu {
+  display: table-row;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30px; /* =27x1+3 | 1 = 1/4 */
+  margin: 0;
+  padding: 16px 16px 4px 16px;
+  vertical-align: top;
+}
+
+  ul li {
+    list-style-type: none;
+    margin: 2px 16px 2px 4px;
+    font-size: 120%;
+  }
+  ul li a {
+    display: inline-block;
+    background-color: #d6414d;
+    color: #fcf0f2;
+    text-decoration: none;
+    padding: 2px 8px;
+    border: solid 1px #fcf0f2;
+  }
+    ul li a:first-child {
+      width: 106px;
+      margin-right: -3px;
+    }
+    ul li a:hover {
+      background-color: #6b2026;
+      color: #fff;
+      border: solid 1px #fff;
+    }
+
+h2 {
+  font-size: 120%;
+  font-weight: normal;
+  background-color: #d6414d;
+  padding: 6px;
+  margin: 0 0 2px 0;
+  clear: both;
+  min-height: 24px;
+}
+  h2 a.formulas-title {
+    color: #fcf0f2;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+    h2 a.formulas-title:hover {
+      color: #fff;
+    }
+
+.fold-buttons {
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+  padding-right: 16px;
+  padding-bottom: 8px;
+}
+
+.fold-buttons > div {
+  display: inline-block;
+  width: 108px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+  color: #d6414d;
+  border: solid 1px #d6414d;
+  padding: 5px;
+  vertical-align: bottom;
+}
+  .fold-buttons > div:hover {
+    color: #fcf0f2;
+    border: solid 1px #6b2026;
+    background-color: #6b2026;
+  }
+
+.formulas {
+  font-size: 150%;
+  padding: 6px;
+  background-color: #FFF;
+}
+
+.grupo-formulas {
+  display: inline-block;
+  vertical-align: top;
+  border: dotted 1px #ccc;
+  margin-bottom: 8px;
+}
+
+.subgrupo-vert-formulas {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+.subgrupo-vert-formulas .formula .katex-display {
+  text-align: left;
+}
+
+.subgrupo-horiz-formulas {
+  display: block;
+}
+
+.subgrupo-horiz-formulas > .formula,
+.subgrupo-horiz-formulas > .wolfram-alpha-link {
+  display: inline-block;
+}
+
+.formula .katex-display {
+  padding: 0 10px 12px 10px;
+  margin: 12px 12px 0 12px;
+}
+
+.formula-texto .katex-display {
+  font-size: 80%;
+  padding-bottom: 6px;
+}
+
+.texto {
+  font-family: "Times New Roman", Times, serif;
+  padding: 8px 16px;
+}
+
+.subgrupo-horiz-formulas + .subgrupo-horiz-formulas .katex-display,
+.subgrupo-horiz-formulas + .formula .katex-display,
+.formula + .subgrupo-horiz-formulas .katex-display,
+.formula + .formula .katex-display {
+  margin-top: 0;
+}
+
+.formula-titulo {
+  display: block;
+  padding: 4px;
+  background-color: #fcf0f2;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 90%;
+  text-align: center;
+}
+  .formula-titulo .formula .katex-display {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  .formula-titulo .formula .katex {
+    font-size: 1em;
+  }
+
+.no-formula {
+  font-family: "Times New Roman", Times, serif;
+  display: inline-block;
+  padding: 2px 6px;
+  background-color: #ddd;
+}
+  a.no-formula {
+    padding: 4px 9px;
+    background-color: #fcf0f2;
+    color: #00f;
+  }
+  a.no-formula:visited {
+    color: #00f;
+  }
+  a.no-formula:hover {
+    background-color: #00f;
+    color: #fff;
+  }
+
+.wolfram-alpha-link {
+  display: block;
+  text-align: center;
+  font-size: 66%;
+  padding: 6px;
+}
+
+  .wolfram-alpha-link a {
+    color: #d6414d;
+    text-decoration: none;
+  }
+    .wolfram-alpha-link a:hover {
+      color: #6b2026;
+      text-decoration: underline;
+    }
+
+.title-right-btns {
+  float: right;
+}
+.view-video-btn,
+.toggle-formulas-btn,
+.goto-top-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 22px;
+  height: 20px;
+  padding: 2px 0 0 0;
+  text-align: center;
+  margin-right: 6px;
+  color: #fcf0f2;
+  background-color: #d6414d;
+  border: solid 1px #fcf0f2;
+  border-radius: 3px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.view-video-btn {
+  margin-left: 9px;
+}
+.toggle-formulas-btn {
+  float: left;
+}
+.goto-top-btn {
+  float: right;
+  width: 60px;
+}
+  .view-video-btn:hover,
+  .toggle-formulas-btn:hover,
+  .goto-top-btn:hover {
+    color: #fff;
+    background-color: #6b2026;
+    border: solid 1px #fff;
+  }
+
+.spoiler-btn {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 24px 12px;
+  background-color: #d6d6d6;
+}
+  .spoiler-btn:hover {
+    color: #d6d6d6;
+    background-color: #505050;
+  }
+
+.spoiler {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  ul {
+    height: 30px; /* =27x1+3 | 1 = 1/3 */
+  }
+}
+
+@media screen and (max-width: 840px) {
+  #topContent, #menu {
+    display: block;
+  }
+
+  h3 {
+    float: none;
+    margin: 0;
+    background-color: #d6414d;
+  }
+
+  .fold-buttons {
+    display: inline-block;
+    width: 100%;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 582px) {
+  ul {
+    height: 30px; /* =27x1+3 | 1 = 1/2 */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  ul {
+    height: auto;
+  }
+}
+
+@media print {
+  body {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul, h3,
+  .spoiler-btn,
+  .fold-buttons,
+  .view-video-btn,
+  .goto-top-btn,
+  .toggle-formulas-btn,
+  .wolfram-alpha-link {
+    display: none;
+  }
+
+  .only-for-print,
+  .formulas,
+  .spoiler {
+    display: block !important;
+  }
+}
