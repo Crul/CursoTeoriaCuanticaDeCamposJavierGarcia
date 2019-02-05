@@ -136,7 +136,7 @@
           \right)
       </span>
       <span class="formula">
-        \text{det } M = 1
+        \text{det } M = \pm 1
       </span>
       <span class="formula">
         \vec{v}_1 \bot \vec{v}_2 \text{ ortogonales}
@@ -146,6 +146,9 @@
       </span>
       <span class="formula">
         M^{-1} = M^{T}
+      </span>
+      <span class="formula">
+        \text{Si det } M = + 1 \Longrightarrow M \text{ rotación}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -159,10 +162,11 @@
         Además:
       </span>
       <span class="formula">
-        D = M^T A M
-      </span>
-      <span class="formula">
-        A = M D M^T
+        A \text{ simétrica} \Longleftrightarrow 
+        \begin{matrix}
+          D = M^T A M \\
+          A = M D M^T
+        \end{matrix}
       </span>
       <span class="formula">
         \begin{pmatrix}
@@ -203,10 +207,10 @@
     <div class="grupo-formulas">
       <span class="formula-titulo">
         (2.5) Ejercicio propuesto: Dado un campo escalar &Phi; definido
-        <br/>en 3 puntos (&Phi;<sub>1</sub>, &Phi;<sub>2</sub>, &Phi;<sub>3</sub>) y una magnitud COSA definida como:
+        <br/>en 3 puntos (&Phi;<sub>1</sub>, &Phi;<sub>2</sub>, &Phi;<sub>3</sub>) y una magnitud C definida como:
       </span>
       <span class="formula">
-        \text{COSA} = -6 \Phi_1^2 -6 \Phi_2^2 -6 \Phi_3^2 - \sqrt{2} \Phi_1 \Phi_2 - \sqrt{2} \Phi_2 \Phi_3
+        C = -6 \Phi_1^2 -6 \Phi_2^2 -6 \Phi_3^2 - \sqrt{2} \Phi_1 \Phi_2 - \sqrt{2} \Phi_2 \Phi_3
       </span>
       <span class="formula-titulo">
         Se pide:
@@ -218,21 +222,24 @@
         \begin{pmatrix} \Phi_1 & \Phi_2 & \Phi_3 \end{pmatrix}
         \begin{pmatrix} A \end{pmatrix}
         \begin{pmatrix} \Phi_1 \\ \Phi_2 \\ \Phi_3 \end{pmatrix}
-        = \text{COSA}
+        = C
       </span>
       <span class="formula">
-        \text{b) Diagonalizar } A \text{ (hallar } M \text{ tal que:) }
-      </span>
-      <span class="formula">
-        \begin{pmatrix} \Phi_1 \\ \Phi_2 \\ \Phi_3 \end{pmatrix}
-        = M
-        \begin{pmatrix} \Psi_1 \\ \Psi_2 \\ \Psi_3 \end{pmatrix}
+        \text{b) Diagonalizar } A
       </span>
       <span class="formula">
         \text{c) Demostrar que: }
       </span>
       <span class="formula">
-        \text{COSA} = -5 \Psi_1^2 -6 \Psi_2^2 -y \Psi_3^2
+        C = -5 \Psi_1^2 -6 \Psi_2^2 -y \Psi_3^2
+      </span>
+      <span class="formula">
+        \text{En donde hemos definido:}
+      </span>
+      <span class="formula">
+        \begin{pmatrix} \Phi_1 \\ \Phi_2 \\ \Phi_3 \end{pmatrix}
+        = M
+        \begin{pmatrix} \Psi_1 \\ \Psi_2 \\ \Psi_3 \end{pmatrix}
       </span>
       <span class="formula-titulo">
         Soluciones enviadas:
