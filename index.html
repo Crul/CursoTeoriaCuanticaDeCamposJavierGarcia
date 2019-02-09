@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20190204" />
+  <link rel="stylesheet" href="style.css?v=20190209" />
 </head>
 
 <body>
@@ -35,6 +35,10 @@
         <li>
           <a href="#capitulo-2">Capítulo 2</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=YVGfCokfaCE&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-3">Capítulo 3</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=rOF5rRwNehE&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -303,9 +307,139 @@
     </div>
   </div>
 
+  <h2 id="capitulo-3"><a href="#capitulo-3" class="formulas-title">Capítulo 3: Jacobiano e Integrales Gaussianas</a></h2>
+  <div class="capitulo-3 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (3.1) Integral Gaussiana
+      </span>
+      <span class="formula">
+        \int_{- \infty}^\infty e^{-x^2} dx = \sqrt{ \pi }
+      </span>
+      <span class="formula-titulo">
+        generalizando:
+      </span>
+      <span class="formula">
+        \int_{- \infty}^\infty e^{-ax^2} dx = \sqrt{ \frac{\pi}{a} }
+      </span>
+      <span class="formula-titulo">
+        de donde se deduce:
+      </span>
+      <span class="formula">
+        \int_{- \infty}^\infty e^{-ax^2} x^2 dx = \frac{ \sqrt{\pi} }{ 2 a^{ \frac{3}{2} } }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (3.2) Ejercicio propuesto
+      </span>
+      <span class="formula">
+        \text{Dada la definición de promedio:}
+      </span>
+      <span class="formula">
+        < \square > \equiv
+          \frac{
+            \int_{- \infty}^\infty dx \ \square \ e^{- \frac{a}{2} x^2}
+          }{
+            \int_{- \infty}^\infty dx \ e^{- \frac{a}{2} x^2}
+          }
+      </span>
+      <span class="formula">
+        \text{Calcular:}
+      </span>
+      <span class="formula">
+        \text{a) } < x >
+      </span>
+      <span class="formula">
+        \text{b) } < x^2 >
+      </span>
+      <span class="formula">
+        \text{c)* } < x^{2n} >
+      </span>
+      <span class="spoiler-btn">
+        Click para mostrar la solución al apartado c)
+      </span>
+      <span class="formula spoiler">
+        \text{c)* } < x^{2n} >
+          = \frac{1}{a^n}
+            \left( 2n - 1 \right) 
+            \left( 2n - 3 \right) 
+            \left( 2n - 5 \right) 
+            \cdots 5 \cdot 3 \cdot 1
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas:
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 03.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Herick Lopez - Solución Ejercicio Capítulo 03.pdf">
+        Herick Lopez
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Herick Lopez - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/AMV - Solución Ejercicio Capítulo 03.pdf">
+        A.MV
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/AMV - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Alex Rossi - Solución Ejercicio Capítulo 03.pdf">
+        Alex Rossi
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Alex Rossi - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Antonio Gros - Solución Ejercicio Capítulo 03.pdf">
+        Antonio Gros
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Antonio Gros - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Antonio Leites - Solución Ejercicio Capítulo 03.pdf">
+        Antonio Leites
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Antonio Leites - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Carlos Beltran - Solución Ejercicio Capítulo 03.pdf">
+        Carlos Beltran
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Carlos Beltran - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Carlos Lozano - Solución Ejercicio Capítulo 03.pdf">
+        Carlos Lozano
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Carlos Lozano - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Edgar R Perdomo - Solución Ejercicio Capítulo 03.pdf">
+        Edgar R Perdomo
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Edgar R Perdomo - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/German Velandia - Solución Ejercicio Capítulo 03.pdf">
+        German Velandia
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/German Velandia - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Hugo Labella - Solución Ejercicio Capítulo 03.pdf">
+        Hugo Labella
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Hugo Labella - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Julio Taborda - Solución Ejercicio Capítulo 03.pdf">
+        Julio Taborda
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Julio Taborda - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Peñalba Dario - Solución Ejercicio Capítulo 03.pdf">
+        Peñalba Dario
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Peñalba Dario - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Rodrigo Lopez - Solución Ejercicio Capítulo 03.pdf">
+        Rodrigo Lopez
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Rodrigo Lopez - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Sebastian Jaroszewicz - Solución Ejercicio Capítulo 03.pdf">
+        Sebastian Jaroszewicz
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Sebastian Jaroszewicz - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Victor Oncins - Solución Ejercicio Capítulo 03.pdf">
+        Victor Oncins
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Victor Oncins - Solución Ejercicio Capítulo 03.pdf</div>
+      </a>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20190204"></script>
+  <script type="text/javascript" src="script.js?v=20190209"></script>
 
 </body>
 </html>
