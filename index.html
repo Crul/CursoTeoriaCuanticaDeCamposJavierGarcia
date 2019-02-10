@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20190209" />
+  <link rel="stylesheet" href="style.css?v=20190210" />
 </head>
 
 <body>
@@ -39,6 +39,10 @@
         <li>
           <a href="#capitulo-3">Capítulo 3</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=rOF5rRwNehE&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-4">Capítulo 4</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=BKz5tp_GUB8&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -437,9 +441,66 @@
     </div>
   </div>
 
+  <h2 id="capitulo-4"><a href="#capitulo-4" class="formulas-title">Capítulo 4: Funcional Generador</a></h2>
+  <div class="capitulo-4 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.1) Aplicando el siguiente cambio de variables:
+      </span>
+      <span class="subgrupo-horiz-formulas">
+        <span class="formula">
+          x \rightarrow \phi
+        </span>
+        <span class="formula">
+          a \rightarrow m^2
+        </span>
+        <span class="formula">
+          2n \rightarrow p
+        </span>
+      </span>
+      <span class="formula-titulo">
+        a las <a href="#capitulo-3" class="formula-link">fórmulas del Capítulo 3</a> obtenemos:
+      </span>
+      <span class="formula">
+        \int_{- \infty}^\infty d \phi \ e^{- \frac{m^2}{2} \phi^2 } = \frac{ \sqrt{ 2 \pi } }{m}
+      </span>
+      <span class="formula">
+        < \phi^p > =
+          \frac{
+            \int_{- \infty}^\infty \phi^p \ e^{- \frac{m^2}{2} \phi^2}
+          }{
+            \int_{- \infty}^\infty e^{- \frac{m^2}{2} \phi^2}
+          } =
+          \frac{1}{m^p}
+          \left( p - 1 \right)
+          \left( p - 3 \right)
+          \cdots 5 \cdot 3 \cdot 1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.2) Funcional generador
+      </span>
+      <span class="formula">
+        Z \left[ J \right]
+          \equiv \int_{- \infty}^\infty d \phi \ e^{ - \frac{m^2}{2} \phi^2 + J \phi }
+          = \frac{ \sqrt{2\pi} }{m} \ \exp \left[ \frac{ J^2 }{ 2 m^2 } \right]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (4.3) Expresando la fórmula 4.1 en
+        <br/>función del funcional generador:
+      </span>
+      <span class="formula">
+        < \phi^p > = \frac{ Z^{ \left( p \right) } \left[ 0 \right] }{ Z \left[ 0 \right] } 
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="script.js?v=20190209"></script>
+  <script type="text/javascript" src="script.js?v=20190210"></script>
 
 </body>
 </html>
