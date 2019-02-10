@@ -168,6 +168,7 @@ h2 {
   vertical-align: top;
   border: dotted 1px #ccc;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .subgrupo-vert-formulas {
@@ -249,6 +250,10 @@ h2 {
     background-color: #00f;
     color: #fff;
   }
+
+.feynman {
+  text-align: start;
+}
 
 .wolfram-alpha-link {
   display: block;

@@ -43,7 +43,9 @@ function bootstrap() {
   $('.spoiler-btn').click(showSpoiler);
 
   $('html, body').css('min-height', 0);
-  
+
+  renderFeynmanDiagrams();
+
   handleInitialSection();
 }
 
@@ -60,6 +62,22 @@ function handleInitialSection() {
 
 function renderFormula(i, elem) {
   katex.render(elem.innerText, elem, katexOptions);
+}
+
+function renderFeynmanDiagrams() {
+  MathJax.Hub.Config({
+    jax: ['input/TeX','output/HTML-CSS'],
+    messageStyle: 'none',
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  });
+
+  for (var id in feynmanDiagrams) {
+    $('#' + id).feyn(feynmanDiagrams[id]);
+  }
 }
 
 function addGotoTopBtn(index, h2Elem) {
