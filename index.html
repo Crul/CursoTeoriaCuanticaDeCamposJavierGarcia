@@ -48,6 +48,10 @@
           <a href="#capitulo-5">Capítulo 5</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=_RrmeCUM6kU&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-6">Capítulo 6</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=59fbmVGnfS0&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -647,6 +651,80 @@
       <span id="Feynman52" class="feynman"></span>
       <br/>
       <span id="Feynman53" class="feynman"></span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-6"><a href="#capitulo-6" class="formulas-title">Capítulo 6: Campo discreto en una línea</a></h2>
+  <div class="capitulo-6 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.1) Acción de un campo escalar discreto finito:
+      </span>
+      <span class="formula">
+        S \left[ \phi \right] = \frac{m^2}{2}
+          \left( A_{11} \phi_1^2 + A_{12} \phi_1 \phi_2  + A_{21} \phi_2 \phi_1 + \cdots \right)
+      </span>
+      <span class="formula-titulo">
+        Imponiendo:
+      </span>
+      <span class="formula">
+        \phi_i \phi_j = \phi_j \phi_i \implies A \text{ simétrica }
+      </span>
+      <span class="formula-titulo">
+        Podemos expresar S:
+      </span>
+      <span class="formula">
+        S \left[ \phi \right] = \frac{m^2}{2} \ \phi^T A \ \phi
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.2) Aplicando <a href="#capitulo-2" class="formula-link">las fórmulas del Capítulo 2</a> obtenemos:
+      </span>
+      <span class="formula">
+        \phi = M \ \psi
+      </span>
+      <span class="formula formula-texto">
+        \phi \equiv \text{ vector en la base canónica}
+      </span>
+      <span class="formula formula-texto">
+        \psi \equiv \text{ vector en la base propia}
+      </span>
+      <span class="formula-titulo">
+        Dado que:
+      </span>
+      <span class="formula">
+        A \text{ simétrica } \implies A = M \ D \ M^T
+      </span>
+      <span class="formula formula-texto">
+        \text{Con M ortogonal y D diagonal}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.3) Usando las fórmulas (6.1) y (6.2):
+      </span>
+      <span class="formula">
+        \phi^T A \ \phi = \lambda_1 \psi_1^2 + \lambda_2 \psi_2^2 + \cdots + \lambda_n \psi_n^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.4) Expresando la acción en la base propia:
+      </span>
+      <span class="formula">
+        S \left[ \phi \right] = \frac{m^2}{2} \left( \lambda_1 \psi_1^2 + \cdots + \lambda_n \psi_n^2 \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (6.5) Usando <a href="#capitulo-3" class="formula-link">las fórmulas del Capítulo 3</a> obtenemos:
+      </span>
+      <span class="formula">
+        \int \frak{d} \phi \ e^{-S \left[ \phi \right]} =
+          \left( \frac{ \sqrt{2 \pi} }{m} \right) ^2
+          \frac{1}{ \sqrt{ \det A } }
+      </span>
     </div>
   </div>
 
