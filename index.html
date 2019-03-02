@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20190227" />
+  <link rel="stylesheet" href="style.css?v=20190302" />
 </head>
 
 <body>
@@ -55,6 +55,10 @@
         <li>
           <a href="#capitulo-7">Capítulo 7</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=4DK1dI7fEFE&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-8">Capítulo 8</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=du9rEZdUOPg&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -761,12 +765,62 @@
     </div>
   </div>
 
+  <h2 id="capitulo-8"><a href="#capitulo-8" class="formulas-title">Capítulo 8: Cálculo del Valor Esperado 2</a></h2>
+  <div class="capitulo-8 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.1) Cálculo de Z[J]:
+      </span>
+      <span class="formula">
+        Z \left[ J \right] = \int \mathcal{D} \phi \ e^{ -S \left[ \phi \right] + \phi^T J }
+          = \exp \left[ \frac{1}{2m^2} J^T A^{-1} J \right]
+            \frac{ \left( \sqrt{ 2\pi } \right) ^2 }
+                 { m^n \sqrt{ \det A } }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.2) Valor esperado en función de J:
+      </span>
+      <span class="formula">
+        \left< \phi_a \phi_b \right> = 
+            \frac{\partial}{ \partial J_a }
+            \frac{\partial}{ \partial J_b }
+            \exp \left[ \frac{1}{2m^2} J^T A^{-1} J \right]
+          \equiv
+            \frac{\partial}{ \partial J_a }
+            \frac{\partial}{ \partial J_b }
+            \exp \left[ a_{ij} J^i J^j \right]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (8.3) Ejercicio propuesto:
+      </span>
+      <span class="formula formula-texto">
+        \text{Calcular el valor esperado de } \phi_a, \phi_b, \phi_c, \phi_d
+      </span>
+      <span class="formula">
+        \left< \phi_a, \phi_b, \phi_c, \phi_d \right> =
+          \frac{1}{ Z \left[ 0 \right] }
+          \left[
+            \frac{\partial}{ \partial J_a }
+            \frac{\partial}{ \partial J_b }
+            \frac{\partial}{ \partial J_c }
+            \frac{\partial}{ \partial J_d }
+            Z \left[ J \right]
+          \right] _{J=0}
+          = ?
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20190227"></script>
-  <script type="text/javascript" src="script.js?v=20190227"></script>
+  <script type="text/javascript" src="feynmans.js?v=20190302"></script>
+  <script type="text/javascript" src="script.js?v=20190302"></script>
 
 </body>
 </html>
