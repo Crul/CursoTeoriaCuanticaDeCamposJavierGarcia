@@ -769,28 +769,50 @@
   <div class="capitulo-8 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (8.1) Cálculo de Z[J]:
+        (8.1) Si tenemos:
+      </span>
+      <span class="formula">
+        S \left[ \phi \right] = \frac{m^2}{2} \phi^T A \ \phi
+      </span>
+      <span class="formula-titulo">
+        Entonces:
       </span>
       <span class="formula">
         Z \left[ J \right] = \int \mathcal{D} \phi \ e^{ -S \left[ \phi \right] + \phi^T J }
-          = \exp \left[ \frac{1}{2m^2} J^T A^{-1} J \right]
-            \frac{ \left( \sqrt{ 2\pi } \right) ^n }
+          = \frac{ \left( \sqrt{ 2\pi } \right) ^n }
                  { m^n \sqrt{ \det A } }
+            \exp \left[ \frac{1}{2m^2} J^T A^{-1} J \right]
       </span>
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (8.2) Valor esperado en función de J:
+        (8.2) Fórmula general:
       </span>
       <span class="formula">
         \left< \phi_a \phi_b \right> = 
+          \left.
+            \frac{1}{ Z \left[ 0 \right] }
+            \frac{\partial}{ \partial J_a }
+            \frac{\partial}{ \partial J_b }
+            Z \left[ J \right]
+          \right|_{J=0}
+      </span>
+      <span class="formula-titulo">
+        En caso de:
+      </span>
+      <span class="formula">
+        S \left[ \phi \right] = \frac{m^2}{2} \phi^T A \ \phi
+      </span>
+      <span class="formula-titulo">
+        Entonces:
+      </span>
+      <span class="formula">
+        \left< \phi_a \phi_b \right> = 
+          \left.
             \frac{\partial}{ \partial J_a }
             \frac{\partial}{ \partial J_b }
             \exp \left[ \frac{1}{2m^2} J^T A^{-1} J \right]
-          \equiv
-            \frac{\partial}{ \partial J_a }
-            \frac{\partial}{ \partial J_b }
-            \exp \left[ a_{ij} J^i J^j \right]
+          \right|_{J=0}
       </span>
     </div>
     <div class="grupo-formulas">
