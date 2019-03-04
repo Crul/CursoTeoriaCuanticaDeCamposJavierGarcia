@@ -58,7 +58,7 @@ var feynmanDiagrams = {
     fermion: { line: 'v1-v2', arrow: false, },
     label: {
       t1: ['5,10', '$\\left< \\phi_a \\phi_b \\right> =$', 80, 20],
-      t2: ['140,10', 'propagador', 80, 20],
+      t2: ['140,10', 'propagador', 90, 20],
     },
     mathjax: true,
   },
