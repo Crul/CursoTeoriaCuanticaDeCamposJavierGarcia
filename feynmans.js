@@ -52,13 +52,15 @@ var feynmanDiagrams = {
   },
 
   Feynman91: {
-    width: 240, height: 40,
+    width: 290, height: 64,
     node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
-    vertex: { v1: '80,20', v2: '120,20', },
+    vertex: { v1: '100,37', v2: '140,37', },
     fermion: { line: 'v1-v2', arrow: false, },
     label: {
-      t1: ['5,10', '$\\left< \\phi_a \\phi_b \\right> =$', 80, 20],
-      t2: ['140,10', 'propagador', 90, 20],
+      t1: ['85,20', 'a', 20, 20],
+      t2: ['149,20', 'b', 20, 20],
+      t3: ['5,24', '$\\large \\left< \\phi_a \\phi_b \\right> =$', 80, 20],
+      t4: ['170,8', 'propagador $\\Large \\frac{A^{-1}_{ab}}{m^2}$', 150, 70],
     },
     mathjax: true,
   },
