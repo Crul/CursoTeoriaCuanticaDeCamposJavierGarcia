@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20190302" />
+  <link rel="stylesheet" href="style.css?v=20190304" />
 </head>
 
 <body>
@@ -59,6 +59,10 @@
         <li>
           <a href="#capitulo-8">Capítulo 8</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=du9rEZdUOPg&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-9">Capítulo 9</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=2aGYaIG2lNs&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -834,6 +838,46 @@
           \right] _{J=0}
           = ?
       </span>
+      <span class="formula-titulo">
+        Solución en el <a href="#capitulo-9" class="formula-link">Capítulo 9</a>
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-9"><a href="#capitulo-9" class="formulas-title">Capítulo 9: Valor Esperado a 4 puntos</a></h2>
+  <div class="capitulo-9 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.1) Valor esperado a 4 puntos:
+        <br/>(solución al <a href="#capitulo-8" class="formula-link">Ejercicio 8.3</a>)
+      </span>
+      <span class="formula">
+        \left< \phi_a \phi_b \phi_c \phi_d \right> =
+          \frac{1}{m^4} \left(
+            A^{-1}_{ab} A^{-1}_{cd} +
+            A^{-1}_{bc} A^{-1}_{ad} +
+            A^{-1}_{ac} A^{-1}_{bd}
+          \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (9.2) Diagramas de Feynman
+      </span>
+      <span id="Feynman91" class="feynman"></span>
+      <span class="formula-titulo">
+        En 4 puntos:
+      </span>
+      <span class="formula">
+        \left< \phi_a \phi_b \phi_c \phi_d \right> =
+          \left< \phi_a \phi_b \right> 
+          \left< \phi_c \phi_d \right> +
+          \left< \phi_b \phi_c \right> 
+          \left< \phi_a \phi_d \right> +
+          \left< \phi_a \phi_c \right> 
+          \left< \phi_b \phi_d \right>
+      </span>
+      <span id="Feynman92" class="feynman"></span>
     </div>
   </div>
 
@@ -841,8 +885,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20190302"></script>
-  <script type="text/javascript" src="script.js?v=20190302"></script>
+  <script type="text/javascript" src="feynmans.js?v=20190304"></script>
+  <script type="text/javascript" src="script.js?v=20190304"></script>
 
 </body>
 </html>
