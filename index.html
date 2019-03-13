@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20190304" />
+  <link rel="stylesheet" href="style.css?v=20190313" />
 </head>
 
 <body>
@@ -63,6 +63,10 @@
         <li>
           <a href="#capitulo-9">Capítulo 9</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=2aGYaIG2lNs&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-10">Capítulo 10</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=kL54r_IdRfY&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -978,12 +982,98 @@
     </div>
   </div>
 
+  <h2 id="capitulo-10"><a href="#capitulo-10" class="formulas-title">Capítulo 10: Serie de Fourier 1</a></h2>
+  <div class="capitulo-10 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.1) Coeficientes de un vector v
+        <br/>expresado en una base ortonormal:
+      </span>
+      <span class="formula">
+        \vec{v} = a_1 \vec{e}_1 + a_2 \vec{e}_2 + a_3 \vec{e}_3
+      </span>
+      <span class="formula">
+        a_n = \vec{v} \cdot \vec{e}_n
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.2) Producto escalar de dos funciones:
+      </span>
+      <span class="formula">
+        f(x) \cdot g(x) = \int_a^b f(x) \ g(x) \ dx
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.3) Base de Fourier:
+      </span>
+      <span class="formula">
+        \left\{ \cos(nx), \sin(nx) \right\}
+      </span>
+      <span class="formula-titulo">
+        Al ser ortogonal cumple:
+      </span>
+      <span class="formula">
+        \cos(n_1 x) \cdot \cos(n_2 x) = \pi \delta_{n_1, n_2}
+      </span>
+      <span class="formula">
+        \sin(n_1 x) \cdot \sin(n_2 x) = \pi \delta_{n_1, n_2}
+      </span>
+      <span class="formula">
+        \cos(n_1 x) \cdot \sin(n_2 x) = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.4) Función f expresada en la base de Fourier:
+      </span>
+      <span class="formula">
+        f(x) = \sum_{n=0}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx)
+      </span>
+      <span class="formula">
+        a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \ dx
+      </span>
+      <span class="formula">
+        b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) \ dx
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.5) Expresando (10.4) en potencias de e:
+      </span>
+      <span class="formula">
+        f(x) = \sum_{n=-\infty}^{\infty} c_n \ e^{inx}
+      </span>
+      <span class="formula">
+        c_n = \frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x) \ e^{-inx} \ dx
+      </span>
+      <span class="formula-titulo">
+        Además:
+      </span>
+      <span class="formula">
+        c_n^* = \frac{1}{2 \pi} \int_{-\pi}^{\pi} f(x) \ e^{inx} \ dx
+      </span>
+      <span class="formula">
+        c_n^* = c_{-n}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (10.6) Cambiando el rango (-&pi;, &pi;) por (-<sup>L</sup>/<sub>2</sub>, <sup>L</sup>/<sub>2</sub>):
+      </span>
+      <span class="formula">
+        f(x) = \sum_{n=-\infty}^{\infty} \Large{ c_n \ e^{ i \frac{2 \pi n}{L} x } }
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20190304"></script>
-  <script type="text/javascript" src="script.js?v=20190304"></script>
+  <script type="text/javascript" src="feynmans.js?v=20190313"></script>
+  <script type="text/javascript" src="script.js?v=20190313"></script>
 
 </body>
 </html>
