@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.css" integrity="sha384-VEnyslhHLHiYPca9KFkBB3CMeslnM9CzwjxsEbZTeA21JBm7tdLwKoZmCt3cZTYD" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css?v=20190313" />
+  <link rel="stylesheet" href="style.css?v=20190319" />
 </head>
 
 <body>
@@ -67,6 +67,10 @@
         <li>
           <a href="#capitulo-10">Capítulo 10</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=kL54r_IdRfY&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-11">Capítulo 11</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=IQi-ZNzWcPE&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -1068,12 +1072,58 @@
     </div>
   </div>
 
+  <h2 id="capitulo-11"><a href="#capitulo-11" class="formulas-title">Capítulo 11: Serie de Fourier 2</a></h2>
+  <div class="capitulo-11 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (11.1) Serie de Fourier dependiente del tiempo:
+      </span>
+      <span class="formula">
+        \phi(x,t) = \sum_{n=-\infty}^{\infty} c_n(t) \ e^{ i k_n x }
+      </span>
+      <span class="formula">
+        c_n(t) = \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) e^{ i k_n x} dx
+      </span>
+      <span class="formula">
+        k_n \equiv \frac{2 \pi n}{L}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (11.2) Aplicándolo a la
+        <br/>ecuación de onda:
+      </span>
+      <span class="formula">
+        \frac{ \partial^2 \phi }{ \partial t^2 }
+          - v^2 \ \frac{ \partial^2 \phi }{ \partial x^2 } = 0
+      </span>
+      <span class="formula-titulo">
+        Obtenemos:
+      </span>
+      <span class="formula">
+        c_n(t) = A_n e^{ -i \omega_n t } + A_n^* e^{ -i \omega_n t }
+      </span>
+      <span class="formula">
+        \omega_n \equiv v \left| k_n \right | > 0
+      </span>
+      <span class="formula-titulo">
+        Donde se cumple:
+      </span>
+      <span class="formula">
+        k_{-n} = - k_n
+      </span>
+      <span class="formula">
+        \omega_{-n} = \omega_n
+      </span>
+    </div>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0-beta1/katex.min.js" integrity="sha384-O4hpKqcplNCe+jLuBVEXC10Rn1QEqAmX98lKAIFBEDxZI0a+6Z2w2n8AEtQbR4CD" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20190313"></script>
-  <script type="text/javascript" src="script.js?v=20190313"></script>
+  <script type="text/javascript" src="feynmans.js?v=20190319"></script>
+  <script type="text/javascript" src="script.js?v=20190319"></script>
 
 </body>
 </html>
