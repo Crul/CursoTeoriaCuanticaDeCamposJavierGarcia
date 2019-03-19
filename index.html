@@ -997,7 +997,7 @@
         \vec{v} = a_1 \vec{e}_1 + a_2 \vec{e}_2 + a_3 \vec{e}_3
       </span>
       <span class="formula">
-        a_n = \vec{v} \cdot \vec{e}_n
+        a_n = \vec{e}_n \cdot \vec{e}_n
       </span>
     </div>
     <div class="grupo-formulas">
@@ -1019,7 +1019,11 @@
         Al ser ortogonal cumple:
       </span>
       <span class="formula">
-        \cos(n_1 x) \cdot \cos(n_2 x) = \pi \delta_{n_1, n_2}
+        \cos(n_1 x) \cdot \cos(n_2 x) =
+          \begin{cases}
+            2 \pi \small{ \text{ (si } n_1 = n_2 = 0 \text{)} } \\
+            \pi \delta_{n_1, n_2}
+          \end{cases}
       </span>
       <span class="formula">
         \sin(n_1 x) \cdot \sin(n_2 x) = \pi \delta_{n_1, n_2}
@@ -1036,7 +1040,12 @@
         f(x) = \sum_{n=0}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx)
       </span>
       <span class="formula">
-        a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \ dx
+        \small{ \text{para } n = 0 \text{ :} } \ \ \ \ 
+          a_0 = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \ dx
+      </span>
+      <span class="formula">
+        \small{ \text{para } n \ne 0 \text{ :} } \ \ \ \ 
+          a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \ dx
       </span>
       <span class="formula">
         b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) \ dx
