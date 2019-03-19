@@ -1082,10 +1082,24 @@
         \phi(x,t) = \sum_{n=-\infty}^{\infty} c_n(t) \ e^{ i k_n x }
       </span>
       <span class="formula">
-        c_n(t) = \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) e^{ i k_n x} dx
+        k_n \equiv \frac{2 \pi n}{L}
       </span>
       <span class="formula">
-        k_n \equiv \frac{2 \pi n}{L}
+        \small{ \text{para } n = 0 \text{ :} } \ \ \ \ \ \ 
+          c_0(t) = \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) \ dx
+      </span>
+      <span class="formula">
+        \small{ \text{para } n \ne 0 \text{ :} } \ \ \ \ \ \ 
+          c_n(t) = \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) e^{ i k_n x} dx
+      </span>
+      <span class="formula-titulo">
+        Donde se cumple:
+      </span>
+      <span class="formula">
+        c_n^*(t) = c_{-n}(t)
+      </span>
+      <span class="formula">
+        n = \dots, -2, -1, 0, 1, 2, \dots
       </span>
     </div>
     <div class="grupo-formulas">
@@ -1101,7 +1115,7 @@
         Obtenemos:
       </span>
       <span class="formula">
-        c_n(t) = A_n e^{ -i \omega_n t } + A_n^* e^{ -i \omega_n t }
+        c_n(t) = A_n e^{ -i \omega_n t } + A_{-n}^* e^{ -i \omega_n t }
       </span>
       <span class="formula">
         \omega_n \equiv v \left| k_n \right | > 0
