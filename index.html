@@ -1045,12 +1045,12 @@
         f(x) = \sum_{n=0}^{\infty} a_n \cos(nx) + \sum_{n=1}^{\infty} b_n \sin(nx)
       </span>
       <span class="formula">
-        \small{ \text{para } n = 0 \text{ :} } \ \ \ \ 
-          a_0 = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \ dx
-      </span>
-      <span class="formula">
-        \small{ \text{para } n \ne 0 \text{ :} } \ \ \ \ 
-          a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \ dx
+        a_n = \begin{cases}
+          \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \ dx
+            & \small \text{para } n = 0 \normalsize \\
+          \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \cos(nx) \ dx
+            & \small \text{para } n \ne 0 \normalsize
+        \end{cases}
       </span>
       <span class="formula">
         b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) \sin(nx) \ dx
@@ -1099,12 +1099,12 @@
         k_n \equiv \frac{2 \pi n}{L}
       </span>
       <span class="formula">
-        \small{ \text{para } n = 0 \text{ :} } \ \ \ \ \ \ 
-          c_0(t) = \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) \ dx
-      </span>
-      <span class="formula">
-        \small{ \text{para } n \ne 0 \text{ :} } \ \ \ \ \ \ 
-          c_n(t) = \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) e^{ i k_n x} dx
+        c_n(t) = \begin{cases}
+          \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) \ dx
+            & \small \text{para } n = 0 \normalsize \\
+          \frac{1}{L} \int_{ -\frac{L}{2} }^{ \frac{L}{2} } \phi(x,t) e^{ i k_n x} dx
+            & \small \text{para } n \ne 0 \normalsize
+        \end{cases}
       </span>
       <span class="formula-titulo">
         Donde se cumple:
