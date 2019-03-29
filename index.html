@@ -72,6 +72,10 @@
           <a href="#capitulo-11">Capítulo 11</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=IQi-ZNzWcPE&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-12">Capítulo 12</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=CZvUENPl-Nw&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1142,6 +1146,86 @@
       </span>
       <span class="formula">
         \omega_{-n} = \omega_n
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-12"><a href="#capitulo-12" class="formulas-title">Capítulo 12: Transformada Discreta de Fourier (DFT)</a></h2>
+  <div class="capitulo-12 formulas">
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="docs/Capítulo 12 - Ejemplo 01.m">
+        Código MATLAB ejemplo 01
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Capítulo 12 - Ejemplo 01.m</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="docs/Capítulo 12 - Ejemplo 02.m">
+        Código MATLAB ejemplo 02
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Capítulo 12 - Ejemplo 02.m</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="docs/Capítulo 12 - Ejemplo 03.m">
+        Código MATLAB ejemplo 03
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Capítulo 12 - Ejemplo 03.m</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="docs/Capítulo 12 - Ejemplo 04.m">
+        Código MATLAB ejemplo 04
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Capítulo 12 - Ejemplo 04.m</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="https://octave-online.net/bucket~HfGcyCq2ngqmsJh88KqsMD">
+        Ejecutar código online (Octave Online)
+        <div class="only-for-print">https://octave-online.net/bucket~HfGcyCq2ngqmsJh88KqsMD</div>
+      </a>
+    </div>
+    <br/>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (12.1) Serie de Fourier compleja en función del tiempo
+      </span>
+      <span class="formula">
+        \phi(x,t) = \frac{1}{2} \sum_{n = -\infty}^{\infty}
+          \left[ c_n(t) e^{ i k_n x } + c_n^*(t) e^{ -i k_n x } \right]
+      </span>
+      <span class="formula">
+        A_n = \frac{c_n(0)}{2}
+      </span>
+      <span class="formula">
+        \phi(x,t) = \sum_{n = -\infty}^{\infty} \left[
+          A_n \ e^{ -i \left( \omega_n t - k_n x \right) } +
+          A_n^* \ e^{ i \left( \omega_n t - k_n x \right) }
+          \right]
+      </span>
+      <span class="formula">
+        \phi(x,t) \in \R
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (12.2) DFT (Transformada Discreta de Fourier)
+      </span>
+      <span class="formula">
+        x_m = m \frac{L}{N}
+      </span>
+      <span class="formula">
+        m = -\frac{N}{2}, -\frac{N}{2} + 1, \cdots, \frac{N}{2} - 1
+      </span>
+      <span class="formula">
+        c_n(0) = \frac{1}{N} \sum_{m = -\frac{N}{2}}^{\frac{N}{2} - 1} \phi_m(0) e^{-i k_n x_m}
+      </span>
+      <span class="formula">
+        \int_{-\frac{L}{2}}^{-\frac{L}{2}} g(x) dx =
+          \frac{L}{N} \sum_{m = -\frac{N}{2}}^{\frac{N}{2} - 1} g_m
+      </span>
+      <span class="formula">
+        \phi_m(t) = \sum_{n = -\frac{N}{2}}^{\frac{N}{2} - 1} \left[
+          A_n \ e^{ -i \left( \omega_n t - k_n x_m \right) } +
+          A_n^* \ e^{ i \left( \omega_n t - k_n x_m \right) }
+          \right]
       </span>
     </div>
   </div>
