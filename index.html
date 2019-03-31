@@ -76,6 +76,10 @@
           <a href="#capitulo-12">Capítulo 12</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=CZvUENPl-Nw&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-13">Capítulo 13</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=7nHj8Ay9PaY&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1226,6 +1230,56 @@
           A_n \ e^{ -i \left( \omega_n t - k_n x_m \right) } +
           A_n^* \ e^{ i \left( \omega_n t - k_n x_m \right) }
           \right]
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-13"><a href="#capitulo-13" class="formulas-title">Capítulo 13: Transformada de Fourier, Delta de Dirac</a></h2>
+  <div class="capitulo-13 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (13.1) Transformada de Fourier
+      </span>
+      <span class="formula">
+        \hat{f}(k) = \frac{1}{ \sqrt{2 \pi} } \int_{-\infty}^{\infty} f(x) \ e^{-ikx} dx
+      </span>
+      <span class="formula">
+        f(x) = \frac{1}{ \sqrt{2 \pi} } \int_{-\infty}^{\infty} \hat{f}(k) \ e^{ikx} dk
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (13.2) Delta de Dirac
+      </span>
+      <span class="formula">
+        \delta(x) \equiv \frac{1}{2 \pi} \int_{-\infty}^{\infty} e^{ikx} dk
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (13.3) Propiedades de la Delta de Dirac
+      </span>
+      <span class="formula">
+        \int_{-\infty}^{\infty} h(x) \delta(x-a) dx = h(a)
+      </span>
+      <span class="formula-titulo">
+        De forma general:
+      </span>
+      <span class="formula">
+        \int_{-\infty}^{\infty} h(x) \delta(a+bx) dx = \frac{1}{|b|} h(x_0)
+      </span>
+      <span class="formula">
+        x_0 \ \text{\small tal que } a + bx = 0
+      </span>
+      <span class="formula-titulo">
+        De forma aun más general:
+      </span>
+      <span class="formula">
+        \int_{-\infty}^{\infty} h(x) \delta \left( g(x) \right) dx =
+          \sum_{x_0} \frac{h(x_0)}{|g'(x_0)|}
+      </span>
+      <span class="formula">
+        x_0 \ \text{\small tal que } g(x_0) = 0
       </span>
     </div>
   </div>
