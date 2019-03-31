@@ -80,6 +80,10 @@
           <a href="#capitulo-13">Capítulo 13</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=7nHj8Ay9PaY&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-14">Capítulo 14</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=_iEY3xbfBrc&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1280,6 +1284,108 @@
       </span>
       <span class="formula">
         x_0 \ \text{\small tal que } g(x_0) = 0
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-14"><a href="#capitulo-14" class="formulas-title">Capítulo 14: Función de Green</a></h2>
+  <div class="capitulo-14 formulas">
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="docs/Capítulo 14 - Ejemplo 01.m">
+        Código MATLAB ejemplo 01
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Capítulo 14 - Ejemplo 01.m</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="https://octave-online.net/bucket~QuC8174wYmwTknYQVeN3ZD">
+        Ejecutar código online (Octave Online)
+        <div class="only-for-print">https://octave-online.net/bucket~QuC8174wYmwTknYQVeN3ZD</div>
+      </a>
+    </div>
+    <br/>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.1) Dada la ecuación:
+      </span>
+      <span class="formula">
+        \sum_{j=1}^{N} A_{ij} f_j = g_i
+      </span>
+      <span class="formula-titulo">
+        Su solución es:
+      </span>
+      <span class="formula">
+        \det A \neq 0 \Longrightarrow
+        f_j = \sum_{i=1}^{N} \left( A^{-1} \right)_{ji} g_i
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.2) Función de Green
+      </span>
+      <span class="formula">
+        f(x) = \int_{-\infty}^{\infty} G(x,x') \ g(x') \ dx'
+      </span>
+      <span class="formula-titulo">
+        Que, dado un operador A,
+      </span>
+      <span class="formula">
+        A \left[ f(x, x') \right] = g(x)
+      </span>
+      <span class="formula-titulo">
+        cumple:
+      </span>
+      <span class="formula">
+        A \left[ G(x, x') \right] = \delta(x - x')
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.3) Para la ecuación diferencial:
+      </span>
+      <span class="formula">
+        f''(x) - f(x) = g(x)
+      </span>
+      <span class="formula-titulo">
+        Se define:
+      </span>
+      <span class="formula">
+        G \equiv A^{-1} = \left( \frac{d^2}{dx^2} - 1 \right)^{-1}
+      </span>
+      <span class="formula-titulo">
+        Y se obtiene:
+      </span>
+      <span class="formula">
+        G(x,x') = -\frac{1}{2} e^{- |x-x'| } \ (x')^2
+      </span>
+      <span class="wolfram-alpha-link">
+        <a target="_blank" href="https://www.wolframalpha.com/input/?i=e%5E(-%7Cx-2%7C)">ver ejemplo de e<sup>-|x-x'|</sup> en Wolfram Alpha</a>
+        <div class="only-for-print">https://www.wolframalpha.com/input/?i=e%5E(-%7Cx-2%7C)</div>
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (14.4) Ejercicio propuesto
+      </span>
+      <span class="formula formula-texto">
+        \text{Comprobar que para:}
+      </span>
+      <span class="formula">
+        f''(x) - f(x) = g(x)
+      </span>
+      <span class="formula">
+        g(x) = x^2
+      </span>
+      <span class="formula formula-texto">
+        \text{el valor de:}
+      </span>
+      <span class="formula">
+        f(x) = \int_{-\infty}^{\infty} G(x,x') \ g(x') \ dx'
+      </span>
+      <span class="formula">
+        f(x) = \int_{-\infty}^{\infty} -\frac{1}{2} e^{- |x-x'| } \ (x')^2 \ dx'
+      </span>
+      <span class="formula formula-texto">
+        \text{es solución de la ecuación.}
       </span>
     </div>
   </div>
