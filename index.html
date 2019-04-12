@@ -88,6 +88,10 @@
           <a href="#capitulo-15">Capítulo 15</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=At1ovqpTi44&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-16">Capítulo 16</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=PP8E4Zu-_y0&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1455,6 +1459,76 @@
       <span class="formula formula-texto">
         \text{y cumplen con las cond. de contorno del problema}
       </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-16"><a href="#capitulo-16" class="formulas-title">Capítulo 16: Integrales de Contorno</a></h2>
+  <div class="capitulo-16 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (16.1) Integral de un contorno simple
+        <br/>y cerrado de una función holomorfa
+      </span>
+      <span class="formula">
+        \oint_C f(z) \ dz = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (16.2)
+      </span>
+      <span class="formula">
+        \oint \frac{1}{z} dz = 2 \pi i
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (16.3) Fórmula integral de Cauchy
+      </span>
+      <span class="formula">
+        \oint_C \frac{f(z) }{ \left( z - z_0 \right)^{n+1} } dz =
+          \frac{ 2 \pi i }{ n! } f^{(n)} (z_0)
+      </span>
+      <span class="formula formula-texto">
+        \text{siendo } f(z) \text{ holomorfa en C y en su interior,}
+      </span>
+      <span class="formula formula-texto">
+        C \text{ un camino cerrado recorrido en sentido anti-horario}
+      </span>
+      <span class="formula formula-texto">
+        \text{y } z_0 \text{ un punto interior de C}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (16.4)
+      </span>
+      <span class="formula">
+        \oint_{C1} \frac{ e^{iza} }{ 1+z^2 } dz = \pi e^{-a}
+      </span>
+      <span class="formula">
+        \oint_{C2} \frac{ e^{iza} }{ 1+z^2 } dz = \pi e^a
+      </span>
+      <svg width="140" height="120">
+        <style>
+          text { font-family: "Times New Roman", Times, serif; }
+          .text-i { fill: red; }
+          .text-c1 { fill: darkcyan; }
+          .text-c2 { fill: magenta; }
+        </style>
+        <line x1="0" y1="60" x2="120" y2="60" stroke="green" stroke-width="1" />
+        <line x1="60" y1="0" x2="60" y2="120" stroke="green" stroke-width="1" />
+        <circle cx="60" cy="30" r="2" stroke-width="0" fill="red" />
+        <text x="65" y="35" class="text-i">i</text>
+        <circle cx="60" cy="90" r="2" stroke-width="0" fill="red" />
+        <text x="65" y="95" class="text-i">-i</text>
+        <path d="M110,59 a50,50 0 0,0 -100,0 z" fill="none" stroke="darkcyan" stroke-width="2" />
+        <path d="M80,21.6 l-5,-10 l10,-5" fill="none" stroke="darkcyan" stroke-width="2" />
+        <text x="110" y="30" class="text-c1">C1</text>
+        <path d="M10,61 a50,50 0 0,0 100,0 z" fill="none" stroke="magenta" stroke-width="2" />
+        <path d="M80,115 l-10,-5 l5,-10" fill="none" stroke="magenta" stroke-width="2" />
+        <text x="110" y="100" class="text-c2">C2</text>
+      </svg>
     </div>
   </div>
 
