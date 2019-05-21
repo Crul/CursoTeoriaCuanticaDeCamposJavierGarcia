@@ -100,6 +100,10 @@
           <a href="#capitulo-18">Capítulo 18</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=7u0d6jH6OwY&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-19">Capítulo 19</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=64jolFAwx4o&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -1901,6 +1905,227 @@
       </span>
       <span class="formula">
         ( \partial_0 - \partial_1^2 ) \phi = 0
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-19"><a href="#capitulo-19" class="formulas-title">Capítulo 19: Funcionales</a></h2>
+  <div class="capitulo-19 formulas">
+    <div class="grupo-formulas">
+      <a class="no-formula" target="_blank" href="docs/Miguel Cañizares - 19 Funcionales y P Mínima Accíon.pdf">
+        Resumen (PDF) por Miguel Cañizares
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Miguel Cañizares - 19 Funcionales y P Mínima Accíon.pdf</div>
+      </a>
+    </div>
+    <br/>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.1) Polinomio de Taylor (2D)
+      </span>
+      <span class="formula">
+        f(x + \delta x, y + \delta y) \simeq f(x,y)
+          + \frac{\partial f}{\partial x} \delta x
+          + \frac{\partial f}{\partial y} \delta y
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.2) Polinomio de Taylor (4D)
+      </span>
+      <span class="formula">
+        \phi(ct + \delta(ct), x + \delta x, y + \delta y, z + \delta z)
+          \simeq \phi(ct, x, y, z)
+          + \frac{\partial \phi}{\partial ct} \delta (ct)
+          + \frac{\partial \phi}{\partial x} \delta x
+          + \frac{\partial \phi}{\partial y} \delta y
+          + \frac{\partial \phi}{\partial z} \delta z
+      </span>
+      <span class="formula-titulo">
+        Usando la notación relativista (<a href="#capitulo-18" class="formula-link">ver fórmula 18.1</a>)
+      </span>
+      <span class="formula">
+        \phi(x + \delta x) \simeq \phi(x) + \partial_\mu \phi \ \delta x^\mu
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.3) La variación y la derivada conmutan
+      </span>
+      <span class="formula">
+        \delta \left( f` \right) = \left( \delta f \right)'
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.4) Variación aproximada de una función de funciones
+      </span>
+      <span class="formula">
+        \delta L
+          = L \left( \phi + \delta \phi, \phi' + \delta \phi' \right) - L \left( \phi, \phi' \right)
+          \simeq \frac{ \partial L }{ \partial \phi } \delta \phi
+          + \frac{ \partial L }{ \partial \phi' } \delta \phi'
+      </span>
+    </div>
+    <div class="grupo-formulas subgrupo-vert-formulas">
+      <span class="no-formula">
+        Vídeo de referencia
+      </span>
+      <a class="no-formula" target="_blank" href="https://www.youtube.com/watch?v=R-_LrxzYQx4">
+        ¿Qué es un FUNCIONAL y por qué<br/>
+        son importantes en FÍSICA TEÓRICA?
+        <div class="only-for-print">https://www.youtube.com/watch?v=R-_LrxzYQx4</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.5) Funcional
+      </span>
+      <span class="formula">
+        S \left[ f(x) \right] = \int_a^b L \left( f(x), f'(x) \right) dx
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.6) La variación y la integral conmutan
+      </span>
+      <span class="formula">
+        \delta \int = \int \delta
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.7) Variación de un funcional
+      </span>
+      <span class="formula">
+        \delta S = \int_a^b
+          \left[
+            \frac{ \partial L }{ \partial f }
+            - \frac{d}{dx} \left( \frac{ \partial L }{ \partial f' } \right)
+          \right]
+          df \ dx
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.8) Notación relativista
+      </span>
+      <span class="formula">
+        d^4x \equiv cdt \ dx \ dy \ dz
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.9) Funcional de un campo
+      </span>
+      <span class="formula">
+        S \left[ \phi(x) \right] = \int_a^b L \left( \phi(x), \partial_0 \phi, \partial_1 \phi, \partial_2 \phi, \partial_3 \phi \right) d^4 x
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.10) Variación aproximada de
+      </span>
+      <span class="formula">
+       L \left( \phi(x), \partial_0 \phi, \partial_1 \phi, \partial_2 \phi, \partial_3 \phi \right) 
+      </span>
+      <span class="formula">
+        \delta L
+          \simeq \frac{ \partial L }{ \partial \phi } \delta \phi
+          + \frac{ \partial L }{ \partial (\partial_\mu \phi) } \delta (\partial_\mu \phi)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.11) Variación de un funcional de un campo
+      </span>
+      <span class="formula">
+        \delta S = \int_a^b
+          \left[
+            \frac{ \partial L }{ \partial \phi }
+            - \partial_\mu \left( \frac{ \partial L }{ \partial (\partial_\mu \phi) } \right)
+          \right]
+          \delta \phi \ d^4 x
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.12) Derivada de un funcional
+      </span>
+      <span class="formula">
+        \frac{ \delta S }{ \delta \phi } \equiv 
+            \frac{ \partial L }{ \partial \phi }
+            - \partial_\mu \left( \frac{ \partial L }{ \partial (\partial_\mu \phi) } \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.13) Principio de mínima acción
+      </span>
+      <span class="formula formula-texto">
+        \text{Las teorías plausibles deben cumplir:}
+      </span>
+      <span class="formula">
+        \frac{ \delta S }{ \delta \phi } = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.14) Dada la acción:
+      </span>
+      <span class="formula">
+        S = \int d^4 x \ \frac{1}{2} \partial_\mu \phi \ \partial^\mu \phi
+      </span>
+      <span class="formula-titulo">
+        Aplicando el principio de mínima acción (19.13),
+        <br/>obtenemos la ecuación de onda en 4D:
+      </span>
+      <span class="formula">
+        \partial^2_0 \phi - \partial^2_1 \phi - \partial^2_2 \phi - \partial^2_3 \phi = 0
+      </span>
+      <span class="formula-titulo">
+        Que es invariante Lorentz debido a que L lo es:
+      </span>
+      <span class="formula">
+        L = \frac{1}{2} \partial_\mu \phi \ \partial^\mu \phi
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.15) Aplicando la <a href="#capitulo-18" class="formula-link">fórmula (18.3)</a>,
+        <br/>podemos escribir la ecuación de
+        <br/>onda con notación relativista:
+      </span>
+      <span class="formula">
+        \partial_\mu \ \partial^\mu \ \phi = 0  
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (19.16) Ejercicio propuesto:
+      </span>
+      <span class="formula formula-texto">
+        \text{Dada la acción:}
+      </span>
+      <span class="formula">
+        S = \frac{1}{2} \int d^4 x \left[ \partial_\mu \phi \ \partial^\mu \phi - m^2 \phi^2 \right]
+      </span>
+      <span class="formula">
+        \text{\footnotesize a) Demostrar que }
+        L = \frac{1}{2} \left[ \partial_\mu \phi \ \partial^\mu \phi - m^2 \phi^2 \right]
+      </span>
+      <span class="formula formula-texto">
+        \text{es invariante bajo la transformación:}
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          {x^0}' &= \gamma x^0 - \gamma \beta x^1 \\
+          {x^1}' &= -\gamma \beta x^0 + \gamma x^1 \\
+          {x^2}' &= x^2 \\
+          {x^3}' &= x^3
+        \end{aligned}
+      </span>
+      <span class="formula">
+        \text{\footnotesize b) Calcular } \frac{ \delta S }{ \delta \phi }
       </span>
     </div>
   </div>
