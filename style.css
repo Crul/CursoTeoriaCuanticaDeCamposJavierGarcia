@@ -32,13 +32,13 @@ ol > li {
 h1 {
   font-size: 140%;
   font-weight: normal;
-  background-color: #6b2026;
-  color: #fcf0f2;
+  background-color: #510f14;
+  color: #faeff1;
   padding: 9px;
   margin: 0;
 }
   h1 a {
-    color: #fcf0f2;
+    color: #faeff1;
   }
   h1 a:hover {
     color: #fff;
@@ -49,19 +49,19 @@ h3 {
   margin: -30px 0 0 0;
   font-size: 90%;
   font-weight: normal;
-  color: #6b2026;
+  color: #510f14;
   padding: 6px;
   text-align: right;
 }
   h3 a {
-    color: #fcf0f2;
+    color: #faeff1;
   }
   h3 a:hover {
     color: #fff;
   }
 
 #topContent {
-  background-color: #fcf0f2;
+  background-color: #faeff1;
   display: table;
   width: 100%;
 }
@@ -98,18 +98,18 @@ ul {
   }
   ul li a {
     display: inline-block;
-    background-color: #d6414d;
-    color: #fcf0f2;
+    background-color: #c03b46;
+    color: #faeff1;
     text-decoration: none;
     padding: 2px 8px;
-    border: solid 1px #fcf0f2;
+    border: solid 1px #faeff1;
   }
     ul li a:first-child {
       width: 106px;
       margin-right: -3px;
     }
     ul li a:hover {
-      background-color: #6b2026;
+      background-color: #510f14;
       color: #fff;
       border: solid 1px #fff;
     }
@@ -117,14 +117,14 @@ ul {
 h2 {
   font-size: 120%;
   font-weight: normal;
-  background-color: #d6414d;
+  background-color: #c03b46;
   padding: 6px;
   margin: 0 0 2px 0;
   clear: both;
   min-height: 24px;
 }
   h2 a.formulas-title {
-    color: #fcf0f2;
+    color: #faeff1;
     text-decoration: none;
     vertical-align: middle;
   }
@@ -146,15 +146,15 @@ h2 {
   text-align: center;
   cursor: pointer;
   border-radius: 3px;
-  color: #d6414d;
-  border: solid 1px #d6414d;
+  color: #c03b46;
+  border: solid 1px #c03b46;
   padding: 5px;
   vertical-align: bottom;
 }
   .fold-buttons > div:hover {
-    color: #fcf0f2;
-    border: solid 1px #6b2026;
-    background-color: #6b2026;
+    color: #faeff1;
+    border: solid 1px #510f14;
+    background-color: #510f14;
   }
 
 .formulas {
@@ -167,7 +167,7 @@ h2 {
   display: inline-block;
   vertical-align: top;
   border: dotted 1px #ccc;
-  border-top: solid 1px #d6414d;
+  border-top: solid 1px #c03b46;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -221,7 +221,7 @@ h2 {
 .formula-titulo {
   display: block;
   padding: 4px;
-  background-color: #fcf0f2;
+  background-color: #faeff1;
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   font-size: 90%;
@@ -268,11 +268,11 @@ h2 {
 }
 
   .wolfram-alpha-link a {
-    color: #d6414d;
+    color: #c03b46;
     text-decoration: none;
   }
     .wolfram-alpha-link a:hover {
-      color: #6b2026;
+      color: #510f14;
       text-decoration: underline;
     }
 
@@ -289,9 +289,9 @@ h2 {
   padding: 2px 0 0 0;
   text-align: center;
   margin-right: 6px;
-  color: #fcf0f2;
-  background-color: #d6414d;
-  border: solid 1px #fcf0f2;
+  color: #faeff1;
+  background-color: #c03b46;
+  border: solid 1px #faeff1;
   border-radius: 3px;
   vertical-align: middle;
   text-decoration: none;
@@ -310,7 +310,7 @@ h2 {
   .toggle-formulas-btn:hover,
   .goto-top-btn:hover {
     color: #fff;
-    background-color: #6b2026;
+    background-color: #510f14;
     border: solid 1px #fff;
   }
 
@@ -344,7 +344,7 @@ h2 {
   h3 {
     float: none;
     margin: 0;
-    background-color: #d6414d;
+    background-color: #c03b46;
   }
 
   .fold-buttons {
