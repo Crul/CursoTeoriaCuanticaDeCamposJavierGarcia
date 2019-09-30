@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="lib/katex.min.css" />
-  <link rel="stylesheet" href="style.css?v=20190802" />
+  <link rel="stylesheet" href="style.css?v=20190930" />
 </head>
 
 <body>
@@ -111,6 +111,10 @@
         <li>
           <a href="#capitulo-21">Capítulo 21</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=Y20HZyml0W4&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-22">Capítulo 22</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=ShIJfDuC_vI&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -2195,12 +2199,88 @@
     </div>
   </div>
 
+  <h2 id="capitulo-22"><a href="#capitulo-22" class="formulas-title">Capítulo 22: Cómo cuantizar una teoría</a></h2>
+  <div class="capitulo-22 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.1) Ecuación de Schrödinger
+      </span>
+      <span class="formula">
+        i \hbar \frac{ \partial \psi }{ \partial t } =
+          - \frac{ \hbar^2 }{ 2m } \nabla^2 \psi + V \psi
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.2) Ecuación de Schrödinger
+        <br/>(independiente del tiempo)
+      </span>
+      <span class="formula">
+        - \frac{ \hbar^2 }{ 2m } \nabla^2 \psi + V \psi = E \psi
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.3) Matriz hermítica
+      </span>
+      <span class="formula">
+        A^+ \equiv \left( A^* \right)^T = A
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.4) Teorema
+      </span>
+      <span class="formula formula-texto">
+        \text{Una matriz hermítica siempre es diagonalizable,}
+      </span>
+      <span class="formula formula-texto">
+        \text{con valores propios reales y vectores propios ortogonales}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.5) Conmutador
+      </span>
+      <span class="formula">
+        [A,B] \equiv AB - BA
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (22.6) Cuantización canónica
+      </span>
+      <span class="formula">
+        \text{\footnotesize El corchete de Poisson } \{ A, B \} = C \ 
+        \text{\footnotesize pasa a ser } [A,B] = i \hbar C
+      </span>
+      <span class="formula formula-texto">
+        \text{El conmutador de dos variables canónicas conjugadas es:}
+      </span>
+      <span class="formula">
+        [q,p] = i \hbar
+      </span>
+      <span class="formula">
+        \text{\footnotesize El momento lineal } p \ 
+        \text{\footnotesize es un operador diferencial}
+      </span>
+      <span class="formula">
+        \vec{p} = - i \hbar \vec{\nabla} =
+          \left(
+            - i \hbar \frac{\partial}{\partial x},
+            - i \hbar \frac{\partial}{\partial y},
+            - i \hbar \frac{\partial}{\partial z}
+          \right)
+      </span>
+    </div>
+  </div>
+
   <script type="text/javascript" src="lib/katex.min.js"></script>
   <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20190802"></script>
-  <script type="text/javascript" src="script.js?v=20190802"></script>
+  <script type="text/javascript" src="feynmans.js?v=20190930"></script>
+  <script type="text/javascript" src="script.js?v=20190930"></script>
 
 </body>
 </html>
