@@ -116,6 +116,10 @@
           <a href="#capitulo-22">Capítulo 22</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=ShIJfDuC_vI&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-23">Capítulo 23</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=1uLFGzS7Xno&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -2271,6 +2275,145 @@
             - i \hbar \frac{\partial}{\partial y},
             - i \hbar \frac{\partial}{\partial z}
           \right)
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-23"><a href="#capitulo-23" class="formulas-title">Capítulo 23: Cómo cuantizar una teoría - 2ª parte</a></h2>
+  <div class="capitulo-23 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.1)
+      </span>
+      <span class="formula">
+        \text{\footnotesize Si } A \text{\footnotesize es hermítico (autoadjunto) } A^+ = A \text{\footnotesize entonces:}
+      </span>
+      <span class="formula">
+        a) \left( A | \psi \rangle \right)^+ = \langle \psi | A
+      </span>
+      <span class="formula">
+        b) \langle \phi | A | \psi \rangle^* = \langle \psi | A | \phi \rangle
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.2) Producto escalar
+      </span>
+      <span class="formula-titulo">
+        Dimensión N
+      </span>
+      <span class="formula">
+        \langle a | b \rangle = \sum_{j=1}^N a_j^* b_j
+      </span>
+      <span class="formula-titulo">
+        Dimensión infinita
+      </span>
+      <span class="formula">
+        \langle \phi | \psi \rangle = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ \psi(x)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.3) Elementos de matriz de operadores
+      </span>
+      <span class="formula-titulo">
+        Dimensión N
+      </span>
+      <span class="formula">
+        \langle a | A | b \rangle = \sum_{i=1}^N \sum_{j=1}^N a_i^* A_{ij}  b_j
+      </span>
+      <span class="formula-titulo">
+        Dimensión infinita
+      </span>
+      <span class="formula">
+        \langle \phi | A | \psi \rangle = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ A \ \psi(x)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.4) Normalización
+      </span>
+      <span class="formula">
+        \int_{-\infty}^{\infty} dx \ | \psi (x) |^2 = 1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.5)
+      </span>
+      <span class="formula">
+        \text{\footnotesize Espacio de Hilbert } L^2 (-\infty, \infty)
+      </span>
+      <span class="formula formula-texto">
+        \text{Es un espacio vectorial de funciones de cuadrado integrable:}
+      </span>
+      <span class="formula">
+        \int_{-\infty}^{\infty} dx \ | \psi (x) |^2 < \infty
+      </span>
+      <span class="formula formula-texto">
+        \text{dotado del producto escalar}
+      </span>
+      <span class="formula">
+        \langle \phi | \psi \rangle = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ \psi(x)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.6) Teorema
+      </span>
+      <span class="formula formula-texto">
+        \text{Si un operador es hermítico (autoadjunto)}
+      </span>
+      <span class="formula formula-texto">
+        \text{entonces sus valores propios son reales}
+      </span>
+      <span class="formula formula-texto">
+        \text{y sus vectores propios son ortogonales.}
+      </span>
+      <span class="formula formula-texto">
+        \text{Además forma una base completa}
+      </span>
+      <span class="formula formula-texto">
+        \text{del espacio de Hilbert.}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.7) Ecuación de continuidad (densidad de probabilidad)
+      </span>
+      <span class="formula">
+        \frac{ \partial }{ \partial } | \psi |^2
+          + \vec{\nabla} \cdot \frac{\hbar}{2mi}
+          \left( \psi^* \vec{\nabla} \psi - \psi \vec{\nabla} \psi^* \right)
+          = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.8) Ecuación de valores propios del operador x
+      </span>
+      <span class="formula">
+        x \ \delta (x - x_0) = x_0 \ \delta (x - x_0)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (23.9)
+      </span>
+      <span class="formula">
+        \text{\footnotesize Representación de posiciones = base de vectores de posición: } \{ |x \rangle \}
+      </span>
+      <span class="formula-titulo">
+        Productos escalares interesantes:
+      </span>
+      <span class="formula">
+        \langle x | y \rangle = \delta (x-y)
+      </span>
+      <span class="formula">
+        \langle x | \psi \rangle = \psi(x)
+      </span>
+      <span class="formula">
+        \langle \psi | y \rangle = \psi^* (x)
       </span>
     </div>
   </div>
