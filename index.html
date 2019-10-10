@@ -124,6 +124,10 @@
           <a href="#capitulo-24">Capítulo 24</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=zHotm9fZJsw&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-25">Capítulo 25</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=p3srqZj8jHo&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -2483,6 +2487,129 @@
       <span class="formula">
         \widehat{\psi}(x) = \int_{-\infty}^{\infty} 
           \frac{dp}{ \sqrt{ 2 \pi \hbar } } \psi(p) e^{ -i \frac{px}{\hbar} }
+    </div>
+  </div>
+
+  <h2 id="capitulo-25"><a href="#capitulo-25" class="formulas-title">Capítulo 25: Cómo cuantizar una teoría - 4ª parte</a></h2>
+  <div class="capitulo-25 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.1) Momento angular (clásico)
+      </span>
+      <span class="formula">
+        \vec{L} = \vec{r} \times \vec{p}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.2) Movimiento circular de radio R
+      </span>
+      <span class="formula">
+        L_z = |\vec{L}| = m R^2 \omega
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.3) Momento angular cuántico
+        <br/>(movimiento en el plano xy)
+      </span>
+      <span class="formula">
+        L_z = -i \hbar \frac{\partial}{\partial \theta}
+      </span>
+      <span class="formula-titulo">
+        Es autoadjunto si las
+        <br/>funciones son periódicas
+      </span>
+      <span class="formula">
+        L_z^+ = L_z
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.4) Funcionres propias de L<sub>z</sub>
+      </span>
+      <span class="formula">
+        \phi_n (\theta) = \frac{1}{ \sqrt{ 2 \pi R } } e^{ i n \theta }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.5) Espacio de Hilbert
+      </span>
+      <span class="formula">
+        L^2 [ 0, 2 \pi ]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.6) Producto escalar en
+        <br/>el Espacio de Hilbert (25.5)
+      </span>
+      <span class="formula">
+        \langle f | g \rangle = \int_0^{2\pi} f(\theta)^* \ g(\theta) \ R \ d\theta
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.7) Notación
+      </span>
+      <span class="formula">
+        \langle \theta | \phi_n \rangle
+          = \langle \theta | n \rangle
+          = \frac{1}{ \sqrt{ 2 \pi R } } e^{ i n \theta }
+      </span>
+      <span class="formula">
+        L_z | n \rangle = n \hbar | n \rangle
+      </span>
+      <span class="formula">
+        \langle \theta | L_z | \psi \rangle = - i \hbar \frac{ \partial \psi }{ \partial \theta }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.8) Ecuación de Schrödinger (notación de Dirac)
+      </span>
+      <span class="formula">
+        -i \hbar \frac{\partial}{\partial t} | \psi(t) \rangle = H | \psi(t) \rangle
+      </span>
+      <span class="formula-titulo">
+        Solución general
+      </span>
+      <span class="formula">
+        | \psi(t) \rangle = \sum_n e^{ \frac{it}{\hbar} E_n } a_n | \phi_n \rangle
+      </span>
+      <span class="formula">
+        \text{\footnotesize Los vectores } | \phi \rangle \text{\footnotesize son propios de H}
+      </span>
+      <span class="formula">
+        H | \phi_n \rangle = E_n | \phi_n \rangle
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.9) Definición de la exponencial de un operador
+      </span>
+      <span class="formula">
+        e^{\widehat{A}} = 1 + \widehat{A} + \frac{1}{2!} \widehat{A}^2 + \frac{1}{3!} \widehat{A}^3 + \cdots
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.10) Si H &#8800; H(t) la ecuación
+        <br/>de Schrödinger equivale a:
+      </span>
+      <span class="formula">
+        | \psi(t) \rangle = U(t) | \psi(0) \rangle
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (25.11) Operador de
+        <br/>la evolución temporal
+      </span>
+      <span class="formula">
+        U(t) = e^{ - \frac{it}{\hbar} H }
+      </span>
     </div>
   </div>
 
