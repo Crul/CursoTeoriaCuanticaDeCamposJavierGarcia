@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="lib/katex.min.css" />
-  <link rel="stylesheet" href="style.css?v=20191001" />
+  <link rel="stylesheet" href="style.css?v=20191016" />
 </head>
 
 <body>
@@ -127,6 +127,10 @@
         <li>
           <a href="#capitulo-25">Capítulo 25</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=p3srqZj8jHo&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-26">Capítulo 26</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=VKaLAfdfqwQ&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -2613,12 +2617,61 @@
     </div>
   </div>
 
+  <h2 id="capitulo-26"><a href="#capitulo-26" class="formulas-title">Capítulo 26: Postulado medida & Principio de Heisenberg</a></h2>
+  <div class="capitulo-26 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.1) Postulado de la medida
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          & A^+ = A && \text{\footnotesize (observable)} \\
+          & A | a_n \rangle = a_n | a_n \rangle && \text{\footnotesize (base propia de } A \text{\footnotesize )}
+        \end{aligned}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.2) Probabilidad de obtener a<sub>n</sub>
+        <br/>al hacer una medida de A
+      </span>
+      <span class="formula">
+        P_n = | \langle a_n | \psi \rangle |^2
+      </span>
+      <span class="formula-titulo">
+        El estado colapsa a:
+      </span>
+      <span class="formula">
+        | \psi \rangle = | a_n \rangle
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.3) Desviación estándar de A en un estado |&#120595;&#10217;
+      </span>
+      <span class="formula">
+        \sigma_A = \sqrt{
+          \langle \psi | A^2 | \psi \rangle -
+          \langle \psi | A | \psi \rangle^2
+        }
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (26.4) Principio de identerminación de Heisemberg
+      </span>
+      <span class="formula">
+        \sigma_A \sigma_B \geqslant \left| \frac{1}{2i} \langle \psi \left| [A,B] \right| \psi \rangle \right|
+      </span>
+    </div>
+  </div>
+
   <script type="text/javascript" src="lib/katex.min.js"></script>
   <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20191001"></script>
-  <script type="text/javascript" src="script.js?v=20191001"></script>
+  <script type="text/javascript" src="feynmans.js?v=20191016"></script>
+  <script type="text/javascript" src="script.js?v=20191016"></script>
 
 </body>
 </html>
