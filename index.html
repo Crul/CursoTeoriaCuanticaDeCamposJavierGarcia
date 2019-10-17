@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="lib/katex.min.css" />
-  <link rel="stylesheet" href="style.css?v=20191016" />
+  <link rel="stylesheet" href="style.css?v=20191017" />
 </head>
 
 <body>
@@ -135,6 +135,10 @@
         <li>
           <a href="#capitulo-27">Capítulo 27</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=hPe36b3eJ64&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-28">Capítulo 28</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=1XMnAV5ezmI&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -2705,12 +2709,102 @@
     </div>
   </div>
 
+  <h2 id="capitulo-28"><a href="#capitulo-28" class="formulas-title">Capítulo 28: Oscilador Cuántico</a></h2>
+  <div class="capitulo-28 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.1) Hamiltoniano oscilador armónico
+      </span>
+      <span class="formula">
+        H = \frac{p^2}{2m} + \frac{m \omega^2}{2} q^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.2) Operadores escalera
+        <br/>oscilador armónico a y a<sup>+</sup>
+      </span>
+      <span class="formula">
+        a = \sqrt{ \frac{ m \omega }{ 2 \hbar } } \left( q + i \frac{p}{ m \omega } \right)
+      </span>
+      <span class="formula">
+        a^+ = \sqrt{ \frac{ m \omega }{ 2 \hbar } } \left( q - i \frac{p}{ m \omega } \right)
+      </span>
+      <span class="formula">
+        q = \sqrt{ \frac{ \hbar }{ 2 m \omega } } \left( a + a^+ \right)
+      </span>
+      <span class="formula">
+        p = -i \sqrt{ \frac{ \hbar m \omega }{2} } \left( a - a^+ \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.3) Conmutadores
+      </span>
+      <span class="formula">
+        [a,a] = [a^+,a^+] = 0
+      </span>
+      <span class="formula">
+        [a,a^+] = 1
+      </span>
+      <span class="formula">
+        [H,a^+] = \hbar \omega a^+
+      </span>
+      <span class="formula">
+        [H,a] = - \hbar \omega a
+      </span>
+      <span class="formula">
+        N = a^+ a
+      </span>
+      <span class="formula">
+        \left[ N, \left( a^+ \right)^k \right] = k \left( a^+ \right)^k
+      </span>
+      <span class="formula">
+        \left[ N, a^k \right] = - k a^k
+      </span>
+      <span class="formula">
+        k = 1, 2, 3, ...
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.4) Hamiltoniano y valores propios
+      </span>
+      <span class="formula">
+        H = \hbar \omega \left( a^+ a + \frac{1}{2} \right)
+      </span>
+      <span class="formula">
+        E = \hbar \omega \left( n + \frac{1}{2} \right) \geqslant 0
+      </span>
+      <span class="formula">
+        H | n \rangle = E_n | n \rangle
+      </span>
+      <span class="formula">
+        | n \rangle = \frac{1}{ \sqrt{ n! } } \left( a^+ \right)^n | 0 \rangle
+      </span>
+      <span class="formula">
+        \langle n_1 | n_2 \rangle = \delta_{n_1, n_2}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (28.5) Acción sobre los estados |n&#10217;
+      </span>
+      <span class="formula">
+        a^+ | n \rangle = \sqrt{ n + 1 } | n + 1 \rangle
+      </span>
+      <span class="formula">
+        a | n \rangle = \sqrt{n} | n - 1 \rangle
+      </span>
+    </div>
+  </div>
+
   <script type="text/javascript" src="lib/katex.min.js"></script>
   <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20191016"></script>
-  <script type="text/javascript" src="script.js?v=20191016"></script>
+  <script type="text/javascript" src="feynmans.js?v=20191017"></script>
+  <script type="text/javascript" src="script.js?v=20191017"></script>
 
 </body>
 </html>
