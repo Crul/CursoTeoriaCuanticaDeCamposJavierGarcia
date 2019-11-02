@@ -70,7 +70,7 @@ h3 {
     background-color: #ffffff88;
     margin: 8px 20px 18px 20px;
     font-size: 125%;
-    text-align: center;
+    display: inline-block;
   }
     #topContent a.no-formula:hover {
       background-color: #00f;
