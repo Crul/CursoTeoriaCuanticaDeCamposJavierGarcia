@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="lib/katex.min.css" />
-  <link rel="stylesheet" href="style.css?v=20191017" />
+  <link rel="stylesheet" href="style.css?v=20200121" />
 </head>
 
 <body>
@@ -143,6 +143,10 @@
         <li>
           <a href="#capitulo-29">Capítulo 29</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=HaQuT30-_Vg&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-30">Capítulo 30</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=l0408XGyV-s&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -3085,12 +3089,42 @@
     </div>
   </div>
 
+  <h2 id="capitulo-30"><a href="#capitulo-30" class="formulas-title">Capítulo 30: Operador Desplazamiento</a></h2>
+  <div class="capitulo-30 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (30.1) Operador desplazamiento D
+      </span>
+      <span class="formula">
+        \begin{aligned}
+        & \text{\footnotesize - Es unitario } D^\dagger = D^{-1} \\
+        & \text{\footnotesize - } D \widehat{x} D^\dagger = \widehat{x} - x_0 \\
+        & \text{\footnotesize - } D \widehat{p} D^\dagger = \widehat{p} - p_0 \\
+        & \text{\footnotesize - } D a D^\dagger = a - \alpha \\
+        & \text{\footnotesize - } D a^\dagger D^\dagger = a^\dagger - \alpha^* \\
+        & \alpha = \sqrt{ \frac{ m \omega }{ 2 \hbar } } \left( x_0 + i \frac{1}{ m \omega } p_0 \right) \\
+        & \text{\footnotesize - } [a, D] = \alpha D \\
+        & \text{\footnotesize - } [a^\dagger, D] = - \alpha^* D^\dagger \\
+        & \text{\footnotesize - } | \alpha \rangle = D |0\rangle
+        \end{aligned}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (31.2) Definición explícita de D
+      </span>
+      <span class="formula">
+        D (\alpha) = e^{ \alpha a^\dagger - \alpha^* a }
+      </span>
+    </div>
+  </div>
+
   <script type="text/javascript" src="lib/katex.min.js"></script>
   <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20191017"></script>
-  <script type="text/javascript" src="script.js?v=20191017"></script>
+  <script type="text/javascript" src="feynmans.js?v=20200121"></script>
+  <script type="text/javascript" src="script.js?v=20200121"></script>
 
 </body>
 </html>
