@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="lib/katex.min.css" />
-  <link rel="stylesheet" href="style.css?v=20200121" />
+  <link rel="stylesheet" href="style.css?v=20200309" />
 </head>
 
 <body>
@@ -167,6 +167,14 @@
         <li>
           <a href="#capitulo-34">Capítulo 34</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=VmP7uFSTaxs&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-35">Capítulo 35</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=2PYC63CJnUs&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-36">Capítulo 36</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=tF0AQP3wMA0&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -3329,12 +3337,280 @@
     </div>
   </div>
 
+  <h2 id="capitulo-35"><a href="#capitulo-35" class="formulas-title">Capítulo 35: Spinor 1</a></h2>
+  <div class="capitulo-35 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.1) Matriz de rotación 2D
+      </span>
+      <span class="formula">
+        R = \begin{pmatrix}
+          \cos \theta & -\sin \theta \\
+          \sin \theta & \cos \theta
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        R^{-1} = \begin{pmatrix}
+          \cos \theta & \sin \theta \\
+          -\sin \theta & \cos \theta
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.2) Rotación<br/>
+        de un punto 2D
+      </span>
+      <span class="formula">
+        \overrightarrow{r}' = R \overrightarrow{r}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.3) Campo vectorial euclídeo 2D
+      </span>
+      <span class="formula">
+        \overrightarrow{\phi} \left( \overrightarrow{r} \right) =
+          \begin{pmatrix}
+            \phi^1 \left( \overrightarrow{r} \right) \\
+            \phi^2 \left( \overrightarrow{r} \right)
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.4) Rotación de un campo vectorial euclídeo 2D
+      </span>
+      <span class="formula">
+        \overrightarrow{\phi}' \left( \overrightarrow{r}' \right) =
+          R \overrightarrow{\phi} \left( R^{-1} \overrightarrow{r}' \right)
+      </span>
+      <span class="formula-titulo">
+        Explícitamente:
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          \phi^{1'} \left( \overrightarrow{r}' \right) \\
+          \phi^{2'} \left( \overrightarrow{r}' \right)
+        \end{pmatrix} = 
+          \begin{pmatrix}
+            \cos \theta & -\sin \theta \\
+            \sin \theta & \cos \theta
+          \end{pmatrix}
+          \begin{pmatrix}
+            \phi^1 \left( R^{-1} \overrightarrow{r}' \right) \\
+            \phi^2 \left( R^{-1} \overrightarrow{r}' \right)
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.5) Transformación<br/>
+        de Lorentz
+      </span>
+      <span class="formula">
+        x^{\mu \prime} = {\Lambda^{\mu \prime}}_\nu x^\nu
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.6) Campo vectorial<br/>
+        de Lorentz
+      </span>
+      <span class="formula">
+        \phi^\alpha \left( x^\mu \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.7) Transformación de Lorentz<br/>
+        en un cmapo de Lorentz
+      </span>
+      <span class="formula">
+        \phi^{\alpha \prime} \left( x' \right) = 
+          {\Lambda^{\alpha \prime}}_\nu \phi^\nu \left( \Lambda^{-1} x' \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.8) 2-Spinor
+      </span>
+      <span class="formula">
+        \psi = \begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.9) Spinor transformado
+      </span>
+      <span class="formula">
+        \psi' = M[\Lambda] \begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}
+      </span>
+      <span class="formula-titulo">
+        Donde las matrices M[&Lambda;] cumplen:
+      </span>
+      <span class="formula">
+        M[ \Lambda_2 \Lambda_1 ] = M[\Lambda_2] M[\Lambda_1]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.10) Toy model
+      </span>
+      <span class="formula">
+        m_0 \ m_1 \text{ \footnotesize matrices reales cuadradas tales que:}
+      </span>
+      <span class="formula">
+        m_0^2 = 1
+        \hspace3ex
+        m_1^2 = -1
+      </span>
+      <span class="formula">
+        m_0 m_1 = -m_1 m_0
+      </span>
+      <span class="formula">
+        m_0^T = m_0
+        \hspace3ex
+        m_1^T = -m_1
+      </span>
+      <span class="formula">
+        m_\alpha m_\beta + m_\beta m_\alpha = 2 g_{\alpha \beta}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.11) Transformación M
+      </span>
+      <span class="formula">
+        M = e^{ \frac{\theta}{2} m_0 m_1 } = \cosh \frac{\theta}{2} + m_0 m_1 \sinh \frac{\theta}{2}
+      </span>
+      <span class="formula">
+        M^{-1} = e^{ -\frac{\theta}{2} m_0 m_1 } = \cosh \frac{\theta}{2} - m_0 m_1 \sinh \frac{\theta}{2}
+      </span>
+      <span class="formula">
+        M^T = M
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.12) Spinor<br/>
+        transformado
+      </span>
+      <span class="formula">
+        \psi' = M \psi
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.13) Teorema
+      </span>
+      <span class="formula">
+        M m_0 M^{-1} = \cosh \theta \ m_0 - \sinh \theta \ m_1
+      </span>
+      <span class="formula">
+        M m_1 M^{-1} = - \sinh \theta \ m_0 + \cosh \theta \ m_1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.14) "Métrica" en el<br/>
+        espacio interno de m<sub>0</sub>
+      </span>
+      <span class="formula">
+        M^T m_0 M = m_0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.15) Spinor dual
+      </span>
+      <span class="formula">
+        \overline{\psi} = \psi^T m_0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.16) Spinor dual transformado
+      </span>
+      <span class="formula">
+        \overline{\psi}' = \left( \psi' \right)^T m_0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.17) Invariante
+      </span>
+      <span class="formula">
+        \overline{\psi} \psi = \overline{\psi}' \psi'
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.18) Teorema
+      </span>
+      <span class="formula">
+        M \left( m_0 p^0 + m_1 p^1 \right) M^{-1} =
+          m_0 p^{0 \prime} + m_1 p^{1 \prime}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.19) Invariante
+      </span>
+      <span class="formula">
+        \overline{\psi} \left( m_0 p^0 + m_1 p^1 \right) \psi =
+          \overline{\psi}' \left( m_0 p^{0 \prime} + m_1 p^{1 \prime} \right) \psi'
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.20) Prototipo densidad lagrangiana<br/>
+        de un campo spinoral
+      </span>
+      <span class="formula">
+        \mathcal{L} = i \overline{\psi} \left( m_0 \partial^0 + m_1 \partial^1 \right) \psi - m \overline{\psi} \psi
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (35.21) Ejercicio propuesto
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que:} 
+      </span>
+      <span class="formula">
+        e^{ \frac{\theta}{2} m_0 m_1 } m_1 e^{ -\frac{\theta}{2} m_0 m_1 } =
+          - \sinh \theta \ m_0 + \cosh \theta \ m_1
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas:
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 35.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 35.pdf</div>
+      </a>
+      <a class="no-formula" target="_blank" href="docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 35.pdf">
+        Rodolfo Guidobono
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Rodolfo Guidobono - Solución Ejercicio Capítulo 35.pdf</div>
+      </a>
+    </div>
+  </div>
+
+  <h2 id="capitulo-36"><a href="#capitulo-36" class="formulas-title">Capítulo 36: Spinor 2</a></h2>
+  <div class="capitulo-36 formulas">
+    <div class="grupo-formulas">
+      <span class="no-formula">
+        Ver <a href="#capitulo-35">capítulo 35</a>
+      </span>
+    </div>
+  </div>
+
   <script type="text/javascript" src="lib/katex.min.js"></script>
   <script type="text/javascript" src="lib/jquery-3.4.0.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20200121"></script>
-  <script type="text/javascript" src="script.js?v=20200121"></script>
+  <script type="text/javascript" src="feynmans.js?v=20200309"></script>
+  <script type="text/javascript" src="script.js?v=20200309"></script>
 
 </body>
 </html>
