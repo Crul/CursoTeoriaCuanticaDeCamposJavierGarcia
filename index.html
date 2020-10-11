@@ -192,6 +192,10 @@
           <a href="#capitulo-40">Capítulo 40</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=NBW37aq169A&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-41">Capítulo 41</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=XOr5U4SotYw&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -4019,6 +4023,151 @@
         Albert Dalmau
         <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Albert Dalmau - Solución Ejercicio Capítulo 40.pdf</div>
       </a>
+    </div>
+  </div>
+
+  <h2 id="capitulo-41"><a href="#capitulo-41" class="formulas-title">Capítulo 41: Función de onda del electrón a partir del Grupo de Lorentz</a></h2>
+  <div class="capitulo-41 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.1) Minkowski
+      </span>
+      <span class="formula">
+        \begin{pmatrix} p^0 \\ p^1 \\ p^2 \\ p^3 \end{pmatrix}
+          = \begin{pmatrix}
+              1 & 0 & 0 & 0 \\
+              0 & \cos \phi & -\sin \phi & 0 \\
+              0 & \sin \phi & \cos \phi & 0 \\
+              0 & 0 & 0 & 1
+            \end{pmatrix}
+            \begin{pmatrix}
+              1 & 0 & 0 & 0 \\
+              0 & \cos \phi & 0 & \sin \phi \\
+              0 & 0 & 1 & 0 \\
+              0 & -\sin \phi & 0 & \cos \phi
+            \end{pmatrix}
+            \begin{pmatrix}
+              \cosh \eta & 0 & 0 & \sinh \eta \\
+              0 & 1 & 0 & 0 \\
+              0 & 0 & 1 & 0 \\
+              \sinh \eta & 0 & 0 & \cosh \eta
+              \end{pmatrix}
+            \begin{pmatrix} mc \\ 0 \\ 0 \\ 0 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.2) Espacio interno
+      </span>
+      <span class="formula">
+        \psi = \exp \left[ - i \phi \frac{ \sigma^{12} }{ 2 } \right]
+          \exp \left[ - i \theta \frac{ \sigma^{31} }{ 2 } \right]
+          \exp \left[ - i \eta \frac{ \sigma^{03} }{ 2 } \right] \psi_{CM}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.3) Transformaciones
+      </span>
+      <span class="formula">
+        S \left[ \Lambda_{ \text{boost} - z } (\eta) \right]
+          = \cosh \frac{\eta}{2} + \gamma^0 \gamma^3 \sinh \frac{\eta}{2}
+      </span>
+      <span class="formula">
+        S \left[ \Lambda_{ \text{rot} - y } (\theta) \right]
+          = \cos \frac{\theta}{2} + \gamma^3 \gamma^1 \sin \frac{\theta}{2}
+      </span>
+      <span class="formula">
+        S \left[ \Lambda_{ \text{rot} - z } (\phi) \right]
+          = \cos \frac{\phi}{2} + \gamma^1 \gamma^2 \sin \frac{\phi}{2}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.4) Matrices de Pauli
+      </span>
+      <span class="formula">
+        \sigma_x = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}
+        \hspace3ex
+        \sigma_y = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
+        \hspace3ex
+        \sigma_z = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.5) Matrices gamma en la representación de Dirac
+      </span>
+      <span class="formula">
+        \gamma^0 = \begin{pmatrix} I & 0 \\ 0 & -I \end{pmatrix}
+        \hspace3ex
+        \gamma^1 = \begin{pmatrix} 0 & \sigma_x \\ -\sigma_x & 0 \end{pmatrix}
+      </span>
+      <span class="formula">
+        \gamma^2 = \begin{pmatrix} 0 & \sigma_y \\ -\sigma_y & 0 \end{pmatrix}
+        \hspace3ex
+        \gamma^3 = \begin{pmatrix} 0 & \sigma_z \\ -\sigma_z & 0 \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.6) Usando la representación de matrices gamma y productos directos:
+      </span>
+      <span class="formula">
+        S[ \Lambda ] =
+          \begin{pmatrix}
+            \cosh \frac{\eta}{2} & 0 \\
+            0 & \cosh \frac{\eta}{2}
+          \end{pmatrix}
+          \otimes
+          \begin{pmatrix}
+            e^{ -\frac{1}{2} i \phi} \cos \frac{\theta}{2} & 
+              - e^{ -\frac{1}{2} i \phi} \sin \frac{\theta}{2} \\
+            e^{ \frac{1}{2} i \phi} \sin \frac{\theta}{2} & 
+              e^{ \frac{1}{2} i \phi} \sin \frac{\theta}{2}
+          \end{pmatrix}
+          +
+          \begin{pmatrix}
+            0 & \sinh \frac{\eta}{2} \\
+            \sinh \frac{\eta}{2} & 0
+          \end{pmatrix}
+          \otimes
+          \begin{pmatrix}
+            e^{ -\frac{1}{2} i \phi} \cos \frac{\theta}{2} & 
+              e^{ -\frac{1}{2} i \phi} \sin \frac{\theta}{2} \\
+            e^{ \frac{1}{2} i \phi} \sin \frac{\theta}{2} & 
+              - e^{ \frac{1}{2} i \phi} \sin \frac{\theta}{2}
+          \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.7) Notación (onda plana)
+      </span>
+      <span class="formula">
+        \exp \left( \frac{-i}{\hbar} px \right)
+          = \exp \left( -i \frac{ p_\mu x^\mu }{ \hbar} \right)
+          = \exp \left[ \frac{-i}{\hbar} \left( Et - \overrightarrow{p} · \overrightarrow{r} \right) \right]
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (41.8) Solución partícula libre en el sistema de referencia centro de masas
+      </span>
+      <span class="formula">
+        \psi_{cm}^{(1)} =
+          \begin{pmatrix} \phi_1 \\ \phi_2 \\ 0 \\ 0 \end{pmatrix}
+          \exp \left( -i \frac{ mc^2 }{\hbar} t \right)
+          \hspace4ex
+          , E = mc^2
+      </span>
+      <span class="formula">
+        \psi_{cm}^{(2)} =
+          \begin{pmatrix} 0 \\ 0 \\ \phi_3 \\ \phi_4 \end{pmatrix}
+          \exp \left( i \frac{ mc^2 }{\hbar} t \right)
+          \hspace4ex
+          , E = -mc^2
+      </span>
     </div>
   </div>
 
