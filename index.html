@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="favicon.png" />
 
   <link rel="stylesheet" href="lib/katex.min.css" />
-  <link rel="stylesheet" href="style.css?v=20200412" />
+  <link rel="stylesheet" href="style.css?v=20201111" />
 </head>
 
 <body>
@@ -199,6 +199,10 @@
         <li>
           <a href="#capitulo-42">Capítulo 42</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=L4NhrD8xYTY&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
+        <li>
+          <a href="#capitulo-43">Capítulo 43</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=e3NUDWpgeVQ&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
       <div class="fold-buttons">
@@ -4303,12 +4307,134 @@
     </div>
   </div>
 
+  <h2 id="capitulo-43"><a href="#capitulo-43" class="formulas-title">Capítulo 43: Spinores de Dirac. Propiedades</a></h2>
+  <div class="capitulo-43 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (43.1) Spinores de Dirac
+      </span>
+      <span class="formula">
+        u_{1}=\left(
+          \begin{array}{c}
+            \cosh \frac{\eta}{2} \\
+            \sinh \frac{\eta}{2}
+          \end{array}
+        \right) \otimes \left( 
+          \begin{array}{c}
+            \cos \frac{\theta}{2} \\ 
+            e^{i\phi}\sin \frac{\theta}{2}
+          \end{array}
+        \right)
+        \qquad
+        u_{2}=\left( 
+          \begin{array}{c}
+            \cosh \frac{\eta}{2} \\ 
+            -\sinh \frac{\eta}{2}
+          \end{array}
+          \right) \otimes \left( 
+            \begin{array}{c}
+              -e^{-i\phi}\sin \frac{\theta}{2} \\ 
+              \cos \frac{\theta}{2}
+            \end{array}
+          \right)
+      </span>
+      <span class="formula">
+        v_{1}=\left( 
+          \begin{array}{c}
+            \sinh \frac{\eta}{2} \\ 
+            \cosh \frac{\eta}{2}
+          \end{array}
+        \right) \otimes \left( 
+          \begin{array}{c}
+            \cos \frac{\theta}{2} \\ 
+            e^{i\phi}\sin \frac{\theta}{2}
+          \end{array}
+        \right)
+        \qquad 
+        v_{2}=\left( 
+          \begin{array}{c}
+            -\sinh \frac{\eta}{2} \\ 
+            \cosh \frac{\eta}{2}
+          \end{array}
+        \right) \otimes \left( 
+          \begin{array}{c}
+            -e^{-i\phi}\sin \frac{\theta}{2} \\ 
+            \cos \frac{\theta}{2}
+          \end{array}
+        \right)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (43.2) Base de estados de spin 1/2
+      </span>
+      <span class="formula">
+        \chi_{+}^{\dag}\chi_{+} =\chi_{-}^{\dag}\chi_{-}=1 \\
+      </span>
+      <span class="formula">
+        \chi_{+}^{\dag}\chi_{-} =\chi_{-}^{\dag}\chi_{+}=0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (43.3) Resolución de la identidad
+      </span>
+      <span class="formula">
+        \chi_{+}\chi_{+}^{\dag}+\chi_{-}\chi_{-}^{\dag}=\mathbf{1}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (43.4) Matriz de spin 1/2
+      </span>
+      <span class="formula">
+        \overrightarrow{\sigma}\cdot \widehat{n} = \left( 
+          \begin{array}{cc}
+            \cos \theta           & e^{-i\phi}\sin \theta  \\ 
+            e^{i\phi}\sin \theta  & -\cos \theta 
+          \end{array}
+        \right)
+      </span>
+      <span class="formula">
+        \left( \overrightarrow{\sigma}\cdot \widehat{n}\right) \chi_{+} = \chi_{+}
+      </span>
+      <span class="formula">
+        \left( \overrightarrow{\sigma}\cdot \widehat{n}\right) \chi_{-} = -\chi_{-}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (43.5) Propiedades de los spinores de Dirac
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          u_{i}^{\dag}(\overrightarrow{p})u_{j}(\overrightarrow{p})
+            &= v_{i}^{\dag}( \overrightarrow{p})v_{j}(\overrightarrow{p})
+            &&= \frac{E}{mc^{2}}\delta_{ij} \\
+          \overline{u}_{i}(\overrightarrow{p})u_{j}(\overrightarrow{p})
+            &= -\overline{v}_{i}(\overrightarrow{p})v_{j}(\overrightarrow{p})
+            &&= \delta_{ij} \\
+          \overline{u}_{i}(\overrightarrow{p})v_{j}(\overrightarrow{p})
+            &= \overline{v}_{i}(\overrightarrow{p})u_{j}(\overrightarrow{p})
+            &&= 0 \\
+          u_{i}^{\dag}(-\overrightarrow{p})v_{j}(\overrightarrow{p})
+            &= v_{i}^{\dag}(\overrightarrow{p})u_{j}(-\overrightarrow{p})
+            &&= 0 \\
+          \sum_{i=1}^{2}u_{i}(\overrightarrow{p})\overline{u}_{i}(\overrightarrow{p})
+            &= \frac{\gamma ^{\mu}p_{\mu}+mc}{2mc} \\
+          \sum_{i=1}^{2}v_{i}(\overrightarrow{p})\overline{v}_{i}(\overrightarrow{p})
+            &= \frac{\gamma ^{\mu}p_{\mu}-mc}{2mc}
+        \end{aligned}
+      </span>
+    </div>
+  </div>
+
   <script type="text/javascript" src="lib/katex.min.js"></script>
   <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
   <script type="text/javascript" src="lib/jquery.feyn-1.0.1.min.js"></script>
-  <script type="text/javascript" src="feynmans.js?v=20200412"></script>
-  <script type="text/javascript" src="script.js?v=20200412"></script>
+  <script type="text/javascript" src="feynmans.js?v=20201111"></script>
+  <script type="text/javascript" src="script.js?v=20201111"></script>
 
 </body>
 </html>
