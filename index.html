@@ -220,6 +220,10 @@
           <a href="#capitulo-47">Capítulo 47</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=k-WHZeBF81o&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+        <li>
+          <a href="#capitulo-48">Capítulo 48</a>
+          <a target="_blank" href="https://www.youtube.com/watch?v=TarascUBCLc&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -4657,6 +4661,128 @@
     <div class="grupo-formulas">
       <span class="no-formula">
         No hay fórmulas
+      </span>
+    </div>
+  </div>
+
+  <h2 id="capitulo-48"><a href="#capitulo-48" class="formulas-title">Capítulo 48: Yang - Mills: Transporte Paralelo</a></h2>
+  <div class="capitulo-48 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.1) Base de vectores del espacio interno
+      </span>
+      <span class="formula">
+        \{e_a(x)\}, \qquad a=1,2,...,N
+      </span>
+      <span class="formula formula-texto">
+        e_a(x) \text{ es una función de las coordinadas } x^\mu \text{ suficientemente "suave".}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.2) Vectores en el espacio interno
+      </span>
+      <span class="formula">
+        \vec{v} = v^a e_a
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.3) Transformación de las coordenadas de un vector
+      </span>
+      <span class="formula">
+        v^{a'} = M^{a'}_a v^a
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.4) Transformación de los vectores de la base
+      </span>
+      <span class="formula">
+        e_{a'} = M^a_{a'} e_a
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.5) Matrices de transformación
+      </span>
+      <span class="formula">
+        M^{a'}_a \ \leftarrow \text{ Componentes de la matriz } M
+      </span>
+      <span class="formula">
+        M^{a}_{a'} \ \leftarrow \text{ Componentes de la matriz } M^{-1}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.6) Parametrización de una curva espaciotemporal
+      </span>
+      <span class="formula">
+        x^\mu (\lambda), \qquad \lambda \in \mathbb{R}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.7) Derivada de los vectores de la base
+      </span>
+      <span class="formula">
+        \frac{d e_a}{d \lambda} = \partial_\mu e_a \frac{d x^\mu}{d \lambda} = \frac{d x^\mu}{d \lambda} \Pi^{b}_{\mu a}(x) e_b(x)
+      </span>
+      <span class="formula-titulo">
+        Donde se definen las connexiones
+      </span>
+      <span class="formula">
+        \partial_\mu e_a = \Pi^b_{\mu a} (x) e_b(x)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.8) Derivada de un vector
+      </span>
+      <span class="formula">
+        \frac{d \vec{v}}{d \lambda} = \frac{d x^\mu}{d \lambda} \left(\partial_\mu v^a + \Pi^{b}_{\mu a} v^c\right) e_a
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.9) Transporte paralelo
+      </span>
+      <span class="formula formula-texto">
+        \text{Dado un vector } \vec{v}(x(\lambda)) \text{ queremos definir otro } \vec{v}^{\parallel}(\lambda) \text{ que cumpla:}
+      </span>
+      <span class="formula formula-texto">
+        \text{1) }\vec{v}^\parallel(\lambda=0) = \vec{v}(\lambda=0)
+      </span>
+      <span class="formula formula-texto">
+        \text{2) }\frac{d\vec{v}^\parallel}{d \lambda} = 0 \Longrightarrow \partial_\mu {v^\parallel}^a + \Pi^a_{\mu c} {v^\parallel}^c = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.10) Derivada covariante
+      </span>
+      <span class="formula">
+        D_\mu v^a = \frac{v^a(x+\delta x) - {v^\parallel}^a(x+\delta x)}{\delta x} = \partial_\mu v^a + \Pi^a_{\mu b}v^b
+      </span>
+      <span class="formula">
+        \partial_\mu \vec{v} = (D_\mu v^a)e_a
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (48.11) Transformación de las connexiones
+      </span>
+      <span class="formula formula-texto">
+        \text{Si queremos que } \partial_\mu \vec{v} \text{ sea un vector:}
+      </span>
+      <span class="formula">
+        \Pi'_\mu = M \Pi_\mu M^{-1} - (\partial_\mu M) M^{-1}
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula formula-texto">
+        \Pi^a_{\mu b} \leftarrow \text{Elemento } a,\ b \text{ de la matriz } \Pi_\mu
       </span>
     </div>
   </div>
