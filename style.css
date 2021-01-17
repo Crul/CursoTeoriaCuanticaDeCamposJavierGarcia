@@ -81,6 +81,14 @@ h3 {
   display: table-row;
 }
 
+#footer {
+  text-align: center;
+  background-color: #faeff1;
+  color: #c03b46;
+  margin-top: 24px;
+  padding: 4px 0;
+}
+
 ul {
   display: flex;
   flex-direction: column;
