@@ -4818,7 +4818,56 @@
 
   <h2 id="capitulo-49"><a href="#capitulo-49" class="formulas-title">Capítulo 49: Yang - Mills: Curvatura vs. Tensor FARADAY</a></h2>
   <div class="capitulo-49 formulas">
-    
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (49.1) Transporte paralelo
+      </span>
+      <span class="formula">
+        \stackrel{\curvearrowleft}{v}^\parallel(C) \cong \left[1 - \Pi_x(A) \delta x - \Pi_y(B) \delta y + \Pi_y(B) \Pi_x(A) \delta x \delta y\right]v(A)
+      </span>
+      <span class="formula">
+        \stackrel{\curvearrowright}{v}^\parallel(C) \cong \left[1 - \Pi_y(A) \delta y - \Pi_x(D) \delta x + \Pi_x(D) \Pi_y(A) \delta x \delta y\right]v(A)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (49.2) Dependencia del transporte paralelo respecto al camino
+      </span>
+      <span class="formula">
+        \lim_{\begin{matrix}\delta x \to 0\\ \delta y \to 0\end{matrix}} \frac{\stackrel{\curvearrowleft}{v}^\parallel(C) - \stackrel{\curvearrowright}{v}^\parallel(C)}{\delta x \delta y} = \left[\partial_y \Pi_x - \partial_x \Pi_y + \Pi_y \Pi_x - \Pi_x \Pi_y\right]v(A)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (49.3) Segunda derivada de los vectores de la base
+      </span>
+      <span class="formula">
+        (\partial_x \partial_y - \partial_y \partial_x) e_a = \left[\partial_x \Pi_y - \partial_y \Pi_x + \Pi_x \Pi_y - \Pi_y \Pi_x\right]^{b}_{a}e_b
+      </span>
+      <span class="formula">
+        (\partial_\mu \partial_\nu - \partial_\nu \partial_\mu) e_a = \left[\partial_\mu \Pi_\nu - \partial_\nu \Pi_\mu + \Pi_\mu \Pi_\nu - \Pi_\nu \Pi_\mu \right]^{b}_{a}e_b
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (49.4) Tensor de Curvatura
+      </span>
+      <span class="formula formula-texto">
+        \text{Definimos el tensor de curvatura } F_{\mu\nu} \text{como}
+      </span>
+      <span class="formula">
+        F_{\mu\nu} \propto \partial_\mu \Pi_\nu - \partial_\nu \Pi_\mu + \Pi_\mu \Pi_\nu - \Pi_\nu \Pi_\mu
+      </span>
+      <span class="formula-titulo">
+        De forma que
+      </span>
+      <span class="formula">
+        \lim_{\text{Área} \to 0} \frac{\text{diferencia} \stackrel{\circlearrowleft}{v}}{\text{Área}} \propto -F_{\mu\nu} v
+      </span>
+      <span class="formula">
+        (\partial_\mu \partial_\nu - \partial_\nu \partial_\mu) e_a \propto \left[F_{\mu\nu}\right]^{b}_{a} e_b
+      </span>
+    </div>
   </div>
 
   <div id="footer">
