@@ -4954,7 +4954,158 @@
 
   <h2 id="capitulo-51"><a href="#capitulo-51" class="formulas-title">Capítulo 51: Yang Mills: SU(2) vía Momento Angular</a></h2>
   <div class="capitulo-51 formulas">
-    
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.1) Momento angular
+        <br/> Newton
+      </span>
+      <span class="formula">
+        \vec{L} = (L_x, L_y, L_z)
+      </span>
+      <span class="formula">
+        L_x = y p_z - z p_y
+      </span>
+      <span class="formula">
+        L_y = z p_x - x p_z
+      </span>
+      <span class="formula">
+        L_z = x p_y - y p_x
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.2) Relaciones conmutación
+      </span>
+      <span class="formula">
+        [L_i, L_j] = i \hbar \varepsilon_{ijk}L_k
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.3) Momento angular generalizado
+      </span>
+      <span class="formula formula-texto">
+        \text{Conjunto de tres operadores } \{J_i\}_{i=1}^3
+      </span>
+      <span class="formula formula-texto">
+        \text{que cumplen la ecuación 51.2}
+      </span>
+      <span class="formula">
+        [J_i, J_j] = i \hbar \varepsilon_{ijk}J_k
+      </span>
+      <span class="formula">
+        J^2 = J_1^2+J_2^2+J_3^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.4) Teorema (Lema de Schur)
+      </span>
+      <span class="formula">
+        [B, J_i]=0, \  \forall i \Longrightarrow B \propto \mathbb{I}
+      </span>
+      <span class="formula formula-texto">
+        \text{Decimos que } B \text{ es un casimir}.
+      </span>
+      <span class="formula-titulo">
+        Entonces
+      </span>
+      <span class="formula formula-texto">
+        J^2 \text{ es un casimir}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.5) Base propia
+      </span>
+      <span class="formula formula-texto">
+        \text{Sea } \{\ket{\phi_n}\}_{n=1}^N \text{ la base pròpia de } J_3
+      </span>
+      <span class="formula-titulo">
+        Entonces
+      </span>
+      <span class="formula">
+        J_3 \ket{\phi_n} = m\hbar \ket{\phi_n}
+      </span>
+      <span class="formula">
+        J^2\ket{\phi_n} = \hbar^2 j(j+1) \ket{\phi_n}
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula">
+        j = \frac{n}{2}, \qquad n\in \mathbb{N}
+      </span>
+      <span class="formula">
+        m \in \{-j, -j+1, \ldots, j-1, j\}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.6) Operadores escalera
+      </span>
+      <span class="formula">
+        J_+\ket{\phi_n} = \alpha_n \ket{\phi_{n+1}}
+      </span>
+      <span class="formula">
+        J_- \ket{\phi_n} = \beta_n \ket{\phi_{n-1}}
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula">
+        \alpha_n = \hbar \sqrt{j(j+1)-n(n+1)}
+      </span>
+      <span class="formula">
+        \beta_n = \hbar \sqrt{j(j+1)-n(n-1)}=\alpha_{n-1}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.7) Propiedades de los operadores escalera
+      </span>
+      <span class="formula">
+        \left.\begin{matrix}J_+ = J_1 + i J_2 \\
+        J_- = J_1 - i J_2\end{matrix}\right\} \Longleftrightarrow
+        \left\{\begin{matrix}J_1 = \frac{1}{2}(J_++J_-) \\
+        J_2 = \frac{1}{2i}(J_+-J_-)\end{matrix}\right.
+      </span>
+      <span class="formula">
+        J_-=J_+^\dag
+      </span>
+      <span class="formula">
+        [J_3, J_+] = \hbar J_+
+      </span>
+      <span class="formula">
+        [J_3, J_-] = -\hbar J_-
+      </span>
+      <span class="formula">
+        [J_+, J_-] = 2\hbar J_3
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (51.8) Notación Estándar
+      </span>
+      <span class="formula formula-texto">
+        \text{Los estados } \{\ket{\phi_n}\} \text{ se suelen escribir en función}
+      </span>
+      <span class="formula formula-texto">
+        \text{de los valores propios de } J_3 \text{ y } J^2.
+      </span>
+      <span class="formula">
+        \ket{\phi_n} = \ket{j, m}
+      </span>
+      <span class="formula-titulo">
+        De forma que
+      </span>
+      <span class="formula">
+        J_3 \ket{j, m} = \hbar m \ket{j, m}
+      </span>
+      <span class="formula">
+        J^2 \ket{j, m} = \hbar^2 j(j+1) \ket{j, m}
+      </span>
+    </div>
   </div>
 
   <div id="footer">
