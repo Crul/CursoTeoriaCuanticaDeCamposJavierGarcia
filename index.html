@@ -5114,7 +5114,238 @@
 
   <h2 id="capitulo-52"><a href="#capitulo-52" class="formulas-title">Capítulo 52: Yang Mills: SU(2) vía SUMA MOMENTOS ANGULARES</a></h2>
   <div class="capitulo-52 formulas">
-    
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.1) Componentes de los operadores momento angular
+      </span>
+      <span class="formula">
+        \braket{j,m'\vert J_+ \vert j,m} = \hbar \sqrt{j(j+1)-mm'}\delta_{m',m+1}
+      </span>
+      <span class="formula">
+        \braket{j,m'\vert J_- \vert j,m} = \hbar \sqrt{j(j+1)-mm'}\delta_{m',m-1}
+      </span>
+      <span class="formula">
+        \braket{j,m'\vert J_1 \vert j,m} = \frac{\hbar}{2} \sqrt{j(j+1)-mm'}\left(\delta_{m',m+1}+\delta_{m',m-1}\right)
+      </span>
+      <span class="formula">
+        \braket{j,m'\vert J_2 \vert j,m} = \frac{\hbar}{2i} \sqrt{j(j+1)-mm'}\left(\delta_{m',m+1}-\delta_{m',m-1}\right)
+      </span>
+      <span class="formula">
+        \braket{j,m'\vert J_3 \vert j,m} = \frac{\hbar}{2} m \delta_{m',m}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.2) Matrices asociada a un operador
+      </span>
+      <span class="formula formula-texto">
+        \text{La matriz asociada a un operador } M
+      </span>
+      <span class="formula formula-texto">
+        \text{ actuando sobre un espacio con base } \mathscr{B}=\{\ket{n}\}_{n=1}^N \text{ es}
+      </span>
+      <span class="formula">
+        M = \begin{pmatrix}
+          \braket{1\vert M \vert 1} & \braket{1\vert M \vert 2} & \cdots & \braket{1\vert M \vert N}\\
+          \braket{2\vert M \vert 1} & \braket{2\vert M \vert 2} & \cdots & \braket{2\vert M \vert N}\\
+          \vdots & \vdots & \ddots & \vdots\\
+          \braket{N\vert M \vert 1} & \braket{N\vert M \vert 2} & \cdots & \braket{N\vert M \vert N}
+        \end{pmatrix}
+      </span>
+      <span class="formula formula-texto">
+        \text{Es decir, sus componentes vendrán dadas por}
+      </span>
+      <span class="formula">
+        M_{ij} = \braket{i \vert M \vert j}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.3) Matrices asociadas al operador
+        </br> momento angular I
+      </span>
+      <span class="formula formula-texto">
+        \text{Escogiendo la base}
+      </span>
+      <span class="formula">
+        \mathscr{B}=\{\ket{j,m}\}_{m=j}^{-j}
+      </span>
+      <span class="formula">
+        J_1^{1/2} = \frac{\hbar}{2}\begin{pmatrix}
+          0 & 1\\
+          1 & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_2^{1/2} = \frac{\hbar}{2}\begin{pmatrix}
+          0 & -i\\
+          i & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_3^{1/2} = \frac{\hbar}{2}\begin{pmatrix}
+          1 & 0\\
+          0 & -1\\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.4) Matrices asociadas al operador
+        </br> momento angular II
+      </span>
+      <span class="formula">
+        J_1^{1} = \frac{\hbar}{\sqrt{2}}\begin{pmatrix}
+          0 & 1 & 0\\
+          1 & 0 & 1\\
+          0 & 1 & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_2^{1} = \frac{\hbar}{\sqrt{2}}\begin{pmatrix}
+          0 & -i & 0\\
+          i & 0 & -i\\
+          0 & i & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_3^{1} = \hbar\begin{pmatrix}
+          1 & 0 & 0\\
+          0 & 0 & 0\\
+          0 & 0 & -1\\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.5) Matrices asociadas al operador
+        </br> momento angular III
+      </span>
+      <span class="formula">
+        J_1^{3/2} = \frac{\hbar}{2}\begin{pmatrix}
+          0 & \sqrt{3} & 0 & 0\\
+          \sqrt{3} & 0 & 2 & 0\\
+          0 & 2 & 0 & \sqrt{3}\\
+          0 & 0 & \sqrt{3} & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_2^{3/2} = \frac{\hbar}{2}\begin{pmatrix}
+          0 & -i\sqrt{3} & 0 & 0\\
+          i\sqrt{3} & 0 & -2i & 0\\
+          0 & 2i & 0 & -i\sqrt{3}\\
+          0 & 0 & i\sqrt{3} & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_3^{3/2} = \frac{\hbar}{2}\begin{pmatrix}
+          3 & 0 & 0 & 0\\
+          0 & 1 & 0 & 0\\
+          0 & 0 & -1 & 0\\
+          0 & 0 & 0 & -3\\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.6) Suma momento angular
+      </span>
+      <span class="formula formula-texto">
+        \text{Dado un sistema con momento angular } \vec{J}^A \text{ actuando sobre un espacio } \mathcal{H}^A,
+      </span>
+      <span class="formula formula-texto">
+        \text{y otro sistema con momento angular} \vec{J}^B \text{ actuando sobre un espacio } \mathcal{H}^B.
+      </span>
+      <span class="formula-titulo">
+        El sistema conjunto tendrá momento angular dado por los operadores
+      </span>
+      <span class="formula">
+        \vec{J}^A + \vec{J}^B = \vec{J}^A\otimes \mathbb{I}_B + \mathbb{I}_A\otimes \vec{J}^B
+      </span>
+      <span class="formula-titulo">
+        Actuando sobre el espacio
+      </span>
+      <span class="formula">
+        \mathcal{H}^A \otimes \mathcal{H}^B
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.7) Matrices asociadas a la suma 
+         de momentos angulares
+      </span>
+      <span class="formula">
+        j_A \otimes j_B = |j_A + j_B| \oplus |j_A + j_B - 1| \oplus \cdots \oplus |j_A - j_B|
+      </span>
+      <span class="formula-titulo">
+        De forma equivalente, la 
+        </br> matriz asociada se puede escribir como
+      </span>
+      <span class="formula">
+        \vec{J}^A + \vec{J}^B = \vec{J}^{j_A+j_B} \oplus \vec{J}^{j_A+j_B-1} \oplus \cdots \oplus \vec{J}^{|j_A-j_B|}
+      </span>
+      <span class="formula-titulo">
+        Recordando que
+      </span>
+      <span class="formula">
+        A \oplus B = \begin{pmatrix}
+          A & 0 \\
+          0 & B \\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.8) Ejemplo
+      </span>
+      <span class="formula">
+        \frac{1}{2} \otimes 1 = \frac{3}{2} \oplus \frac{1}{2}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        J_1 = \begin{pmatrix}
+          J_1^{3/2} & 0 \\
+          0 & J_1^{1/2} \\
+        \end{pmatrix} = \frac{\hbar}{2}\left(\begin{array}{cccc:cc}
+          0 & \sqrt{3} & 0 & 0 & 0 & 0\\
+          \sqrt{3} & 0 & 2 & 0 & 0 & 0\\
+          0 & 2 & 0 & \sqrt{3} & 0 & 0\\
+          0 & 0 & \sqrt{3} & 0 & 0 & 0\\
+          \hdashline
+          0 & 0 & 0 & 0 & 0 & 1\\
+          0 & 0 & 0 & 0 & 1 & 0\\
+        \end{array}\right)
+      </span>
+      <span class="formula">
+        J_2 = \begin{pmatrix}
+          J_2^{3/2} & 0 \\
+          0 & J_2^{1/2} \\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        J_3 = \begin{pmatrix}
+          J_3^{3/2} & 0 \\
+          0 & J_3^{1/2} \\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (52.9) Coeficientes de Clebsch-Gordan
+      </span>
+      <span class="formula formula-texto">
+        \text{La base } \{\ket{j_A, j_B, J, M}\} \text{ del espacio } \mathcal{H}^A\otimes \mathcal{H}^B
+      </span>
+      <span class="formula formula-texto">
+        \text{se puede relacional con la base } \{\ket{j_A, m_A}\otimes \ket{j_B, m_B}\}
+      </span>
+      <span class="formula">
+        \ket{j_A, j_B, J, M} = \sum_{m_A, m_B} C_{j_Am_Aj_Bm_B}^{JM}\ket{j_A, m_A}\otimes \ket{j_B, m_B}
+      </span>
+      <span class="formula formula-texto">
+        C_{j_Am_Aj_Bm_B}^{JM} = \text{Coeficientes de Clebsch-Gordan.}
+      </span>
+    </div>
   </div>
 
   <div id="footer">
