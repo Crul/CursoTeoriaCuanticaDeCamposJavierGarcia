@@ -5354,7 +5354,147 @@
 
   <h2 id="capitulo-53"><a href="#capitulo-53" class="formulas-title">Capítulo 53: ISOSPIN - SU(2)</a></h2>
   <div class="capitulo-53 formulas">
-    
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (53.1) Espacio de Isospín
+      </span>
+      <span class="formula">
+        \mathcal{H} = \{\ket{p}, \ket{n}\}
+      </span>
+      <span class="formula-titulo">
+        Un estado arbitrario vendrá dado por
+      </span>
+      <span class="formula">
+        \ket{\psi} = \alpha \ket{p} + \beta \ket{n}
+      </span>
+      <span class="formula">
+        |\alpha|^2+|\beta|^2=1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (53.2) Creación y aniquilación de nucleones
+      </span>
+      <span class="formula formula-texto">
+        \text{Podemos definir los operadores}
+      </span>
+      <span class="formula formula-texto">
+        \text{creación y aniquilación de nucleones:}
+      </span>
+      <span class="formula">
+        a_p,\quad a_p^\dag, \quad a_n, \quad a_n^\dag
+      </span>
+      <span class="formula-titulo">
+        Con las propiedades
+      </span>
+      <span class="formula">
+        a_p^\dag \ket{0} = \ket{p}, \qquad
+        a_n^\dag \ket{0} = \ket{n}
+      </span>
+      <span class="formula">
+        a_i a_j^\dag + a_j^\dag a_i = \delta_{ij}
+      </span>
+      <span class="formula">
+        a_i^\dag a_j^\dag + a_j^\dag a_i^\dag = 0, \qquad \forall i,j
+      </span>
+      <span class="formula">
+        a_i a_j + a_j a_i = 0, \qquad \forall i,j
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (53.3) Álgebra cerrada
+      </span>
+      <span class="formula formula-texto">
+        \text{Los operadores } \{a_p^\dag a_p,\ a_n^\dag a_n,\ a_n^\dag a_p,\ a_p^\dag a_n\} \text{ forman un álgebra cerrada.}
+      </span>
+      <span class="formula-titulo">
+        Es decir,
+      </span>
+      <span class="formula">
+        [a_i^\dag a_j, a_k^\dag a_l] = \sum_{n,m} \alpha^{nm}_{ijkl} a_n^\dag a_m
+      </span>
+      <span class="formula">
+        [a_p^\dag a_p, a_p^\dag a_n] = a_p^\dag a_n, \qquad [a_p^\dag a_p, a_n^\dag a_p] = -a_n^\dag a_p
+      </span>
+      <span class="formula">
+        [a_n^\dag a_n, a_p^\dag a_n] = -a_p^\dag a_n, \qquad [a_n^\dag a_n, a_n^\dag a_p] = a_n^\dag a_p
+      </span>
+      <span class="formula">
+        [a_p^\dag a_n, a_n^\dag a_p] = a_p^\dag a_p - a_n^\dag a_n
+      </span>
+      <span class="formula formula-texto">
+        \text{Todos los demás conmutadores son cero,}
+      </span>
+      <span class="formula formula-texto">
+        \text{ o se obtienen por antisimetría.}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (53.4) Operadores de Isospín
+      </span>
+      <span class="formula">
+        \vec{I} = (I_1, I_2, I_3) = (I_x, I_y, I_z)
+      </span>
+      <span class="formula">
+        I_1 = \frac{1}{2}(a_p^\dag a_n + a_n^\dag a_p)
+      </span>
+      <span class="formula">
+        I_2 = \frac{1}{2i}(a_p^\dag a_n - a_n^\dag a_p)
+      </span>
+      <span class="formula">
+        I_3 = \frac{1}{2}(a_p^\dag a_p - a_n^\dag a_n)
+      </span>
+      <span class="formula">
+        [I_i, I_j] = i \varepsilon_{ijk}I_k
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (53.5) Sección eficaz
+      </span>
+      <span class="formula formula-texto">
+        \text{La probabilidad de que un estado } \ket{IN} \text{ se convierta en otro estado } \ket{OUT}
+      </span>
+      <span class="formula formula-texto">
+        \text{es proporcional a la cantidad } \sigma(IN \rightarrow OUT).
+      </span>
+      <span class="formula">
+        \sigma(IN \rightarrow OUT) \sim \left|\braket{IN \vert S \vert OUT}\right|^2
+      </span>
+      <span class="formula">
+        S = \begin{pmatrix}
+          \alpha & 0 & 0 & 0 & 0 & 0 \\
+          0 & \alpha & 0 & 0 & 0 & 0 \\
+          0 & 0 & \alpha & 0 & 0 & 0 \\
+          0 & 0 & 0 & \alpha & 0 & 0 \\
+          0 & 0 & 0 & 0 & \beta & 0 \\
+          0 & 0 & 0 & 0 & 0 & \beta \\
+        \end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (53.6) Ejercicio propuesto
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          1) \hspace2ex &\text{Comprobar que } \left[a_p^\dag a_n, a_n^\dag a_p\right]=a_p^\dag a_p - a_n^\dag a_n\\
+          2) \hspace2ex &\text{Invertir las siguientes ecuaciones:}\\
+          &\hspace1ex\ket{\Delta^{++}} = \ket{\pi^+, p}\\
+          &\hspace1ex\ket{\Delta^{+}} = \frac{1}{\sqrt{3}}\ket{\pi^+, n} + \sqrt{\frac{2}{3}}\ket{\pi^0, p}\\
+          &\hspace1ex\ket{\Delta^{0}} = \sqrt{\frac{2}{3}}\ket{\pi^0, n} + \frac{1}{\sqrt{3}}\ket{\pi^-, p}\\
+          &\hspace1ex\ket{\Delta^{-}} = \ket{\pi^-, n}\\
+          &\hspace1ex\Ket{1\ \frac{1}{2}; \frac{1}{2}\ +\frac{1}{2}} = - \sqrt{\frac{2}{3}}\ket{\pi^+, n} + \frac{1}{\sqrt{3}}\ket{\pi^0, p}\\
+          &\hspace1ex\Ket{1\ \frac{1}{2}; \frac{1}{2}\ -\frac{1}{2}} = - \frac{1}{\sqrt{3}}\ket{\pi^0, n} + \sqrt{\frac{2}{3}}\ket{\pi^-, p}\\
+          3) \hspace2ex &\text{Comprobar que } \sigma(\pi^- p \rightarrow \pi^- p) \sim \frac{1}{9}|\alpha + 2\beta|^2
+        \end{aligned}
+      </span>
+      <span class="formula">
+        \color{red} \text{Poner ejercicios del Capítulo.}
+      </span>
+    </div>
   </div>
 
   <div id="footer">
