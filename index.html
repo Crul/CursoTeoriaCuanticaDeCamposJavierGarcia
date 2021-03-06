@@ -5513,7 +5513,99 @@
 
   <h2 id="capitulo-54"><a href="#capitulo-54" class="formulas-title">Capítulo 54: Grupos de Lie 1</a></h2>
   <div class="capitulo-54 formulas">
-    
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (54.1) Grupo de Lie
+      </span>
+      <span class="formula formula-texto">
+        \text{Dado un conjunto } M \text{ parametrizado por } a,
+      </span>
+      <span class="formula formula-texto">
+        \text{junto con un producto } \cdot, \text{ forman un grupo de Lie si:}
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          0) & \hspace2ex \forall a,b\quad \exists c: \hspace2ex M(a)\cdot M(b) = M(c)\\
+          1) & \hspace2ex \forall a,b,c: \hspace2ex M(a)\cdot (M(b)\cdot M(c)) = (M(a)\cdot M(b))\cdot M(c)\\
+          2) & \hspace2ex \exists e: \hspace2ex M(e)\cdot M(a) = M(a)\cdot M(e) = M(a), \quad \forall a\\
+          3) & \hspace2ex \forall a \quad  \exists b: \hspace2ex M(a)\cdot M(b) = M(b)\cdot M(a) = M(e)\\
+        \end{aligned}
+      </span>
+      <span class="formula-titulo">
+        De forma opcional, también queremos que se cumpla
+      </span>
+      <span class="formula">
+        e = 0 \Longrightarrow M(0)=\mathbb{I}
+      </span>
+      <span class="formula-titulo">
+        El grupo será abeliano si se cumple
+      </span>
+      <span class="formula formula-texto">
+        4) \hspace2ex \forall a,b: \hspace2ex M(a)\cdot M(b) = M(b) \cdot M(a)\\
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (54.2) Generadores del grupo
+      </span>
+      <span class="formula formula-texto">
+        \text{Definimos los generadores } B \text{ del grupo, como}
+      </span>
+      <span class="formula">
+        B = \lim_{\varepsilon\to 0} \frac{M(\varepsilon) - M(0)}{\varepsilon} = \left.\frac{dM(a)}{da}\right|_{a=0}
+      </span>
+      <span class="formula-titulo">
+        Si hay más de un parámetro
+      </span>
+      <span class="formula">
+        B_i = \left.\frac{dM(\vec{a})}{da_i}\right|_{\vec{a}=0}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (54.3) Congruencias del grupo ( "río" )
+      </span>
+      <span class="formula formula-texto">
+        \text{Dado un punto } \vec{x}(a) = M(a) \vec{x}_0
+      </span>
+      <span class="formula formula-texto">
+        \text{su velocidad vendrá dada por}
+      </span>
+      <span class="formula">
+        \frac{d \vec{x}(a)}{da} = B \vec{x}
+      </span>
+      <span class="formula">
+        \vec{x}(a) = e^{a B} \vec{x}_0
+      </span>
+      <span class="formula-titulo">
+        
+      </span>
+      <span class="formula formula-texto">
+        \text{Las curvas definidas por el vector } \vec{x}(a)
+      </span>
+      <span class="formula formula-texto">
+        \text{ son las congruencias del grupo.}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (54.4) Ejercicio propuesto
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que el grupo}
+      </span>
+      <span class="formula">
+        SO(2)=\left\{M(a)=\begin{pmatrix}
+          \cos{a} & -\sin{a} \\ \sin{a} & \cos{a}
+        \end{pmatrix}\right\}
+      </span>
+      <span class="formula formula-texto">
+        \text{ forma un grupo de Lie con el producto ordinario de matrices.}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas:
+      </span>
+    </div>
   </div>
 
   <div id="footer">
