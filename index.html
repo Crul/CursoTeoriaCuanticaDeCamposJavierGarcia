@@ -5620,7 +5620,114 @@
   <div class="capitulo-55 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (55.1)
+        (55.1) Grupo SO(3)
+      </span>
+      <span class="formula formula-texto">
+        \text{El grupo } SO(3) \text{ se define como el grupo}
+      </span>
+      <span class="formula">
+        \{R: R^TR=\mathbb{I}, \ |R|=1\}
+      </span>
+      <span class="formula formula-texto">
+        \text{con el producto ordinario de matrices.}
+      </span>
+      <span class="formula-titulo">
+        Demostración SO(3) es un grupo
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Demostración SO(3) grupo.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Demostración SO(3) grupo.pdf</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (55.2) Generadores SO(3)
+      </span>
+      <span class="formula">
+        B_1 = \begin{pmatrix}
+          0 & 0 & 0\\
+          0 & 0 & -1\\
+          0 & 1 & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        B_2 = \begin{pmatrix}
+          0 & 0 & 1\\
+          0 & 0 & 0\\
+          -1 & 0 & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        B_3 = \begin{pmatrix}
+          0 & -1 & 0\\
+          1 & 0 & 0\\
+          0 & 0 & 0\\
+        \end{pmatrix}
+      </span>
+      <span class="formula-titulo">
+        En general, cualquier combinación lineal de 
+      </br>estas matrices sirven como generadores.
+      </span>
+      <span class="formula">
+        A_i = \sum_{j} \lambda_{ij}B_j
+      </span>
+      <span class="formula formula-texto">
+        \text{con } A_i \text{ linealmente independientes.}
+      </span>
+      <span class="formula">
+        A_i^T = -A_i
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (55.3) Relaciones de conmutación
+      </span>
+      <span class="formula">
+        [B_i, B_j] = \varepsilon_{ijk} B_k
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (55.4) Ejercicios propuestos
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          1) \hspace2ex &\text{Comprobar que } \\
+          & \hspace2ex B^2=\begin{pmatrix}(n_1^2-1) & n_1n_2 & n_1n_3\\
+          n_2n_1 & (n_2^2-1) & n_2n_3\\
+          n_3n_1 & n_3n_2 & (n_3^2-1) \end{pmatrix}\\
+          & \hspace2ex  B^3=B \\
+          2) \hspace2ex &\text{Comprobar las relaciones de}\\
+           & \text{conmutación } (55.3)\\
+        \end{aligned}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 55.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 55.pdf</div>
+      </a>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (55.5) Rotación general
+      </span>
+      <span class="formula">
+        R(\alpha, \vec{n}) = e^{\alpha B} = \mathbb{I}+B\sin{\alpha} +B^2 (1-\cos{\alpha})
+      </span>
+      <span class="formula">
+        B = \vec{n}\cdot \vec{B} = n_x B_1 + n_yB_2 + n_zB_3
+      </span>
+      <span class="formula">
+        |\vec{n}|^2=n_x^2+n_y^2+n_z^2=1
+      </span>
+      <span class="formula">
+        R(\alpha, \vec{n}) = \begin{pmatrix}
+          \cos{\alpha} + (1-\cos{\alpha})n_1^2 & (1-\cos{\alpha})n_1n_2-n_3\sin{\alpha} & (1-\cos{\alpha})n_1n_3+n_2\sin{\alpha}\\
+          (1-\cos{\alpha})n_2n_1+n_3\sin{\alpha} & \cos{\alpha}+(1-\cos{\alpha})n_2^2 & (1-\cos{\alpha})n_2n_3-n_1\sin{\alpha} \\
+          (1-\cos{\alpha})n_3n_1-n_2\sin{\alpha} & (1-\cos{\alpha})n_3n_2+n_1\sin{\alpha} & \cos{\alpha}+(1-\cos{\alpha})n_3^2 \\
+        \end{pmatrix}
       </span>
     </div>
   </div>
