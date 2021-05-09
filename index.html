@@ -5740,8 +5740,91 @@
   <div class="capitulo-56 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (56.1)
+        (56.1) Propiedades exponencial de una matriz
       </span>
+      <span class="formula">
+        (e^A)^T = e^{(A^T)}
+      </span>
+      <span class="formula">
+        |e^A| = \det{e^A} = e^{\text{Tr}{A}}
+      </span>
+      <span class="formula">
+        [A, B] = 0 \Longrightarrow e^Ae^B = e^{A+B}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (56.2) Generadores de SO(3)
+      </span>
+      <span class="formula">
+        J_i = i B_i
+      </span>
+      <span class="formula">
+        J_i^\dag = J_i
+      </span>
+      <span class="formula">
+        [J_i, J_j] = i \varepsilon_{ijk}J_k
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (56.3) Álgebra de Lie
+      </span>
+      <span class="formula formula-texto">
+        \text{Un álgebra de Lie se define como un } \mathbb{C}-\text{espacio vectorial}
+      </span>
+      <span class="formula formula-texto">
+        \text{junto con una operación } [\cdot , \cdot] \text{ que cumple las siguientes propiedades:}
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          \text{i}) \hspace2ex & \text{Bilinealidad:} & [\lambda A+\mu B, C] = \lambda [A, C] + \mu[B, C]\\
+          &&[A,\lambda B+\mu C] = \lambda [A, B] + \mu[A, C]\\
+          \text{ii}) \hspace2ex &\text{Indentidad de Jacobi:} & [[A,B],C]+[[C,A],B]+[[B,C],A] = 0\\
+          \text{iii}) \hspace2ex &\text{Nilpotencia:} & [A, A] = 0\\
+        \end{aligned}
+      </span>
+      <span class="formula">
+        \forall A, B, C \in V, \qquad \forall \lambda,\mu \in \mathbb{C}.
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (56.4) Conexión grupos y álgebras de Lie
+      </span>
+      <span class="formula">
+        M = e^{-i a_j T^j}, \qquad a_j \in \mathbb{R}
+      </span>
+      <span class="formula">
+        [T^a, T^b] = i f^{abc} T^c
+      </span>
+      <span class="formula formula-texto">
+        \text{Donde } f^{abc} \text{ son las constantes de estructura del grupo}
+      </span>
+      <span class="formula formula-texto">
+        \text{y } T^a \text{ los generadores del grupo.}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (56.5) Ejercicios
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          1) \hspace2ex &\text{Demostrar que } |e^A|=e^{\text{Tr}\{A\}}\\
+          2) \hspace2ex &\text{Demostrar que las propiedades (56.3) i) y iii) implican que } [A,B]=-[B,A]\\
+          3) \hspace2ex &\text{Demostrar que el grupo de polinomios de grado 2, con el corchete}\\
+          & [a_1x^2+a_2x+a_3,b_1x^2+b_2x+b_3] = (a_2b_3-a_3b_2)x^2+(a_3b_1-a_1b_3)x+(a_1b_2-a_2b_1)\\
+          & \text{forma un álgebra de Lie.}
+        \end{aligned}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 56.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 56.pdf</div>
+      </a>
     </div>
   </div>
 
