@@ -273,7 +273,7 @@
           <a target="_blank" href="https://www.youtube.com/watch?v=iNf1U8SDrxA&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
         <li>
-          <a href="#capitulo-61">Capítulo 61</a>
+          <a href="#seminario-1">Seminario 1</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=Nb3VW9BkI-8&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
       </ul>
@@ -6201,10 +6201,231 @@
   </div>
 
   <h2 id="seminario-1"><a href="#seminario-1" class="formulas-title">Seminario 1: Álgebras de Clifford y Grupos de Spin (por C.S. Shahbazi) - PARTE 1</a></h2>
-  <div class="seminatio-1 formulas">
+  <div class="seminario-1 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S1.1)
+        (S1.1) Definición 1: Álgebra
+      </span>
+      <span class="formula formula-texto">
+        \text{Un Álgebra es un espacio vectorial } \mathcal{A},
+      </span>
+      <span class="formula-texto formula">
+        \text{junto con una operación}
+      </span>
+      <span class="formula">
+        \begin{array}{ccc}\mathcal{A}\times \mathcal{A}& \to &\mathcal{A}\\
+        (a,b)&\mapsto& ab\end{array}
+      </span>
+      <span class="formula-titulo">
+        Con las siguientes propiedades:
+      </span>
+      <span class="formula formula-texto">
+        a(bc)=(ab)c \text{ (Asociativa)}
+      </span>
+      <span class="formula formula-texto">
+        a(b+c)=ab+ac \text{ (Distributiva-izquierda)}
+      </span>
+      <span class="formula formula-texto">
+        (b+c)a=ba+ca \text{ (Distributiva-derecha)}
+      </span>
+      <span class="formula formula-texto">
+        \lambda(ab)=(\lambda a)b=a(\lambda b) \text{ (Bilineal)}
+      </span>
+      <span class="formula formula-texto">
+        \exists 1_\mathcal{A}\in \mathcal{A}\quad  |\quad a 1_{\mathcal{A}}=1_\mathcal{A} a = a \text{ (Unital)}
+      </span>
+      <span class="formula formula-texto">
+        \forall a, b, c \in \mathcal{A}, \qquad \lambda \in \mathbb{R} \text{ (Real)}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.2) Definición 2: Morfismo de Álgebras
+      </span>
+      <span class="formula formula-texto">
+        \text{Un morfismo de Álgebras es}
+      </span>
+      <span class="formula-texto formula">
+        \text{una aplicación lineal}
+      </span>
+      <span class="formula">
+        f:\mathcal{A}_1 \to \mathcal{A}_2
+      </span>
+      <span class="formula-titulo">
+        Con las propiedades:
+      </span>
+      <span class="formula">
+        f(ab) = f(a)f(b)
+      </span>
+      <span class="formula">
+        f(1_{\mathcal{A}_1}) = 1_{\mathcal{A}_2}
+      </span>
+      <span class="formula-titulo">
+        Isomorfismo
+      </span>
+      <span class="formula-texto formula">
+        \text{Si la aplicación } f \text{ es invertible}
+      </span>
+      <span class="formula-texto formula">
+        \text{y la aplicación } f^{-1} \text{ es un morfismo,}
+      </span>
+      <span class="formula-texto formula">
+        \text{diremos que } \mathcal{A}_1 \text{ es isomorfo a } \mathcal{A}_2 
+      </span>
+      <span class="formula">
+        \mathcal{A}_1 \backsimeq \mathcal{A}_2
+      </span>
+    </div>
+    <!-- <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.3) Definición 3: Álgebra Divisible
+      </span>
+      <span class="formula-texto formula">
+        \text{Un Álgebra es divisible o de división cuando,}
+      </span>
+      <span class="formula-texto formula">
+         \text{para todo elemento }a\in\mathcal{A} \text{ distinto de cero,}
+      </span>
+      <span class="formula-texto formula">
+         \text{existe otro }a^{-1}\in\mathcal{A}\text{ que cumple}
+      </span>
+      <span class="formula">
+        aa^{-1}=a^{-1}a=1_\mathcal{A}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.4) Teorema 4: T. de Frobenius
+      </span>
+      <span class="formula-texto formula">
+        \text{Las únicas Álgebras (asociativas, reales)}
+      </span>
+      <span class="formula-texto formula">
+        \text{divisibles de dimensión finita son } \mathbb{R}, \mathbb{C} \text{ y } \mathbb{H}.
+      </span>
+      <span class="formula-titulo">
+        Corolario:
+      </span>
+      <span class="formula-texto formula">
+        \text{Toda Álgebra (finita?) es isomorfa a}
+      </span>
+      <span class="formula-texto formula">
+        \text{una Álgebra matricial sobre } \mathbb{R}, \mathbb{C} \text{ o } \mathbb{H}.
+      </span>
+    </div> -->
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.3) Definición 3: Espacio Vectorial Cuadrático
+      </span>
+      <span class="formula-texto formula">
+        \text{Un Espacio Vectorial Cuadrático es una pareja } (V,h)
+      </span>
+      <span class="formula-texto formula">
+        \text{con } V \text{ un espacio vectorial real y}
+      </span>
+      <span class="formula-texto formula">
+        h: V \times V \to \mathbb{R} \text{ una aplicación bilineal con}
+      </span>
+      <span class="formula">
+        h(v_1,v_2)=h(v_2,v_1)\quad \forall v_1,v_2\in V
+      </span>
+      <span class="formula">
+        h(v,u)=0 \quad\forall u\in V \Longleftrightarrow v=0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.4) Definición 4: Morfismo de EV Cuadrático
+      </span>
+      <span class="formula-texto formula">
+        \text{Un morfismo de espacios vectoriales}
+      </span>
+      <span class="formula-texto formula">
+        \text{cuadráticos es una aplicación } f
+      </span>
+      <span class="formula">
+        \begin{array}{cccc} f:&(V_1,h_1)&\to &(V_2,h_2) \\ &v_1&\mapsto &v_2 \end{array}
+      </span>
+      <span class="formula-titulo">
+        Con la propiedad
+      </span>
+      <span class="formula">
+        h_2(f(v_1),f(v_2))=h_1(v_1,v_2), \quad \forall v_1, v_2 \in V_1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.5) Definición 5: Grupo Ortogonal
+      </span>
+      <span class="formula-texto formula">
+        \text{Dado un espacio vectorial cuadrático } (V,h)
+      </span>
+      <span class="formula-texto formula">
+        \text{se define el grupo ortogonal } O(V,h) \text{ como}
+      </span>
+      <span class="formula-texto formula">
+        O(V,h)=\left\{f:(V,h)\to (V,h) \text{ isomorfismos lineales } \right\}
+      </span>
+      <span class="formula-texto formula">
+        \text{con la composición de aplicaciones lineales.}
+      </span>
+    </div>
+    <!-- <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.8) Definición 8: Determinante
+      </span>
+      <span class="formula-texto formula">
+        \text{El determinante se define como una aplicación entre álgebras}
+      </span>
+      <span class="formula formula-texto">
+        \begin{array}{cccc} \det:&\text{End}(V)&\to &\mathbb{R} \\ &T&\mapsto &\det{(T)} \end{array}
+      </span>
+      <span class="formula-texto formula">
+        \text{que preserva la estructura de producto: } \det{(T_1 T_2)} = \det{(T_1)}\det{(T_2)}.
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula-texto formula">
+        \text{Si restringimos el determinante al grupo ortogonal } O(V,h)\subset \text{End}(V)
+      </span>
+      <span class="formula-texto formula">
+        \text{el determinante solo toma los valores } 1 \text{ y } -1.
+      </span>
+      <span class="formula">
+        \det : O(V,h) \to \mathbb{Z}_2
+      </span>
+    </div> -->
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.6) Definición 6: Grupo Ortogonal Especial
+      </span>
+      <span class="formula-texto formula">
+        \text{El grupo ortogonal especial } SO(V,h) \text{ se define como}
+      </span>
+      <span class="formula">
+        SO(V,h)=\{T\in O(V,h) | \det(T)=1\}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S1.7) Definición 7: Álgebra de Clifford
+      </span>
+      <span class="formula-texto formula">
+        \text{Un Álgebra de Clifford asociada a un EV cuadrático } (V,h)
+      </span>
+      <span class="formula-texto formula">
+        \text{es un par } (\mathcal{A}, j) \text{ con } \mathcal{A} \text{ un Álgebra y } j:(V,h)\to \mathcal{A} 
+      </span>
+      <span class="formula-texto formula">
+        \text{una aplicación lineal inyectiva con propiedades:}
+      </span>
+      <span class="formula">
+        1_{\mathcal{A}}\notin \text{Im}(j)
+      </span>
+      <span class="formula">
+        j(v)^2 = q(v) 1_\mathcal{A}, \quad q(v)=h(v,v)
+      </span>
+      <span class="formula">
+        j(V)=\text{Im}(j) \text{ genera } \mathcal{A}
       </span>
     </div>
   </div>
