@@ -6280,7 +6280,7 @@
         \mathcal{A}_1 \backsimeq \mathcal{A}_2
       </span>
     </div>
-    <!-- <div class="grupo-formulas">
+    <div class="grupo-formulas">
       <span class="formula-titulo">
         (S1.3) Definición 3: Álgebra Divisible
       </span>
@@ -6311,24 +6311,27 @@
         Corolario:
       </span>
       <span class="formula-texto formula">
-        \text{Toda Álgebra (finita?) es isomorfa a}
+        \text{Toda Álgebra de Clifford es isomorfa a}
       </span>
       <span class="formula-texto formula">
         \text{una Álgebra matricial sobre } \mathbb{R}, \mathbb{C} \text{ o } \mathbb{H}.
       </span>
-    </div> -->
+    </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S1.3) Definición 3: Espacio Vectorial Cuadrático
+        (S1.5) Definición 5: Espacio Vectorial Cuadrático
       </span>
       <span class="formula-texto formula">
-        \text{Un Espacio Vectorial Cuadrático es una pareja } (V,h)
+        \text{Un Espacio Vectorial Cuadrático}
       </span>
       <span class="formula-texto formula">
-        \text{con } V \text{ un espacio vectorial real y}
+        \text{es una pareja } (V,h)\text{. Con } V \text{ un espacio}
       </span>
       <span class="formula-texto formula">
-        h: V \times V \to \mathbb{R} \text{ una aplicación bilineal con}
+        \text{vectorial real y }h: V \times V \to \mathbb{R}
+      </span>
+      <span class="formula-texto formula">
+        \text{ una aplicación bilineal con}
       </span>
       <span class="formula">
         h(v_1,v_2)=h(v_2,v_1)\quad \forall v_1,v_2\in V
@@ -6339,13 +6342,13 @@
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S1.4) Definición 4: Morfismo de EV Cuadrático
+        (S1.6) Definición 6: Morfismo de EV Cuadrático
       </span>
       <span class="formula-texto formula">
         \text{Un morfismo de espacios vectoriales}
       </span>
       <span class="formula-texto formula">
-        \text{cuadráticos es una aplicación } f
+        \text{cuadráticos es una aplicación lineal } f
       </span>
       <span class="formula">
         \begin{array}{cccc} f:&(V_1,h_1)&\to &(V_2,h_2) \\ &v_1&\mapsto &v_2 \end{array}
@@ -6359,7 +6362,7 @@
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S1.5) Definición 5: Grupo Ortogonal
+        (S1.7) Definición 7: Grupo Ortogonal
       </span>
       <span class="formula-texto formula">
         \text{Dado un espacio vectorial cuadrático } (V,h)
@@ -6368,39 +6371,48 @@
         \text{se define el grupo ortogonal } O(V,h) \text{ como}
       </span>
       <span class="formula-texto formula">
-        O(V,h)=\left\{f:(V,h)\to (V,h) \text{ isomorfismos lineales } \right\}
+        O(V,h)=\left\{f:(V,h)\to (V,h) \text{ isomorfismos} \right\}
       </span>
       <span class="formula-texto formula">
-        \text{con la composición de aplicaciones lineales.}
+        \text{con la composición de aplicaciones.}
       </span>
     </div>
-    <!-- <div class="grupo-formulas">
+    <div class="grupo-formulas">
       <span class="formula-titulo">
         (S1.8) Definición 8: Determinante
       </span>
       <span class="formula-texto formula">
-        \text{El determinante se define como una aplicación entre álgebras}
+        \text{El determinante se define como}
       </span>
       <span class="formula formula-texto">
-        \begin{array}{cccc} \det:&\text{End}(V)&\to &\mathbb{R} \\ &T&\mapsto &\det{(T)} \end{array}
+        \text{una aplicación entre Álgebras}
+      </span>
+      <span class="formula formula-texto">
+        \begin{array}{cccc} \det\!:&\text{End}(V)&\to &\mathbb{R} \\ &T&\mapsto &\det{(T)} \end{array}
       </span>
       <span class="formula-texto formula">
-        \text{que preserva la estructura de producto: } \det{(T_1 T_2)} = \det{(T_1)}\det{(T_2)}.
+        \text{que preserva la estructura de producto:}
+      </span>
+      <span class="formula">
+         \det{(T_1 T_2)} = \det{(T_1)}\det{(T_2)}
       </span>
       <span class="formula-titulo"></span>
       <span class="formula-texto formula">
-        \text{Si restringimos el determinante al grupo ortogonal } O(V,h)\subset \text{End}(V)
+        \text{Si restringimos el determinante al grupo}
+      </span>
+      <span class="formula formula-texto">
+        \text{ortogonal } O(V,h)\subset \text{End}(V)
       </span>
       <span class="formula-texto formula">
         \text{el determinante solo toma los valores } 1 \text{ y } -1.
       </span>
       <span class="formula">
-        \det : O(V,h) \to \mathbb{Z}_2
+        \det\!: O(V,h) \to \mathbb{Z}_2
       </span>
-    </div> -->
+    </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S1.6) Definición 6: Grupo Ortogonal Especial
+        (S1.9) Definición 9: Grupo Ortogonal Especial
       </span>
       <span class="formula-texto formula">
         \text{El grupo ortogonal especial } SO(V,h) \text{ se define como}
@@ -6411,7 +6423,7 @@
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S1.7) Definición 7: Álgebra de Clifford
+        (S1.10) Definición 10: Álgebra de Clifford
       </span>
       <span class="formula-texto formula">
         \text{Un Álgebra de Clifford asociada a un EV cuadrático } (V,h)
