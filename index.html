@@ -6627,7 +6627,147 @@
   <div class="seminario-2 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (S2.1)
+        (S2.1) Definición: Morfismo de Álgebras de Clifford
+      </span>
+      <span class="formula formula-texto">
+        \text{Dadas dos Álgebras de Clifford; } (\mathcal{A}, j) \text{ asociada}
+      </span>
+      <span class="formula-texto formula">
+        \text{al espacio vectorial cuadrático } (V, h) \text{ y } (\mathcal{A}', j') \text{ asociada}
+      </span>
+      <span class="formula formula-texto">
+        \text{ al espacio vectorial cuadrático } (V', h') \text{ se define como}
+      </span>
+      <span class="formula formula-texto">
+        \text{la pareja } (f, f_0), \text{ con las propiedades:}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula formula-texto">
+        f_0: (V,h) \to (V', h') \text{ es un morfismo de espacios vectoriales cuadráticos.}
+      </span>
+      <span class="formula formula-texto">
+        f: \mathcal{A} \to \mathcal{A}' \text{ es un morfismo de Álgebras.}
+      </span>
+      <span class="formula">
+        <!-- \begin{tikzcd}
+          \mathcal{A} \arrow[r, "f"] & \mathcal{A}'\\
+          V \arrow[u, "j"] \arrow[r, "f_0"] & V' \arrow[u, "j'"']\\
+        \end{tikzcd} -->
+        (f \circ j)(v) = (j' \circ f_0)(v) \qquad \forall v \in V
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S2.2) Definición: Isomorfismo de Álgebras de Clifford
+      </span>
+      <span class="formula formula-texto">
+        \text{Un morfismo } (f, f_0) \text{ es un isomorfismo si}
+      </span>
+      <span class="formula formula-texto">
+        f \text{ y } f_0 \text{ son isomorfismos.}
+      </span>
+      <span class="formula formula-texto">
+        \text{Si existe un isomorfismo entre } (\mathcal{A}, j) \text{ y } (\mathcal{A}', j') \text{ escribimos}
+      </span>
+      <span class="formula">
+        (\mathcal{A}, j) \backsimeq (\mathcal{A}', j')
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S2.3) Definición: Álgebra de Clifford Universal
+      </span>
+      <span class="formula formula-texto">
+        \text{Un Álgebra de Clifford } (\mathcal{A}, j) \text{ es universal si:}
+      </span>
+      <span class="formula formula-texto">
+        \text{Para todo espacio vectorial cuadrático } (V', h'), 
+      </span>
+      <span class="formula-texto formula">
+        \text{ toda Álgebra} (\mathcal{A}', j') \text{ y todo morfismo } T: (V,h) \to (V', h'),
+      </span>
+      <span class="formula formula-texto">
+        \text{existe un morfismo } \bar{T}: \mathcal{A} \to \mathcal{A}' \text{ tal que } (\bar{T}, T)
+      </span>
+      <span class="formula formula-texto">
+        \text{es un morfismo de Álgebras de Clifford.}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S2.4) Proposición
+      </span>
+      <span class="formula formula-texto">
+        \text{Sean } (\mathcal{A}, j) \text{ y } (\mathcal{A}', j') \text{ Álgebras de Clifford,}
+      </span>
+      <span class="formula-texto formula">
+        \text{y } T \text{ un morfismo de EV cuadráticos.}
+      </span>
+      <span class="formula formula-texto">
+        \text{Si existe un morfismo } \bar{T}, \text{ tal que } (\bar{T}, T) \text{ es un}
+      </span>
+      <span class="formula-texto formula">
+        \text{morfismo de Álgebras de Clifford, entonces } \bar{T} \text{ es único.}
+      </span>
+      <span class="formula-titulo">
+        Corolario:
+      </span>
+      <span class="formula-texto formula">
+        \text{Sean } (\mathcal{A}, j), (\mathcal{A}', j') \text{ Álgebras de Clifford universales,}
+      </span>
+      <span class="formula formula-texto">
+        \text{entonces } (\mathcal{A}, j) \backsimeq (\mathcal{A}', j')
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S2.5) Teorema
+      </span>
+      <span class="formula-texto formula">
+        \text{ Sea} (V,h) \text{ un espacio vectorial cuadrático.}
+      </span>
+      <span class="formula formula-texto">
+         \text{Existe una única Álgebra de Clifford universal: } C\ell (V,h).
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S2.6) Definición
+      </span>
+      <span class="formula formula-texto">
+        \text{Sea } C\ell(V,h), \text{ y } \{e_i\}_{i=1}^d \text{ una base ortonormal de } V,
+      </span>
+      <span class="formula formula-texto">
+        \text{definimos el conjunto } P_{\{e_i\}}\sub C\ell(V,h) \text{ como}
+      </span>
+      <span class="formula">
+        P_{\{e_i\}}=\{1_{\mathcal{A}}\} \cup \{e_i\} \cup \{e_ie_j\}_{i < j} \cup \cdots \cup \{e_1\cdots e_d\}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (S2.7) Proposición
+      </span>
+      <span class="formula-texto formula">
+        \text{Si } (\mathcal{A}, j) \text{ es un Álgebra de Clifford asociada a } (V,h).
+      </span>
+      <span class="formula formula-texto">
+        \text{Entonces, }\mathcal{A} = \text{Span}\{P_{\{e_i\}}\}.
+      </span>
+      <span class="formula formula-texto">
+        \text{Además, si los elementos de } P_{\{e_i\}} \text{ son linealmente}
+      </span>
+      <span class="formula formula-texto">
+        \text{independientes, }\mathcal{A} \text{ es un Álgebra universal.}
+      </span>
+      <span class="formula-titulo">
+        Corolario:
+      </span>
+      <span class="formula formula-texto">
+        \text{Sea } (\mathcal{A}, j) \text{ un Álgebra asociada a } (V, h) \text{ con } \dim{V}=d.
+      </span>
+      <span class="formula formula-texto">
+        \text{Entonces, si } \dim{\mathcal{A}}=2^d,\ \mathcal{A} \text{ es universal.}
       </span>
     </div>
   </div>
