@@ -6788,8 +6788,87 @@
   <div class="capitulo-63 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (63.1)
+        (63.1) Ecuaciones del movimiento. Espacio de Fourier.
       </span>
+      <span class="formula">
+        -k_\mu k^\mu \hat{A}^\nu + k_\mu k^\nu \hat{A}^\mu = \hat{g}^\nu
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          k^2 - k_0^2 & -k_0k_1 & -k_0k_2 & -k_0k_3 \\
+          k_1k_0 & k^2 + k_1^2 & k_1k_2 & k_1k_3 \\
+          k_2k_0 & k_2k_1 & k^2 + k_2^2 & k_2k_3 \\
+          k_3k_0 & k_3k_1 & k_3k_2 & k^2 + k_3^2 \\
+        \end{pmatrix}
+        \begin{pmatrix}
+        \hat{A}^0 \\ \hat{A}^1 \\ \hat{A}^2 \\ \hat{A}^3
+        \end{pmatrix}
+        =
+        -\begin{pmatrix}
+        \hat{g}^0 \\ \hat{g}^1 \\ \hat{g}^2 \\ \hat{g}^3
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        \det{M} = (k^2)^3 (k^2-k_0^2+k_1^2+k_2^2+k_3^2)=0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (63.2) Gauge de Lorenz
+      </span>
+      <span class="formula">
+        \partial_\mu A^\mu = 0 \Longrightarrow k_\mu \hat{A}^\mu = 0
+      </span>
+      <span class="formula-titulo">
+        Las ecuaciones de movimiento se convierten en
+      </span>
+      <span class="formula">
+        -k^2 \hat{A}^\nu = \hat{g}^\nu
+      </span>
+      <span class="formula">
+        \begin{pmatrix}
+          -k^2 & 0 & 0 & 0 \\
+          0 & -k^2 & 0 & 0 \\
+          0 & 0 & -k^2 & 0 \\
+          0 & 0 & 0 & -k^2 \\
+        \end{pmatrix}
+        \begin{pmatrix}
+        \hat{A}^0 \\ \hat{A}^1 \\ \hat{A}^2 \\ \hat{A}^3
+        \end{pmatrix}
+        =
+        \begin{pmatrix}
+        \hat{g}^0 \\ \hat{g}^1 \\ \hat{g}^2 \\ \hat{g}^3
+        \end{pmatrix}
+      </span>
+      <span class="formula">
+        \det{M} = (k^2)^4 \neq 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (63.3) Función de Green
+      </span>
+      <span class="formula">
+        \hat{G}_{\mu\nu} = \frac{-g_{\mu\nu}}{k^2}
+      </span>
+      <span class="formula">
+        G_{\mu\nu}(x-x') = \int \frac{-g_{\mu\nu}}{k^2 + i \varepsilon} e^{-ik(x-x')}\frac{\,\mathrm{d}^4 x}{(2\pi)^4}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (63.4) Ejercicios
+      </span>
+      <span class="formula formula-texto">
+        \text{Demostrar que el campo magnético es invariante gauge.}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
+      </span>
+      <a class="no-formula" target="_blank" href="docs/Roger Balsach - Solución Ejercicio Capítulo 63.pdf">
+        Roger Balsach
+        <div class="only-for-print">https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia/docs/Roger Balsach - Solución Ejercicio Capítulo 63.pdf</div>
+      </a>
     </div>
   </div>
 
