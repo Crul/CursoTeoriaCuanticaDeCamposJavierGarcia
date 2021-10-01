@@ -6630,16 +6630,16 @@
         (S2.1) Definición: Morfismo de Álgebras de Clifford
       </span>
       <span class="formula formula-texto">
-        \text{Dadas dos Álgebras de Clifford; } (\mathcal{A}, j) \text{ asociada}
+        \text{Dadas dos Álgebras de Clifford; } (\mathcal{A}, j) \text{ asociada al espacio}
       </span>
       <span class="formula-texto formula">
-        \text{al espacio vectorial cuadrático } (V, h) \text{ y } (\mathcal{A}', j') \text{ asociada}
+        \text{vectorial cuadrático } (V, h) \text{ y } (\mathcal{A}', j') \text{ asociada al espacio}
       </span>
       <span class="formula formula-texto">
-        \text{ al espacio vectorial cuadrático } (V', h') \text{ se define como}
+        \text{vectorial cuadrático } (V', h') \text{ se define un morfismo de Álgebras}
       </span>
       <span class="formula formula-texto">
-        \text{la pareja } (f, f_0), \text{ con las propiedades:}
+        \text{de Clifford como la pareja } (f, f_0), \text{ con las propiedades:}
       </span>
       <span class="formula-titulo"></span>
       <span class="formula formula-texto">
@@ -6653,6 +6653,11 @@
           \mathcal{A} \arrow[r, "f"] & \mathcal{A}'\\
           V \arrow[u, "j"] \arrow[r, "f_0"] & V' \arrow[u, "j'"']\\
         \end{tikzcd} -->
+        <!-- \begin{CD}
+          \mathcal{A} @>f>> \mathcal{A}' \\
+          @AjAA @AAj'A \\
+          V @>f_0>> V'
+        \end{CD} -->
         (f \circ j)(v) = (j' \circ f_0)(v) \qquad \forall v \in V
       </span>
     </div>
@@ -6681,10 +6686,10 @@
         \text{Un Álgebra de Clifford } (\mathcal{A}, j) \text{ es universal si:}
       </span>
       <span class="formula formula-texto">
-        \text{Para todo espacio vectorial cuadrático } (V', h'), 
+        \text{Para todo espacio vectorial cuadrático } (V', h'), \text{ toda}
       </span>
       <span class="formula-texto formula">
-        \text{ toda Álgebra} (\mathcal{A}', j') \text{ y todo morfismo } T: (V,h) \to (V', h'),
+        \text{Álgebra } (\mathcal{A}', j') \text{ y todo morfismo } T: (V,h) \to (V', h'),
       </span>
       <span class="formula formula-texto">
         \text{existe un morfismo } \bar{T}: \mathcal{A} \to \mathcal{A}' \text{ tal que } (\bar{T}, T)
@@ -6724,10 +6729,13 @@
         (S2.5) Teorema
       </span>
       <span class="formula-texto formula">
-        \text{ Sea} (V,h) \text{ un espacio vectorial cuadrático.}
+        \text{Sea } (V,h) \text{ un espacio vectorial cuadrático.}
       </span>
       <span class="formula formula-texto">
-         \text{Existe una única Álgebra de Clifford universal: } C\ell (V,h).
+         \text{Existe una única Álgebra de Clifford universal:}
+      </span>
+      <span class="formula">
+        C\ell (V,h)
       </span>
     </div>
     <div class="grupo-formulas">
