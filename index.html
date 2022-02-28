@@ -7417,7 +7417,86 @@
   <div class="capitulo-70 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (70.1)
+        (70.1) Soluciones complejas de Klein-Gordon
+      </span>
+      <span class="formula">
+        f_k(t, \vec{x}) = F_k e^{-i\omega_k t + i \vec{k}\cdot \vec{x}}
+      </span>
+      <span class="formula">
+        f^*_k(t, \vec{x}) = F^*_k e^{i\omega_k t - i \vec{k}\cdot \vec{x}}
+      </span>
+      <span class="formula">
+        \omega_k = \sqrt{\vec{k}^2+m^2}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (70.2) Producto interno de las soluciones
+      </span>
+      <span class="formula">
+        (f_k, f_q) = (\omega_q F_k^*F_q + \omega_qF_qF^*_k)e^{i(\omega_k-\omega_q)t}(2\pi)\delta^{(3)}(\vec{k}-\vec{q})
+      </span>
+      <span class="formula">
+        = 4\pi \omega_k|F_k|^2\delta^{(3)}(\vec{k}-\vec{q})
+      </span>
+      <span class="formula-titulo">
+        Podemos fijar la normalización
+      </span>
+      <span class="formula">
+        F_k = \frac{1}{\sqrt{4\pi \omega_k}}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (70.3) Base ortonormal
+      </span>
+      <span class="formula">
+        f(t, \vec{x}) = \frac{1}{\sqrt{4\pi \omega_k}} e^{-i\omega_k t + i \vec{k}\cdot \vec{x}}
+      </span>
+      <span class="formula">
+        f^*_k(t, \vec{x}) = \frac{1}{\sqrt{4\pi \omega_k}} e^{i\omega_k t - i \vec{k}\cdot \vec{x}}
+      </span>
+      <span class="formula-titulo"></span>
+      <span class="formula">
+        (f_k, f_q) = \delta^{(3)}(\vec{k}-\vec{q})
+      </span>
+      <span class="formula">
+        (f^*_k, f^*_q) = -\delta^{(3)}(\vec{k}-\vec{q})
+      </span>
+      <span class="formula">
+        (f_k, f^*_q) = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (70.4) Campo escalar
+      </span>
+      <span class="formula">
+        \phi(t, \vec{x}) = \int (c_k f_k(t, \vec{x}) + c_k^*f_k^*(t, \vec{x}))\mathrm{d}^3 \vec{k}
+      </span>
+      <span class="formula">
+        c_k = (f_k, \phi), \qquad c_k^* = -(f_k^*, \phi)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (70.5) Campo escalar II
+      </span>
+      <span class="formula formula-texto">
+        \text{Sean } g_{\Omega} \text{ soluciones de la ecuación de Klein-Gordon con energía } \Omega.
+      </span>
+      <span class="formula">
+        (\nabla_\mu \nabla^\mu + m^2)g_\Omega = 0
+      </span>
+      <span class="formula">
+        i \partial_T g_\Omega = \Omega g_\Omega
+      </span>
+      <span class="formula formula-texto"></span>
+      <span class="formula">
+        \phi = \int (d_\Omega g_\Omega + d^*_\Omega g_\Omega^*) \mathrm{d}\Omega
+      </span>
+      <span class="formula">
+
       </span>
     </div>
   </div>
