@@ -7677,7 +7677,75 @@
   <div class="capitulo-73 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (73.1)
+        (73.1) Coeficientes de Bogoliubov
+      </span>
+      <span class="formula formula-texto">
+        \text{Para el caso } m=0:
+      </span>
+      <span class="formula">
+        \alpha_{pk} = \frac{1}{4\pi \sqrt{pk}} I(p,k)
+      </span>
+      <span class="formula">
+        \beta_{pk} = \frac{-1}{4\pi \sqrt{pk}} I(p,-k)
+      </span>
+      <span class="formula">
+        I(p,k)=\int_{-\infty}^\infty (p+ke^x)e^{ipx-ike^x}\mathrm{d}x \\\hspace16ex= \left(\frac{1}{ik}\right)^{ip}\int_0^{i\infty} (px^{ip-1}-ix^{ip})e^{-x}\mathrm{d}x
+      </span>
+      <span class="formula">
+        \alpha_{pk} = -e^{p\pi}\beta_{pk}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (73.2) Densidad de partículas
+      </span>
+      <span class="formula">
+        \langle 0_M | N_p | 0_M \rangle = \int_{-\infty}^\infty |\beta_{pk}|^2 \mathrm{d}k
+      </span>
+      <span class="formula">
+        V = \int_{-\infty}^\infty (e^{2p\pi}-1)|\beta_{pk}|^2\mathrm{d}k
+      </span>
+      <span class="formula">
+        \langle n_p \rangle = \frac{\langle N_p \rangle}{V} = \frac{\langle 0_M | n_p | 0_M \rangle}{V} = \frac{1}{e^{2p\pi}-1}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (73.3) Temperatura de Unruh
+      </span>
+      <span class="formula formula-texto">
+        \langle n_p \rangle = \frac{1}{e^{\frac{2\pi E_pc}{\hbar a}}-1}
+      </span>
+      <span class="formula-titulo">
+        Distribución de Bose-Einstein para spin 0:
+      </span>
+      <span class="formula">
+        \langle n_p \rangle = \frac{1}{e^{\frac{E_p}{k_BT}}-1}
+      </span>
+      <span class="formula">
+        T_{Unruh}=\frac{a\hbar}{2\pi c k_B}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (73.4) Temperatura de Hawking
+      </span>
+      <span class="formula formula-texto">
+        \text{En un agujero negro: } a \to \frac{c^4}{4GM}
+      </span>
+      <span class="formula">
+        T_{Unruh} \to \frac{\hbar c^3}{8\pi GMk_B}=T_{Hawking}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (73.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+          \text{Calcular el coeficiente } \beta_{pk} \text{ en las coordenadas de Rindler.}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>
