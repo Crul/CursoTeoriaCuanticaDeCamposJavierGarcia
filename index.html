@@ -7797,7 +7797,57 @@
   <div class="capitulo-75 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (75.1)
+        (75.1) Ordenación temporal
+      </span>
+      <span class="formula">
+        T\{\phi(x)\phi(y)\}=\theta(x^0-y^0)\phi(x)\phi(y) + \theta(y^0-x^0)\phi(y)\phi(x)
+      </span>
+      <span class="formula">
+        \Delta_F(x-y)=\langle 0 | T\{\phi(x)\phi(y)\}| 0\rangle = \int \frac{ie^{-ik(x-y)}}{k^2-m^2+i\varepsilon} \frac{\mathrm{d}^4 k}{(2\pi)^4}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (75.2) Ordenación normal
+      </span>
+      <span class="formula">
+        \phi^+(x)=\int \frac{1}{\sqrt{2\omega_k}}a_k e^{-ikx}\frac{\mathrm{d}^3k}{(2\pi)^3}
+      </span>
+      <span class="formula">
+        \phi^-(x)=\int \frac{1}{\sqrt{2\omega_k}}a^\dagger_k e^{ikx}\frac{\mathrm{d}^3k}{(2\pi)^3}
+      </span>
+      <span class="formula">
+        N[\phi(x)\phi(y)] = \phi^-(x)\phi^-(y)+\phi^-(x)\phi^+(y)+\phi^+(x)\phi^+(y)+\phi^-(y)\phi^+(x)
+      </span>
+      <span class="formula">
+        \phi(x)\phi(y) = N[\phi(x)\phi(y)] + [\phi^+(x), \phi^-(y)]
+      </span>
+      <span class="formula">
+        \bra{0}N[\phi(x)\phi(y)] | 0 \rangle = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (75.3) Teorema de Wick para ordenación temporal
+      </span>
+      <span class="formula">
+        \overlinesegment{\phi(x)\phi}(y) = \Delta_F(x-y)
+      </span>
+      <span class="formula">
+        T\{\phi(x)\phi(y)\} = N[\phi(x)\phi(y)] + \Delta_F(x-y)
+      </span>
+      <span class="formula">
+        \begin{alignat*}{2}T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\} = &N[\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)] &+& \Delta_F(x_1-x_2)N[\phi(x_3)\phi(x_4)]\\&
+        + \Delta_F(x_1-x_3)N[\phi(x_2)\phi(x_4)]&+ &\Delta_F(x_1-x_4)N[\phi(x_2)\phi(x_3)]\\& + \Delta_F(x_2-x_3)N[\phi(x_1)\phi(x_4)]&+& \Delta_F(x_2-x_4)N[\phi(x_1)\phi(x_3)]\\&
+        + \Delta_F(x_3-x_4)N[\phi(x_1)\phi(x_2)]& +& \Delta_F(x_1-x_2)\Delta_F(x_3-x_4)\\& + \Delta_F(x_1-x_3)\Delta_F(x_2-x_4)& +& \Delta_F(x_1-x_4)\Delta_F(x_2-x_3)\end{alignat*}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (75.4) Diagramas de Feynman
+      </span>
+      <span class="formula">
+        \bra{0}T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\}\ket{0} = \Delta_F(x_1-x_2)\Delta_F(x_3-x_4) + \Delta_F(x_1-x_3)\Delta_F(x_2-x_4) + \Delta_F(x_1-x_4)\Delta_F(x_2-x_3)
       </span>
     </div>
   </div>
