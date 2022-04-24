@@ -2651,10 +2651,10 @@
         \text{\footnotesize Si } A \text{ \footnotesize es hermítico (autoadjunto) } A^\dagger = A \text{ \footnotesize entonces:}
       </span>
       <span class="formula">
-        a) \left( A | \psi \rangle \right)^\dagger = \langle \psi | A
+        a) \left( A \ket{\psi} \right)^\dagger = \bra{\psi } A
       </span>
       <span class="formula">
-        b) \langle \phi | A | \psi \rangle^* = \langle \psi | A | \phi \rangle
+        b) \bra{\phi } A \ket{\psi}^* = \bra{\psi } A \ket{\phi}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2665,13 +2665,13 @@
         Dimensión N
       </span>
       <span class="formula">
-        \langle a | b \rangle = \sum_{j=1}^N a_j^* b_j
+        \braket{a \vert b} = \sum_{j=1}^N a_j^* b_j
       </span>
       <span class="formula-titulo">
         Dimensión infinita
       </span>
       <span class="formula">
-        \langle \phi | \psi \rangle = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ \psi(x)
+        \braket{\phi  \vert  \psi } = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ \psi(x)
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2682,13 +2682,13 @@
         Dimensión N
       </span>
       <span class="formula">
-        \langle a | A | b \rangle = \sum_{i=1}^N \sum_{j=1}^N a_i^* A_{ij}  b_j
+        \bra{a} A \ket{b} = \sum_{i=1}^N \sum_{j=1}^N a_i^* A_{ij}  b_j
       </span>
       <span class="formula-titulo">
         Dimensión infinita
       </span>
       <span class="formula">
-        \langle \phi | A | \psi \rangle = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ A \ \psi(x)
+        \bra{\phi} A \ket{\psi} = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ A \ \psi(x)
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2716,7 +2716,7 @@
         \text{dotado del producto escalar}
       </span>
       <span class="formula">
-        \langle \phi | \psi \rangle = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ \psi(x)
+        \braket{\phi  \vert  \psi } = \int_{-\infty}^{\infty} dx \ \phi^*(x) \ \psi(x)
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2766,19 +2766,19 @@
         (23.9)
       </span>
       <span class="formula">
-        \text{\footnotesize Representación de posiciones = base de vectores de posición: } \{ |x \rangle \}
+        \text{\footnotesize Representación de posiciones = base de vectores de posición: } \{ \ket{x} \}
       </span>
       <span class="formula-titulo">
         Productos escalares interesantes:
       </span>
       <span class="formula">
-        \langle x | y \rangle = \delta (x-y)
+        \braket{x  \vert  y } = \delta (x-y)
       </span>
       <span class="formula">
-        \langle x | \psi \rangle = \psi(x)
+        \braket{x  \vert  \psi } = \psi(x)
       </span>
       <span class="formula">
-        \langle \psi | x \rangle = \psi^* (x)
+        \braket{\psi  \vert  x } = \psi^* (x)
       </span>
     </div>
   </div>
@@ -2793,20 +2793,20 @@
         En dimensión finita N
       </span>
       <span class="formula">
-        I = \sum_{j=1}^N | a_j \rangle \langle a_j |
+        I = \sum_{j=1}^N \ket{a_j} \bra{a_j}
       </span>
       <span class="formula">
-        \text{\footnotesize (} | a_j \rangle \text{\footnotesize es una base ortonormal del espacio de Hilbert}
+        \text{\footnotesize (} \ket{a_j} \text{\footnotesize es una base ortonormal del espacio de Hilbert)}
       </span>
       <span class="formula-titulo">
         En dimensión infinita
       </span>
       <span class="formula">
         \begin{matrix}
-          & I = \int_{-\infty}^{\infty} dx \ | x \rangle \langle x | 
-            & \text{\footnotesize (} |x\rangle \text{\footnotesize base de posiciones)} \\
-          & I = \int_{-\infty}^{\infty} dp \ | p \rangle \langle p | 
-            & \text{\footnotesize (} |p\rangle \text{\footnotesize base de momentos)}
+          & I = \int_{-\infty}^{\infty} dx \ \ket{x} \bra{x}
+            & \text{\footnotesize (} \ket{x} \text{\footnotesize base de posiciones)} \\
+          & I = \int_{-\infty}^{\infty} dp \ \ket{p} \bra{p}
+            & \text{\footnotesize (} \ket{p} \text{\footnotesize base de momentos)}
         \end{matrix}
       </span>
     </div>
@@ -2815,10 +2815,10 @@
         (24.2) Vectores propios de x&#770; y p&#770;
       </span>
       <span class="formula">
-        \widehat{x} | x \rangle = x | x \rangle 
+        \widehat{x} \ket{x} = x \ket{x}
       </span>
       <span class="formula">
-        \widehat{p} | p \rangle = p | p \rangle 
+        \widehat{p} \ket{p} = p \ket{p}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2826,10 +2826,10 @@
         (24.3) Producto escalar
       </span>
       <span class="formula">
-        \langle x | p \rangle = \frac{1}{ \sqrt{ 2 \pi \hbar } } e^{ i \frac{px}{\hbar} }
+        \braket{x  \vert  p } = \frac{1}{ \sqrt{ 2 \pi \hbar } } e^{ i \frac{px}{\hbar} }
       </span>
       <span class="formula">
-        \langle p | x \rangle = \langle x | p \rangle^*
+        \braket{p  \vert  x } = \braket{x  \vert  p }^*
           = \frac{1}{ \sqrt{ 2 \pi \hbar } } e^{ -i \frac{px}{\hbar} }
       </span>
     </div>
@@ -2903,7 +2903,7 @@
         <br/>el Espacio de Hilbert (25.5)
       </span>
       <span class="formula">
-        \langle f | g \rangle = \int_0^{2\pi} f(\theta)^* \ g(\theta) \ R \ d\theta
+        \braket{f  \vert  g } = \int_0^{2\pi} f(\theta)^* \ g(\theta) \ R \ d\theta
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2911,15 +2911,15 @@
         (25.7) Notación
       </span>
       <span class="formula">
-        \langle \theta | \phi_n \rangle
-          = \langle \theta | n \rangle
+        \braket{\theta  \vert  \phi_n }
+          = \braket{\theta  \vert  n }
           = \frac{1}{ \sqrt{ 2 \pi R } } e^{ i n \theta }
       </span>
       <span class="formula">
-        L_z | n \rangle = n \hbar | n \rangle
+        L_z \ket{n} = n \hbar \ket{n}
       </span>
       <span class="formula">
-        \langle \theta | L_z | \psi \rangle = - i \hbar \frac{ \partial \psi }{ \partial \theta }
+        \bra{\theta} L_z \ket{\psi} = - i \hbar \frac{ \partial \psi }{ \partial \theta }
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2927,19 +2927,19 @@
         (25.8) Ecuación de Schrödinger (notación de Dirac)
       </span>
       <span class="formula">
-        -i \hbar \frac{\partial}{\partial t} | \psi(t) \rangle = H | \psi(t) \rangle
+        -i \hbar \frac{\partial}{\partial t} \ket{\psi(t)} = H \ket{\psi(t)}
       </span>
       <span class="formula-titulo">
         Solución general
       </span>
       <span class="formula">
-        | \psi(t) \rangle = \sum_n e^{ \frac{it}{\hbar} E_n } a_n | \phi_n \rangle
+        \ket{\psi(t)} = \sum_n e^{ \frac{it}{\hbar} E_n } a_n \ket{\phi_n}
       </span>
       <span class="formula">
-        \text{\footnotesize Los vectores } | \phi_n \rangle \text{\footnotesize son propios de H}
+        \text{\footnotesize Los vectores } \ket{\phi_n} \text{\footnotesize son propios de H}
       </span>
       <span class="formula">
-        H | \phi_n \rangle = E_n | \phi_n \rangle
+        H \ket{\phi_n} = E_n \ket{\phi_n}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2956,7 +2956,7 @@
         <br/>de Schrödinger equivale a:
       </span>
       <span class="formula">
-        | \psi(t) \rangle = U(t) | \psi(0) \rangle
+        \ket{\psi(t)} = U(t) \ket{\psi(0)}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -2979,7 +2979,7 @@
       <span class="formula">
         \begin{aligned}
           & A^\dagger = A && \text{\footnotesize (observable)} \\
-          & A | a_n \rangle = a_n | a_n \rangle && \text{\footnotesize (base propia de } A \text{\footnotesize )}
+          & A \ket{a_n} = a_n \ket{a_n} && \text{\footnotesize (base propia de } A \text{\footnotesize )}
         \end{aligned}
       </span>
     </div>
@@ -2989,13 +2989,13 @@
         <br/>al hacer una medida de A
       </span>
       <span class="formula">
-        P_n = | \langle a_n | \psi \rangle |^2
+        P_n = | \braket{a_n  \vert  \psi } |^2
       </span>
       <span class="formula-titulo">
         El estado colapsa a:
       </span>
       <span class="formula">
-        | \psi \rangle = | a_n \rangle
+        \ket{\psi} = \ket{a_n}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3004,8 +3004,8 @@
       </span>
       <span class="formula">
         \sigma_A = \sqrt{
-          \langle \psi | A^2 | \psi \rangle -
-          \langle \psi | A | \psi \rangle^2
+          \bra{\psi} A^2 \ket{\psi} -
+          \bra{\psi} A \ket{\psi}^2
         }
       </span>
     </div>
@@ -3014,7 +3014,7 @@
         (26.4) Principio de identerminación de Heisemberg
       </span>
       <span class="formula">
-        \sigma_A \sigma_B \geqslant \left| \frac{1}{2i} \langle \psi \left| [A,B] \right| \psi \rangle \right|
+        \sigma_A \sigma_B \geqslant \left| \frac{1}{2i} \bra{\psi} [A,B] \ket{\psi} \right|
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3031,7 +3031,7 @@
           &&2.b) \hspace2ex &\text{\footnotesize Calcular } \sigma_{\hat{L}_z} \text{ \footnotesize y } \sigma_{\hat{\theta}} \\
           &&2.c) \hspace2ex &\text{\footnotesize ¿Se cumple el principio de Heisenberg?} \\
           &&   &\hspace3ex \sigma_{\hat{L}_z} \sigma_{\hat{\theta}}
-                 \geqslant \left| \frac{1}{2i} \langle \psi | \left[ \hat{L}_z, \hat{\theta} \right] | \psi \rangle \right| \\
+                 \geqslant \left| \frac{1}{2i} \bra{\psi} \left[ \hat{L}_z, \hat{\theta} \right] \ket{\psi} \right| \\
           &&2.d) \hspace2ex &\text{\footnotesize Si no se cumple el principio de Heisenberg,} \\
           &&   &\text{\footnotesize ¿qué crees que está pasando?}
         \end{aligned}
@@ -3070,10 +3070,10 @@
         (27.2) Acción sobre los estados |a<sub>n</sub>&#10217;
       </span>
       <span class="formula">
-        D | a_n \rangle = \alpha_n | a_n + b \rangle
+        D \ket{a_n} = \alpha_n \ket{a_n + b}
       </span>
       <span class="formula">
-        D^\dagger | a_n \rangle = \beta_n | a_n - b \rangle
+        D^\dagger \ket{a_n} = \beta_n \ket{a_n - b}
       </span>
       <span class="formula">
         \alpha_n, \beta_n \in \Complex
@@ -3149,13 +3149,13 @@
         E = \hbar \omega \left( n + \frac{1}{2} \right) > 0
       </span>
       <span class="formula">
-        H | n \rangle = E_n | n \rangle
+        H \ket{n} = E_n \ket{n}
       </span>
       <span class="formula">
-        | n \rangle = \frac{1}{ \sqrt{ n! } } \left( a^\dagger \right)^n | 0 \rangle
+        \ket{n} = \frac{1}{ \sqrt{ n! } } \left( a^\dagger \right)^n \ket{0}
       </span>
       <span class="formula">
-        \langle n_1 | n_2 \rangle = \delta_{n_1, n_2}
+        \braket{n_1  \vert  n_2 } = \delta_{n_1, n_2}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3163,10 +3163,10 @@
         (28.5) Acción sobre los estados |n&#10217;
       </span>
       <span class="formula">
-        a^\dagger | n \rangle = \sqrt{ n + 1 } | n + 1 \rangle
+        a^\dagger \ket{n} = \sqrt{ n + 1 } \ket{n + 1}
       </span>
       <span class="formula">
-        a | n \rangle = \sqrt{n} | n - 1 \rangle
+        a \ket{n} = \sqrt{n} \ket{n - 1}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3204,17 +3204,17 @@
         (29.1) Estado coherente |&alpha;&#10217;
       </span>
       <span class="formula">
-        a | \alpha \rangle = \alpha | \alpha \rangle
+        a \ket{\alpha} = \alpha \ket{\alpha}
       </span>
       <span class="formula">
         \alpha \in \Complex
       </span>
       <span class="formula">
-        | \alpha \rangle = e^{ - \frac{| \alpha |^2}{2} }
-          \sum_{n=0}^{\infty} \frac{ \alpha^n }{ \sqrt{n!} } | n \rangle
+        \ket{\alpha} = e^{ - \frac{| \alpha |^2}{2} }
+          \sum_{n=0}^{\infty} \frac{ \alpha^n }{ \sqrt{n!} } \ket{n}
       </span>
       <span class="formula">
-        \langle \alpha | \alpha \rangle = 1
+        \braket{\alpha  \vert  \alpha } = 1
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3222,7 +3222,7 @@
         (29.2) Probabilidad de medir energía E<sub>n</sub>
       </span>
       <span class="formula">
-        p_n = | \langle n | \alpha \rangle |^2 = e^{-|\alpha|^2} \frac{|\alpha|^{2n}}{n!}
+        p_n = | \braket{n  \vert  \alpha } |^2 = e^{-|\alpha|^2} \frac{|\alpha|^{2n}}{n!}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3230,10 +3230,10 @@
         (29.3) Valores esperados
       </span>
       <span class="formula">
-        \langle \alpha | N | \alpha \rangle = |\alpha|^2
+        \bra{\alpha} N \ket{\alpha} = |\alpha|^2
       </span>
       <span class="formula">
-        \langle \alpha | N^2 | \alpha \rangle = |\alpha|^2 + |\alpha|^4
+        \bra{\alpha} N^2 \ket{\alpha} = |\alpha|^2 + |\alpha|^4
       </span>
       <span class="formula-titulo">
         Desviación estándar
@@ -3247,19 +3247,19 @@
         (29.4) Saturación Principio de Heisenberg
       </span>
       <span class="formula">
-        \langle \alpha | x | \alpha \rangle = \sqrt{ \frac{\hbar}{2m\omega} } \left( \alpha + \alpha^* \right)
+        \bra{\alpha} x \ket{\alpha} = \sqrt{ \frac{\hbar}{2m\omega} } \left( \alpha + \alpha^* \right)
       </span>
       <span class="formula">
-        \langle \alpha | x^2 | \alpha \rangle = \frac{\hbar}{2m\omega} \left( \alpha^2 + \alpha^{*2} + 2 |\alpha|^2 + 1 \right)
+        \bra{\alpha} x^2 \ket{\alpha} = \frac{\hbar}{2m\omega} \left( \alpha^2 + \alpha^{*2} + 2 |\alpha|^2 + 1 \right)
       </span>
       <span class="formula">
         \sigma_x = \sqrt{ \frac{\hbar}{2m\omega} }
       </span>
       <span class="formula">
-        \langle \alpha | p | \alpha \rangle = \frac{1}{i} \sqrt{ \frac{m\hbar\omega}{2} } \left( \alpha - \alpha^* \right)
+        \bra{\alpha} p \ket{\alpha} = \frac{1}{i} \sqrt{ \frac{m\hbar\omega}{2} } \left( \alpha - \alpha^* \right)
       </span>
       <span class="formula">
-        \langle \alpha | p^2 | \alpha \rangle = \frac{m\hbar\omega}{2} \left( -\alpha^2 - \alpha^{*2} + 2 |\alpha|^2 + 1 \right)
+        \bra{\alpha} p^2 \ket{\alpha} = \frac{m\hbar\omega}{2} \left( -\alpha^2 - \alpha^{*2} + 2 |\alpha|^2 + 1 \right)
       </span>
       <span class="formula">
         \sigma_p = \sqrt{ \frac{m\hbar\omega}{2} }
@@ -3308,7 +3308,7 @@
         & \alpha = \sqrt{ \frac{ m \omega }{ 2 \hbar } } \left( x_0 + i \frac{1}{ m \omega } p_0 \right) \\
         & \text{\footnotesize - } [a, D] = \alpha D \\
         & \text{\footnotesize - } [a^\dagger, D] = - \alpha^* D^\dagger \\
-        & \text{\footnotesize - } | \alpha \rangle = D |0\rangle
+        & \text{\footnotesize - } \ket{\alpha} = D \ket{0}
         \end{aligned}
       </span>
     </div>
@@ -3418,7 +3418,7 @@
         (33.1) Squeezed Vacuum
       </span>
       <span class="formula">
-        |b\rangle \equiv S(b) |0\rangle
+        \ket{b} \equiv S(b) \ket{0}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -3439,8 +3439,8 @@
       </span>
       <span class="formula">
         \sigma_A \equiv \sqrt{ 
-            \langle \psi |A^2| \psi \rangle - 
-            \langle \psi |A| \psi \rangle^2
+            \bra{\psi}A^2\ket{\psi} -
+            \bra{\psi}A\ket{\psi}^2
           }
       </span>
     </div>
@@ -3498,9 +3498,9 @@
         \text{Comprobar que:} 
       </span>
       <span class="formula">
-        \langle y_1^2 \rangle 
-          = e^{-2r} \sin^2 \alpha \ \langle x^2 \rangle
-          + e^{-2r} \cos^2 \alpha \ \langle y^2 \rangle
+        \braket{y_1^2}
+          = e^{-2r} \sin^2 \alpha \ \braket{x^2}
+          + e^{-2r} \cos^2 \alpha \ \braket{y^2}
       </span>
       <span class="formula-titulo">
         Soluciones enviadas:
@@ -7300,13 +7300,13 @@
         (68.3) Espacio de Fock
       </span>
       <span class="formula">
-        a(\vec{k})|0\rangle = 0, \qquad \forall \vec{k}\in \mathbb{R}^3
+        a(\vec{k})\ket{0} = 0, \qquad \forall \vec{k}\in \mathbb{R}^3
       </span>
       <span class="formula">
-        |\vec{k}_i\rangle = a^\dag (\vec{k}_i) |0\rangle
+        \ket{\vec{k}_i} = a^\dag (\vec{k}_i) \ket{0}
       </span>
       <span class="formula">
-        |\vec{k},\vec{q}\rangle = a^\dag (\vec{k})a^\dag(\vec{q}) |0\rangle = a^\dag (\vec{q})a^\dag(\vec{k}) |0\rangle
+        \ket{\vec{k},\vec{q}} = a^\dag (\vec{k})a^\dag(\vec{q}) \ket{0} = a^\dag (\vec{q})a^\dag(\vec{k}) \ket{0}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7314,10 +7314,10 @@
         (68.4) Normalización estados
       </span>
       <span class="formula">
-        \langle \vec{k}|\vec{q}\rangle = (2\pi)^3 \delta^{(3)}(\vec{k}-\vec{q})
+        \braket{\vec{k} \vert \vec{q}} = (2\pi)^3 \delta^{(3)}(\vec{k}-\vec{q})
       </span>
       <span class="formula">
-        \langle \vec{k}_1\vec{k}_2 | \vec{q}_1\vec{q}_2\rangle = (2\pi)^6 \left[\delta^{(3)}(\vec{k}_1-\vec{q}_1)\delta^{(3)}(\vec{k}_2-\vec{q}_2)
+        \braket{\vec{k}_1\vec{k}_2  \vert  \vec{q}_1\vec{q}_2} = (2\pi)^6 \left[\delta^{(3)}(\vec{k}_1-\vec{q}_1)\delta^{(3)}(\vec{k}_2-\vec{q}_2)
         +\delta^{(3)}(\vec{k}_1-\vec{q}_2)\delta^{(3)}(\vec{k}_2-\vec{q}_1)\right]
       </span>
     </div>
@@ -7326,7 +7326,7 @@
         (68.5) Ejercicio
       </span>
       <span class="formula formula-texto">
-        \text{Calcular la normalización del producto } \langle \vec{k}_1\vec{k}_2 | \vec{q}_1\vec{q}_2 \rangle
+        \text{Calcular la normalización del producto } \braket{\vec{k}_1\vec{k}_2  \vert  \vec{q}_1\vec{q}_2 }
       </span>
       <span class="formula-titulo">
         Soluciones enviadas
@@ -7658,7 +7658,7 @@
         (72.3) Efecto Unruh
       </span>
       <span class="formula">
-        \langle 0_M | b_k^\dag b_k | 0_M \rangle = \int |\beta_{kq}|^2 \mathrm{d}q
+        \bra{0_M} b_k^\dag b_k \ket{0_M} = \int |\beta_{kq}|^2 \mathrm{d}q
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7708,13 +7708,13 @@
         (73.2) Densidad de partículas
       </span>
       <span class="formula">
-        \langle 0_M | N_p | 0_M \rangle = \int_{-\infty}^\infty |\beta_{pk}|^2 \mathrm{d}k
+        \bra{0_M} N_p \ket{0_M} = \int_{-\infty}^\infty |\beta_{pk}|^2 \mathrm{d}k
       </span>
       <span class="formula">
         V = \int_{-\infty}^\infty (e^{2p\pi}-1)|\beta_{pk}|^2\mathrm{d}k
       </span>
       <span class="formula">
-        \langle n_p \rangle = \frac{\langle N_p \rangle}{V} = \frac{\langle 0_M | n_p | 0_M \rangle}{V} = \frac{1}{e^{2p\pi}-1}
+        \braket{n_p} = \frac{\braket{N_p}}{V} = \frac{\bra{0_M} n_p \ket{0_M}}{V} = \frac{1}{e^{2p\pi}-1}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7722,13 +7722,13 @@
         (73.3) Temperatura de Unruh
       </span>
       <span class="formula formula-texto">
-        \langle n_p \rangle = \frac{1}{e^{\frac{2\pi E_pc}{\hbar a}}-1}
+        \braket{n_p} = \frac{1}{e^{\frac{2\pi E_pc}{\hbar a}}-1}
       </span>
       <span class="formula-titulo">
         Distribución de Bose-Einstein para spin 0:
       </span>
       <span class="formula">
-        \langle n_p \rangle = \frac{1}{e^{\frac{E_p}{k_BT}}-1}
+        \braket{n_p} = \frac{1}{e^{\frac{E_p}{k_BT}}-1}
       </span>
       <span class="formula">
         T_{\mathrm{Unruh}}=\frac{a\hbar}{2\pi c k_B}
@@ -7777,7 +7777,7 @@
         (74.1) Función de correlación (a 2 puntos)
       </span>
       <span class="formula">
-        \langle 0 | \phi(x)\phi(y) | 0 \rangle = \int \frac{1}{2\omega_k}e^{-ik(x-y)}\frac{\mathrm{d}k}{2\pi}
+        \bra{0} \phi(x)\phi(y) \ket{0} = \int \frac{1}{2\omega_k}e^{-ik(x-y)}\frac{\mathrm{d}k}{2\pi}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7785,10 +7785,10 @@
         (74.2) Propagador de Feynman
       </span>
       <span class="formula">
-        \Delta_F = -i G_F = \begin{cases}\langle 0 | \phi(x)\phi(y) | 0 \rangle& x^0>y^0 \\ \langle 0 | \phi(y)\phi(x) | 0 \rangle & y^0 > x^0\end{cases}
+        \Delta_F = -i G_F = \begin{cases}\bra{0} \phi(x)\phi(y) \ket{0}& x^0>y^0 \\ \bra{0} \phi(y)\phi(x) \ket{0} & y^0 > x^0\end{cases}
       </span>
       <span class="formula">
-        \Delta_F = \theta(x^0-y^0)\langle 0 | \phi(x)\phi(y) | 0 \rangle + \theta(y^0-x^0)\langle 0 | \phi(y)\phi(x) | 0 \rangle
+        \Delta_F = \theta(x^0-y^0)\bra{0} \phi(x)\phi(y) \ket{0} + \theta(y^0-x^0)\bra{0} \phi(y)\phi(x) \ket{0}
       </span>
     </div>
   </div>
@@ -7803,7 +7803,7 @@
         T\{\phi(x)\phi(y)\}=\theta(x^0-y^0)\phi(x)\phi(y) + \theta(y^0-x^0)\phi(y)\phi(x)
       </span>
       <span class="formula">
-        \Delta_F(x-y)=\langle 0 | T\{\phi(x)\phi(y)\}| 0\rangle = \int \frac{ie^{-ik(x-y)}}{k^2-m^2+i\varepsilon} \frac{\mathrm{d}^4 k}{(2\pi)^4}
+        \Delta_F(x-y)=\bra{0} T\{\phi(x)\phi(y)\}\ket{0} = \int \frac{ie^{-ik(x-y)}}{k^2-m^2+i\varepsilon} \frac{\mathrm{d}^4 k}{(2\pi)^4}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7823,7 +7823,7 @@
         \phi(x)\phi(y) = N[\phi(x)\phi(y)] + [\phi^+(x), \phi^-(y)]
       </span>
       <span class="formula">
-        \bra{0}N[\phi(x)\phi(y)] | 0 \rangle = 0
+        \bra{0}N[\phi(x)\phi(y)] \ket{0} = 0
       </span>
     </div>
     <div class="grupo-formulas">
