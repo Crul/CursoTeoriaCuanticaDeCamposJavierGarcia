@@ -1,3 +1,4 @@
+var mathjaxDefined = (typeof MathJax !== 'undefined');
 var feynmanDiagrams = {
 
   Feynman51: {
@@ -6,7 +7,7 @@ var feynmanDiagrams = {
     outgoing: {o1: '140,40'},
     fermion: {line: 'i1-o1', arrow: false},
     label: { t1: ['150,26.5', '$ = \\frac{1}{m^2} $', 40, 40] },
-    mathjax: true,
+    mathjax: mathjaxDefined,
   },
 
   Feynman52: {
@@ -17,7 +18,7 @@ var feynmanDiagrams = {
     node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
     fermion: {line: 'i1-v1,i2-v1,v1-o1,v1-o2', arrow: false},
     label: { t1: ['150,30', '$ = - \\lambda $', 40, 20] },
-    mathjax: true,
+    mathjax: mathjaxDefined,
   },
 
   Feynman53: {
@@ -48,7 +49,7 @@ var feynmanDiagrams = {
       t4: ['355,50', '+', 20, 20],
       t5: ['435,50', '+', 20, 20],
     },
-    mathjax: true,
+    mathjax: mathjaxDefined,
   },
 
   Feynman91: {
@@ -62,7 +63,7 @@ var feynmanDiagrams = {
       t3: ['5,24', '$\\large \\left< \\phi_a \\phi_b \\right> =$', 80, 20],
       t4: ['170,8', 'propagador $\\Large \\frac{A^{-1}_{ab}}{m^2}$', 150, 70],
     },
-    mathjax: true,
+    mathjax: mathjaxDefined,
   },
 
   Feynman92: {

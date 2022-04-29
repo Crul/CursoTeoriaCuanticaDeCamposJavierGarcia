@@ -65,15 +65,17 @@ function renderFormula(i, elem) {
 }
 
 function renderFeynmanDiagrams() {
-  MathJax.Hub.Config({
-    jax: ['input/TeX','output/HTML-CSS'],
-    messageStyle: 'none',
-    tex2jax: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    }
-  });
+  if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Config({
+        jax: ['input/TeX','output/HTML-CSS'],
+        messageStyle: 'none',
+        tex2jax: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          processEscapes: true
+        }
+      });
+  }
 
   for (var id in feynmanDiagrams) {
     $('#' + id).feyn(feynmanDiagrams[id]);
