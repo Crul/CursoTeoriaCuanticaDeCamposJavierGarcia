@@ -7843,9 +7843,13 @@
         T\{\phi(x)\phi(y)\} = N[\phi(x)\phi(y)] + \Delta_F(x-y)
       </span>
       <span class="formula">
-        \begin{alignat*}{2}T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\} = &N[\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)] &+& \Delta_F(x_1-x_2)N[\phi(x_3)\phi(x_4)]\\&
-        + \Delta_F(x_1-x_3)N[\phi(x_2)\phi(x_4)]&+ &\Delta_F(x_1-x_4)N[\phi(x_2)\phi(x_3)]\\& + \Delta_F(x_2-x_3)N[\phi(x_1)\phi(x_4)]&+& \Delta_F(x_2-x_4)N[\phi(x_1)\phi(x_3)]\\&
-        + \Delta_F(x_3-x_4)N[\phi(x_1)\phi(x_2)]& +& \Delta_F(x_1-x_2)\Delta_F(x_3-x_4)\\& + \Delta_F(x_1-x_3)\Delta_F(x_2-x_4)& +& \Delta_F(x_1-x_4)\Delta_F(x_2-x_3)\end{alignat*}
+        \begin{alignat*}{3}
+        T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\} = &&   & N[\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)] & + & \Delta_F(x_1-x_2)N[\phi(x_3)\phi(x_4)]\\
+                                                    && + & \Delta_F(x_1-x_3)N[\phi(x_2)\phi(x_4)]  & + & \Delta_F(x_1-x_4)N[\phi(x_2)\phi(x_3)]\\
+                                                    && + & \Delta_F(x_2-x_3)N[\phi(x_1)\phi(x_4)]  & + & \Delta_F(x_2-x_4)N[\phi(x_1)\phi(x_3)]\\
+                                                    && + & \Delta_F(x_3-x_4)N[\phi(x_1)\phi(x_2)]  & + & \Delta_F(x_1-x_2)\Delta_F(x_3-x_4)\\
+                                                    && + & \Delta_F(x_1-x_3)\Delta_F(x_2-x_4)      & + & \Delta_F(x_1-x_4)\Delta_F(x_2-x_3)\\
+        \end{alignat*}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7853,7 +7857,20 @@
         (75.4) Diagramas de Feynman
       </span>
       <span class="formula">
-        \bra{0}T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\}\ket{0} = \Delta_F(x_1-x_2)\Delta_F(x_3-x_4) + \Delta_F(x_1-x_3)\Delta_F(x_2-x_4) + \Delta_F(x_1-x_4)\Delta_F(x_2-x_3)
+        \begin{alignat*}{1}
+          \bra{0}T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\}\ket{0} = & \Delta_F(x_1-x_2)\Delta_F(x_3-x_4) + \\
+                                                                    & \Delta_F(x_1-x_3)\Delta_F(x_2-x_4) + \\
+                                                                    &\Delta_F(x_1-x_4)\Delta_F(x_2-x_3) \\
+        \end{alignat*}
+      </span>
+      <span id="Feynman751" class="feynman"></span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (75.5) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+          \text{Demostrar la ecuación } \bra{0}T\{[\phi^+(x), \phi^-(y)]\}\ket{0}=\bra{0}T\{\phi(x)\phi(y)\}\ket{0}.
       </span>
     </div>
   </div>
