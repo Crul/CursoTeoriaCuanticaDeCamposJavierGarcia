@@ -7814,13 +7814,25 @@
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (75.2) Ordenación normal
+        (75.2) Operador creación y aniquilación.
+        </br> Espacio de posiciones
       </span>
       <span class="formula">
         \phi^+(x)=\int \frac{1}{\sqrt{2\omega_k}}a_k e^{-ikx}\frac{\mathrm{d}^3k}{(2\pi)^3}
       </span>
       <span class="formula">
         \phi^-(x)=\int \frac{1}{\sqrt{2\omega_k}}a^\dagger_k e^{ikx}\frac{\mathrm{d}^3k}{(2\pi)^3}
+      </span>
+      <span class="formula">
+        \phi(x) = \phi^+(x) + \phi^-(x)
+      </span>
+      <span class="formula">
+        \phi^+(x)\ket{0} = 0, \quad \bra{0}\phi^-(x) = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (75.2) Ordenación normal
       </span>
       <span class="formula">
         N[\phi(x)\phi(y)] = \phi^-(x)\phi^-(y)+\phi^-(x)\phi^+(y)+\phi^+(x)\phi^+(y)+\phi^-(y)\phi^+(x)
@@ -7836,13 +7848,22 @@
       <span class="formula-titulo">
         (75.3) Teorema de Wick para ordenación temporal
       </span>
-      <span class="formula">
-        \overlinesegment{\phi(x)\phi}(y) = \Delta_F(x-y)
-      </span>
-      <span class="formula">
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{equation*}
+        \contraction{}{\phi}{(x)}{\phi}\phi(x)\phi(y) = \Delta_F(x-y)
+      \end{equation*} -->
+      <object data="imgs/75_3_1.svg" type="image/svg+xml"></object></br>
+
+      <!-- <span class="formula">
         T\{\phi(x)\phi(y)\} = N[\phi(x)\phi(y)] + \Delta_F(x-y)
-      </span>
-      <span class="formula">
+      </span> -->
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{equation*}
+        T\{\phi(x)\phi(y)\} = N[\phi(x)\phi(y)] + \contraction{}{\phi}{(x)}{\phi}\phi(x)\phi(y)
+      \end{equation*} -->
+      <object data="imgs/75_3_2.svg" type="image/svg+xml"></object></br>
+
+      <!-- <span class="formula">
         \begin{alignat*}{3}
         T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\} = &&   & N[\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)] & + & \Delta_F(x_1-x_2)N[\phi(x_3)\phi(x_4)]\\
                                                     && + & \Delta_F(x_1-x_3)N[\phi(x_2)\phi(x_4)]  & + & \Delta_F(x_1-x_4)N[\phi(x_2)\phi(x_3)]\\
@@ -7850,7 +7871,21 @@
                                                     && + & \Delta_F(x_3-x_4)N[\phi(x_1)\phi(x_2)]  & + & \Delta_F(x_1-x_2)\Delta_F(x_3-x_4)\\
                                                     && + & \Delta_F(x_1-x_3)\Delta_F(x_2-x_4)      & + & \Delta_F(x_1-x_4)\Delta_F(x_2-x_3)\\
         \end{alignat*}
-      </span>
+      </span> -->
+      <!-- LaTeX code (requires amsmath and simplewick)
+      \begin{alignat*}{3}
+        T\{\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)\} = &&   & N[\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)]
+                                                     & + & N[\contraction{}{\phi}{(x_1)}{\phi}\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)] \\&
+                                                     & + & N[\contraction{}{\phi}{(x_1)\phi(x_2)}{\phi}\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)]
+                                                     & + & N[\phi(x_1)\contraction{}{\phi}{(x_2)}{\phi}\phi(x_2)\phi(x_3)\phi(x_4)] \\&
+                                                     & + & N[\contraction{}{\phi}{(x_1)\phi(x_2)\phi(x_3)}{\phi}\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)]
+                                                     & + & N[\phi(x_1)\contraction{}{\phi}{(x_2)\phi(x_3)}{\phi}\phi(x_2)\phi(x_3)\phi(x_4)] \\&
+                                                     & + & N[\phi(x_1)\phi(x_2)\contraction{}{\phi}{(x_3)}{\phi}\phi(x_3)\phi(x_4)]
+                                                     & + & N[\contraction{}{\phi}{(x_1)}{\phi}\phi(x_1)\phi(x_2)\contraction{}{\phi}{(x_3)}{\phi}\phi(x_3)\phi(x_4)] \\&
+                                                     & + & N[\contraction{}{\phi}{(x_1)\phi(x_2)}{\phi}\contraction[1.5ex]{\phi(x_1)}{\phi}{(x_2)\phi(x_3)}{\phi}\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)]
+                                                     & + & N[\contraction{}{\phi}{(x_1)\phi(x_2)\phi(x_3)}{\phi}\contraction[1.5ex]{\phi(x_1)}{\phi}{(x_2)}{\phi}\phi(x_1)\phi(x_2)\phi(x_3)\phi(x_4)]
+      \end{alignat*} -->
+      <object data="imgs/75_3_3.svg" type="image/svg+xml"></object>
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
