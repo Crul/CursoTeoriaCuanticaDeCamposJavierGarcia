@@ -7989,7 +7989,50 @@
   <div class="capitulo-77 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (77.1)
+        (77.1) Evolución temporal
+      </span>
+      <span class="formula">
+        i\partial_t U_I(t, t') = H_I'(t)U_I(t, t')
+      </span>
+      <span class="formula">
+        U_I(t, t') = T\left\{e^{-i\int_{t'}^t H_I'(\tau)\mathrm{d}\tau}\right\}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (77.2) Estado fundamental
+      </span>
+      <span class="formula">
+        \ket{\Omega} = \lim_{t\to \infty(1-i\varepsilon)}\frac{U_I(0,-t)\ket{0}}{\braket{\Omega \vert 0} e^{-iE_0 t}}
+      </span>
+      <span class="formula">
+        \bra{\Omega} = \lim_{t\to \infty(1-i\varepsilon)}\frac{\bra{0}U_I(t,0)}{\braket{0 \vert \Omega} e^{-iE_0 t}}
+      </span>
+      <span class="formula">
+        \lim_{t\to \infty(1-i\varepsilon)}\frac{\braket{0\vert U_I(t, -t)\vert 0}}{|\braket{0\vert \Omega}|^2 e^{-2iE_0 t}} = 1
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (77.3) Función de correlación
+      </span>
+      <span class="formula">
+        \bra{\Omega} \phi(x)\phi(y) \ket{\Omega} = \frac{\bra{0}U_I(\infty,0)\phi(x)\phi(y)U_I(0,-\infty)\ket{0}}{\bra{0}U_I(\infty,-\infty)\ket{0}}
+      </span>
+      <span class="formula">
+        \bra{\Omega} T\{\phi(x)\phi(y)\} \ket{\Omega} = \frac{\bra{0}T\{\phi_I(x)\phi_I(y)U_I(\infty,-\infty)\}\ket{0}}{\bra{0}U_I(\infty,-\infty)\ket{0}}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (77.4) Ejercicios
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          1) \hspace2ex &\text{Demostrar la relación } U_I(t, t') = 1 - i\int_{t'}^t H_I'(t_1)\mathrm{d}t_1
+           + (- i)^2\int_{t'}^t\int_{t'}^{t_1} H_I'(t_1)H_I'(t_2)\mathrm{d}t_1\mathrm{d}t_2 + \cdots\\
+          2) \hspace2ex &\text{Calcular las energías y estados propios del Hamiltoniano } H = \begin{pmatrix}100&1\\1&200\\\end{pmatrix}\\
+        \end{aligned}
       </span>
     </div>
   </div>
