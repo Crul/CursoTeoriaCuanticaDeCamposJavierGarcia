@@ -7931,6 +7931,9 @@
         \ket{\psi(t)}_S = e^{-itH_S}\ket{\psi(0)}
       </span>
       <span class="formula">
+        U_S(t, t') = e^{-i(t-t')H_S}
+      </span>
+      <span class="formula">
         A_S(t) = A_S(0)
       </span>
       <span class="formula">
@@ -7945,6 +7948,9 @@
         \ket{\psi(t)}_H = e^{itH_S}\ket{\psi(t)}_S = \ket{\psi(0)}
       </span>
       <span class="formula">
+        U_H(t, t') = 1
+      </span>
+      <span class="formula">
         A_H(t) = e^{itH_S}A_S e^{-itH_S}
       </span>
     </div>
@@ -7957,6 +7963,9 @@
       </span>
       <span class="formula">
         \ket{\psi(t)}_I = e^{itH_{0,S}}\ket{\psi(t)}_S = e^{itH_{0,S}}e^{-itH_{S}}\ket{\psi(0)}
+      </span>
+      <span class="formula">
+        U_I(t, t') = e^{itH_{0,S}}e^{-i(t-t')H_S}e^{-it'H_{0,S}}
       </span>
       <span class="formula">
         A_I(t) = e^{itH_{0,S}}A_Se^{-itH_{0,S}} = e^{itH_{0,S}}e^{-itH_{S}}A_H(t)e^{itH_{S}}e^{-itH_{0,S}}
