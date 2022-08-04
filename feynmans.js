@@ -133,4 +133,14 @@ var feynmanDiagrams = {
     },
   },
 
+  Feynman781: {
+    width: 200, height: 90,
+    incoming: {i1: '10,80'},
+    outgoing: {o1: '190,80'},
+    vertex: {v1: '35,80', v2: '100,80', v3: '165,80'},
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    fermion: {line: 'i1-o1', arc: 'v1-v3,v1-v2,v2-v3', arrow: false},
+    mathjax: mathjaxDefined,
+  },
+
 };
