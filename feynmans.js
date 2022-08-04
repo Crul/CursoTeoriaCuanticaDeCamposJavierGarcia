@@ -350,4 +350,20 @@ var feynmanDiagrams = {
     mathjax: mathjaxDefined,
   },
 
+  Feynman811: {
+    width: 120, height: 75,
+    incoming: {i1: '20,40'},
+    outgoing: {o1: '100,40'},
+    vertex: {v1: '30,40', v2: '90,40'},
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    fermion: {line: 'i1-o1', arc: 'v1-v2-v1', arrow: false},
+    label: {
+      t1: ['6,30', '$x$', 20, 20],
+      t2: ['107,30', '$y$', 20, 20],
+      t3: ['38,39', '$z_1$', 20, 20],
+      t4: ['68,19', '$z_2$', 20, 20],
+    },
+    mathjax: mathjaxDefined,
+  },
+
 };
