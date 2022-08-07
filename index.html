@@ -8032,8 +8032,25 @@
   <h2 id="capitulo-79"><a href="#capitulo-79" class="formulas-title">Capítulo 79: Regularización del "infinito rojo"</a></h2>
   <div class="capitulo-79 formulas">
     <div class="grupo-formulas">
-      <span class="no-formula">
-        No hay fórmulas
+      <span class="formula-titulo">
+        (79.1) Regularización "infinito rojo"
+      </span>
+      <span class="formula">
+        \int_{-\infty(1-i\varepsilon)}^{\infty(1-i\varepsilon)} e^{-ita} \mathrm{d}t \xrightarrow{a \to a(1+i\varepsilon)} \int_{-\infty(1-i\varepsilon)}^{\infty(1-i\varepsilon)} e^{-ita(1+i\varepsilon)} \mathrm{d}t
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (79.2) Prescripción de Feynman
+      </span>
+      <span class="formula formula-texto">
+        \text{Usando el cambio de variable } t \to t(1+i\varepsilon)
+      </span>
+      <span class="formula">
+        \int_{-\infty(1-i\varepsilon)}^{\infty(1-i\varepsilon)} e^{-ita(1+i\varepsilon)} \mathrm{d}t = \int_{-\infty}^{\infty} \frac{e^{-ita}}{1+i\varepsilon} \mathrm{d}t
+      </span>
+      <span class="formula-titulo">
+        Prescripción de Feynman: Añadir $+i\varepsilon$ en el denominador.
       </span>
     </div>
   </div>
