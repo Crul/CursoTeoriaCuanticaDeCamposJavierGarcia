@@ -7964,10 +7964,10 @@
         (78.1) Lagrangiano $\lambda \phi^4$
       </span>
       <span class="formula">
-        \mathcal{L} = \frac{1}{2}\partial_\mu\phi\partial\mu\phi - \frac{m^2}{2}\phi^2 - \frac{\lambda}{4!}\phi^4
+        \mathcal{L} = \frac{1}{2}\partial_\mu\phi\partial^\mu\phi - \frac{m^2}{2}\phi^2 - \frac{\lambda}{4!}\phi^4
       </span>
       <span class="formula">
-        \mathcal{H} = \frac{1}{2}\pi^2 + \frac{1}{2}\left| \vec{\nabla\phi} \right| ^2 + \frac{1}{2}m^2\phi^2 + \frac{\lambda}{4!}\phi^4
+        \mathcal{H} = \frac{1}{2}\pi^2 + \frac{1}{2}\left| \vec{\nabla}\phi \right| ^2 + \frac{1}{2}m^2\phi^2 + \frac{\lambda}{4!}\phi^4
       </span>
       <span class="formula">
         H'_I = \int \left( \frac{\lambda}{4!}\phi_I^4 \right)\mathrm{d}^3x
@@ -7981,7 +7981,7 @@
          \braket{ \phi^2 }_0 = \frac{1}{m^2}
       </span>
       <span class="formula">
-         \braket{ \phi^n }_0 = \frac{(n-1)!!}{m^n}
+         \braket{ \phi^n }_0 = \frac{(n-1){!}{!}}{m^n}
       </span>
     </div>
     <div class="grupo-formulas">
@@ -7989,13 +7989,19 @@
         (78.3) Función de correlación a $n$ puntos
       </span>
       <span class="formula">
-        \braket{ \phi^n } = \frac{\int_{-\infty}^\infty \phi^n e^{-\frac{m^2\phi^2}{2}-\frac{\lambda}{4}\phi^4}\mathrm{d}\phi}{\int_{-\infty}^\infty e^{-\frac{m^2\phi^2}{2}-\frac{\lambda}{4}\phi^4}\mathrm{d}\phi}
+        \braket{ \phi^n } = \frac{\int_{-\infty}^\infty \phi^n e^{-\frac{m^2\phi^2}{2}-\frac{\lambda}{4!}\phi^4}\mathrm{d}\phi}{\int_{-\infty}^\infty e^{-\frac{m^2\phi^2}{2}-\frac{\lambda}{4!}\phi^4}\mathrm{d}\phi}
                           = \frac{\sum_{k=0}^\infty \frac{1}{k!}\left(\frac{-\lambda}{4!}\right)^k \braket{\phi^{n+4k}}_0}{\sum_{k=0}^\infty \frac{1}{k!}\left(\frac{-\lambda}{4!}\right)^k \braket{\phi^{4k}}_0}
       </span>
     </div>
+	<div class="grupo-formulas">
+      <span class="formula-titulo">
+        (78.4) Propagador de orden 2
+      </span>
+      <span id="Feynman781" class="feynman"></span>
+    </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (78.4) Ejercicios. <a notarget="_blank" href="https://youtu.be/CZDMGn5y-zo?t=2667">(Ver tabla de vértices).</a>
+        (78.5) Ejercicios. <a target="_blank" href="https://youtu.be/CZDMGn5y-zo?t=2667">(Ver tabla de vértices).</a>
       </span>
       <span class="formula formula-texto">
         \begin{aligned}
@@ -8003,7 +8009,7 @@
           2) \hspace2ex &\text{Factores de simetría del siguiente diagrama:}\\
         \end{aligned}
       </span>
-      <span id="Feynman781" class="feynman"></span>
+      <span id="Feynman782" class="feynman"></span>
       <span class="formula-titulo">
         Soluciones enviadas
       </span>
