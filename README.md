@@ -2,5 +2,4 @@
 
 Sitio web: [https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia](https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia)
 
-Formulario creado por [Crul](https://github.com/Crul).
-Agradecimientos a [Roger](https://github.com/Gaussian-art) por su ayuda con el mantenimiento.
+Formulario creado por [Crul](https://github.com/Crul) y [Roger](https://github.com/Gaussian-art).
