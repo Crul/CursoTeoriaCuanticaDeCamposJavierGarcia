@@ -291,4 +291,63 @@ var feynmanDiagrams = {
     mathjax: mathjaxDefined,
   },
 
+  Feynman801: {
+    width: 265, height: 70,
+    incoming: {i1: '45,40'},
+    outgoing: {o1: '120,40'},
+    fermion: {line: 'i1-o1', arrow: false},
+    label: {
+      t1: ['30,30', '$x$', 30, 30],
+      t2: ['130,30', '$y$', 30, 30],
+      t3: ['145,30', '$=\\Delta_F(x-y)$', 120, 70]
+    },
+    mathjax: mathjaxDefined,
+  },
+
+  Feynman802: {
+    width: 265, height: 70,
+    incoming: {i1: '70,60', i2: '110,60', i3: '70,20', i4: '110,20'},
+    vertex: {v1: '90,40'},
+    fermion: {line: 'v1-i1,v1-i2,v1-i3,v1-i4', arrow: false},
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['88,18', '$z$', 20, 20],
+      t5: ['145,28', '$=-i\\lambda \\  \\int \\mathrm{d}^4z$', 90, 100]
+    },
+    mathjax: mathjaxDefined
+  },
+
+  Feynman803: {
+    width: 170, height: 70,
+    incoming: {i1: '40,50'},
+    outgoing: {o1: '120,50'},
+    vertex: {v1: '80,50'},
+    auxiliary: {a1: '80,20'},
+    fermion: {line: 'i1-v1-o1', loop: 'v1-a1', arrow: false},
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['30,40', '$x$', 10, 30],
+      t2: ['130,40', '$y$', 10, 30],
+      t3: ['78, 30', '$z$', 10, 30],
+    },
+    mathjax: mathjaxDefined,
+  },
+
+  Feynman804: {
+    width: 170, height: 70,
+    incoming: {i1: '30,50'},
+    outgoing: {o1: '130,50'},
+    vertex: {v1: '60,50', v2: '100,50'},
+    auxiliary: {a1: '60,20', a2: '100,20'},
+    fermion: {line: 'i1-v1-v2-o1', loop: 'v1-a1,v2-a2', arrow: false},
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['20,40', '$x$', 10, 30],
+      t2: ['140,40', '$y$', 10, 30],
+      t3: ['55,28', '$z_1$', 15, 30],
+      t4: ['95,28', '$z_2$', 15, 30],
+    },
+    mathjax: mathjaxDefined,
+  },
+
 };
