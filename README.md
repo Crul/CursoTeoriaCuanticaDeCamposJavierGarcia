@@ -3,3 +3,10 @@
 Sitio web: [https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia](https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia)
 
 Formulario creado por [Crul](https://github.com/Crul) y [Roger](https://github.com/Gaussian-art).
+
+## Librerías utilizadas
+
+- jQuery: https://jquery.com
+- MathJax: https://www.mathjax.org
+- KaTeX: https://katex.org
+- jQuery.Feyn: https://photino.github.io/jquery-feyn
