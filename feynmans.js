@@ -366,4 +366,85 @@ var feynmanDiagrams = {
     mathjax: mathjaxDefined,
   },
 
+  Feynman812: {
+    width: 365, height: 60,
+    incoming: {i1: '10,40'},
+    outgoing: {o1: '90,40'},
+    fermion: {line: 'i1-o1', arrow: false},
+    symbol: {s1: ['30,35', 0, 'arrow', 40, 0, false]},
+    label: {
+      t1: ['50,15', '$p$', 30, 30],
+      t3: ['115,25', '$=\\frac{i}{p^2-m^2+i\\varepsilon}$', 120, 70]
+    },
+    mathjax: mathjaxDefined,
+  },
+
+  Feynman813: {
+    width: 365, height: 80,
+    incoming: {i1: '30,70', i2: '90,70', i3: '30,10', i4: '90,10'},
+    vertex: {v1: '60,40'},
+    fermion: {line: 'v1-i1,v1-i2,v1-i3,v1-i4', arrow: false},
+    symbol: {
+      s1: ['80,15', 135, 'arrow'],
+      s2: ['85,60', -135, 'arrow'],
+      s3: ['40,15', 45, 'arrow'],
+      s4: ['35,60', -45, 'arrow'],
+    },
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['115,28', '$=-i\\lambda (2 \\pi)^4 \\delta^{(4)}(p_1+p_2+p_3+p_4)$', 250, 30],
+      t2: ['62,1', '$p_1$', 20, 20],
+      t3: ['45,1', '$p_2$', 20, 20],
+      t4: ['23,37', '$p_3$', 20, 20],
+      t5: ['83,37', '$p_4$', 20, 20],
+    },
+    mathjax: mathjaxDefined
+  },
+
+  Feynman814: {
+    width: 170, height: 90,
+    incoming: {i1: '30,70'},
+    outgoing: {o1: '130,70'},
+    vertex: {v1: '80,70'},
+    auxiliary: {a1: '80,30'},
+    fermion: {line: 'i1-v1-o1', loop: 'v1-a1', arrow: false},
+    symbol: {
+      s1: ['35,65', 0, 'arrow', 25],
+      s2: ['96,65', 0, 'arrow', 25],
+      s3: ['70,25', 0, 'arrow', 20, 20],
+    },
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['40,42', '$p_1$', 20, 30],
+      t2: ['105,42', '$p_2$', 20, 30],
+      t3: ['70,5', '$k$', 10, 30],
+    },
+    mathjax: mathjaxDefined,
+  },
+
+  Feynman815: {
+    width: 200, height: 90,
+    incoming: {i1: '20,75'},
+    outgoing: {o1: '190,75'},
+    vertex: {v1: '70,75', v2: '140,75'},
+    auxiliary: {a1: '70,35', a2: '140,35'},
+    fermion: {line: 'i1-v1-v2-o1', loop: 'v1-a1,v2-a2', arrow: false},
+    symbol: {
+      s1: ['25,70', 0, 'arrow', 25],
+      s2: ['156,70', 0, 'arrow', 25],
+      s3: ['90,70', 0, 'arrow', 25],
+      s4: ['60,30', 0, 'arrow', 20, 20],
+      s5: ['130,30', 0, 'arrow', 20, 20],
+    },
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['30,47', '$p_1$', 20, 30],
+      t2: ['95,47', '$p_1$', 20, 30],
+      t3: ['165,47', '$p_2$', 20, 30],
+      t4: ['60,5', '$k_1$', 20, 30],
+      t5: ['130,5', '$k_2$', 20, 30],
+    },
+    mathjax: mathjaxDefined,
+  },
+
 };
