@@ -372,6 +372,11 @@
           <a href="#capitulo-83">Capítulo 83</a>
           <a target="_blank" href="https://www.youtube.com/watch?v=cTDhhdbYA2k&list=PLAnA8FVrBl8BiQd_Fg-Jr32P_v9F8vG-2">&#9658;</a>
         </li>
+
+        <li>
+          <a href="#apendice-1">Apéndice 1</a>
+          <a target="_blank" href="#apendice-1">&#9658;</a>
+        </li>
       </ul>
       <div class="fold-buttons">
         <div id="unfoldAllBtn">
@@ -8268,7 +8273,70 @@
   <div class="capitulo-83 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (83.1)
+        (83.1) Fórmula de reducción LSZ. Espacio de momentos
+      </span>
+      <span class="formula">
+        {}_{{\textstyle\mathstrut}\mathrm{out\!\!}}\braket{p_1\cdots p_n \vert q_1\cdots q_{n'}}_\mathrm{in} = \lim_{\substack{p^2 \to m^2 \\ q^2 \to m^2}} \prod_{j=1}^n\bigg(\frac{p_j^2-m^2}{i}\bigg)
+                \prod_{k=1}^{n'}\bigg(\frac{q_k^2-m^2}{i}\bigg)\tilde{G}(p_1,\ldots,p_n,q_1,\ldots,q_{n'})
+      </span>
+      <span class="formula-titulo">
+        Donde
+      </span>
+      <span class="formula">
+        \tilde{G}(p_1,\ldots,p_n,q_1,\ldots,q_{n'}) = \int \braket{\Omega\vert T\left\{\phi(x_1)\cdots\phi(x_n)\phi(y_1)\cdots\phi(y_{n'})\right\}\vert\Omega}\prod_{j=1}^n\bigg(e^{ip_jx_j} \mathrm{d}^4x_j\bigg)
+                          \prod_{k=1}^{n'}\bigg(e^{-iq_k y_k} \mathrm{d}^4y_k\bigg)
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (83.2) Reglas de Feynman
+      </span>
+      <span class="formula formula-texto">
+        \begin{aligned}
+          1') \hspace2ex &\text{Por cada línea interna, multiplicar por el propagador de Feynman.}\\
+          5) \hspace2ex &\text{Sumar sobre todos los diagramas conectados y amputados}\\
+          6) \hspace2ex &\text{El resultado del diagrama corresponde con:} \quad i\mathcal{M}\ (2\pi)^4\delta^{(4)}\Bigg(\sum_j p_j - \sum_k q_k\Bigg)\\
+        \end{aligned}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (83.3) Ejercicio
+      </span>
+      <span class="formula formula-texto">
+        \text{Calcular la amplitude de scattering de los siguientes diagramas:}
+      </span>
+      <span id="Feynman831" class="feynman"></span>
+    </div>
+  </div>
+
+  <h2 id="apendice-1"><a href="#apendice-1" class="formulas-title">Apéndice 1: Reglas de Feynman</a></h2>
+  <div class="apendice-1 formulas">
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (A1.1) Campo de Klein-Gordon
+      </span>
+      <span id="FeynmanA11" class="feynman"></span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (A1.2) Interacción $\lambda \phi^4$
+      </span>
+      <span id="FeynmanA12" class="feynman"></span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (A1.3) Reglas de Feynman
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          1) \hspace2ex &\text{Por cada línea interna, multiplicar por el propagador de Feynman.}\\
+          2) \hspace2ex &\text{Por cada vértice, multiplicar por el correspondiente factor de interacción.}\\
+          3) \hspace2ex &\text{Por cada propagador interno, integrar sobre el cuadrimomento.}\\
+          4) \hspace2ex &\text{Dividir el diagrama por el factor de simetría.}\\
+          5) \hspace2ex &\text{Sumar sobre todos los diagramas conectados y amputados}\\
+          6) \hspace2ex &\text{El resultado del diagrama corresponde con:} \quad i\mathcal{M}\ (2\pi)^4\delta^{(4)}\Bigg(\sum_j p_j - \sum_k q_k\Bigg)\\
+        \end{aligned}
       </span>
     </div>
   </div>

@@ -447,4 +447,71 @@ var feynmanDiagrams = {
     mathjax: mathjaxDefined,
   },
 
+  Feynman831: {
+    width: 250, height: 100,
+    incoming: {
+      i1: '10,10',
+      i2: '10,90',
+      i3: '120,10',
+      i4: '120,90',
+    },
+    outgoing: {
+      o1: '90,10',
+      o2: '90,90',
+      o3: '220,16',
+      o4: '220,84',
+    },
+    vertex: {
+      v1: '50,20',
+      v2: '50,80',
+      v3: '160,20',
+      v4: '160,80',
+    },
+    fermion: {
+      tension: 2,
+      ratio: 0.5,
+      arrow: false,
+      line: 'i1-v1-o1,i2-v2-o2,i3-v3,i4-v4',
+      arc: 'v3-o4,o3-v4',
+      loop: 'v1-v2,v3-v4',
+    },
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 1.2},
+    mathjax: mathjaxDefined,
+  },
+
+  FeynmanA11: {
+    width: 365, height: 60,
+    incoming: {i1: '10,40'},
+    outgoing: {o1: '90,40'},
+    fermion: {line: 'i1-o1', arrow: false},
+    symbol: {s1: ['30,35', 0, 'arrow', 40, 0, false]},
+    label: {
+      t1: ['50,15', '$p$', 30, 30],
+      t3: ['115,25', '$=\\frac{i}{p^2-m^2+i\\varepsilon}$', 120, 70]
+    },
+    mathjax: mathjaxDefined,
+  },
+
+  FeynmanA12: {
+    width: 365, height: 80,
+    incoming: {i1: '30,70', i2: '90,70', i3: '30,10', i4: '90,10'},
+    vertex: {v1: '60,40'},
+    fermion: {line: 'v1-i1,v1-i2,v1-i3,v1-i4', arrow: false},
+    symbol: {
+      s1: ['80,15', 135, 'arrow'],
+      s2: ['85,60', -135, 'arrow'],
+      s3: ['40,15', 45, 'arrow'],
+      s4: ['35,60', -45, 'arrow'],
+    },
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t1: ['115,28', '$=-i\\lambda (2 \\pi)^4 \\delta^{(4)}(p_1+p_2+p_3+p_4)$', 250, 30],
+      t2: ['62,1', '$p_1$', 20, 20],
+      t3: ['45,1', '$p_2$', 20, 20],
+      t4: ['23,37', '$p_3$', 20, 20],
+      t5: ['83,37', '$p_4$', 20, 20],
+    },
+    mathjax: mathjaxDefined
+  },
+
 };
