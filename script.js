@@ -1,5 +1,8 @@
 // https://github.com/Khan/KaTeX
-var katexOptions = { displayMode: true };
+var katexOptions = {
+    displayMode: true,
+    trust: (context) => context.command === '\\href'
+};
 var closeSymbol = '&#128449;';
 var openSymbol = '&#128448;';
 var gotoTopSymbol = '&uarr;';
