@@ -214,6 +214,12 @@ h2 {
   padding-bottom: 6px;
 }
 
+/* Fix for non-clickable KaTeX links */
+.formula .katex-display a {
+    z-index: 100;
+    position: relative;
+}
+
 .texto {
   font-family: "Times New Roman", Times, serif;
   padding: 8px 16px;
