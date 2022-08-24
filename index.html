@@ -8294,8 +8294,10 @@
       <span class="formula formula-texto">
         \begin{aligned}
           1') \hspace2ex &\text{Por cada línea interna, multiplicar por el propagador de Feynman.}\\
-          5) \hspace2ex &\text{Sumar sobre todos los diagramas conectados y amputados}\\
-          6) \hspace2ex &\text{El resultado del diagrama corresponde con:} \quad i\mathcal{M}\ (2\pi)^4\delta^{(4)}\Bigg(\sum_j p_j - \sum_k q_k\Bigg)\\
+          5)  \hspace2ex &\text{Sumar sobre todos los diagramas completamente conectados y amputados}\\
+          6)  \hspace2ex &\text{El resultado del diagrama corresponde con:}\\
+                         &\quad {}_{{\textstyle\mathstrut}\mathrm{out\!\!}}\braket{p_1\cdots p_n \vert q_1\cdots q_{n'}}_\mathrm{in}=
+                          i\mathcal{M}\ (2\pi)^4\delta^{(4)}\Bigg(\sum_{j=1}^n p_j - \sum_{k=1}^{n'} q_k\Bigg)\\
         \end{aligned}
       </span>
     </div>
@@ -8321,13 +8323,19 @@
   <div class="apendice-1 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (A1.1) Campo de Klein-Gordon
+        (A1.1) Propagadores de Feynman
+      </span>
+      <span class="formula formula-texto">
+        \href{#capitulo-81}{\text{Campo de Klein-Gordon}}
       </span>
       <span id="FeynmanA11" class="feynman"></span>
     </div>
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (A1.2) Interacción $\lambda \phi^4$
+        (A1.2) Interacciones
+      </span>
+      <span class="formula formula-texto">
+        \href{#capitulo-81}{\text{Interacción } \lambda \phi^4}
       </span>
       <span id="FeynmanA12" class="feynman"></span>
     </div>
@@ -8335,14 +8343,16 @@
       <span class="formula-titulo">
         (A1.3) Reglas de Feynman
       </span>
-      <span class="formula">
+      <span class="formula formula-texto">
         \begin{aligned}
-          1) \hspace2ex &\text{Por cada línea interna, multiplicar por el propagador de Feynman.}\\
-          2) \hspace2ex &\text{Por cada vértice, multiplicar por el correspondiente factor de interacción.}\\
-          3) \hspace2ex &\text{Por cada propagador interno, integrar sobre el cuadrimomento.}\\
-          4) \hspace2ex &\text{Dividir el diagrama por el factor de simetría.}\\
-          5) \hspace2ex &\text{Sumar sobre todos los diagramas conectados y amputados}\\
-          6) \hspace2ex &\text{El resultado del diagrama corresponde con:} \quad i\mathcal{M}\ (2\pi)^4\delta^{(4)}\Bigg(\sum_j p_j - \sum_k q_k\Bigg)\\
+          \href{#capitulo-83}{[1]} \hspace2ex &\text{Por cada línea interna, multiplicar por el propagador de Feynman.}\\
+          \href{#capitulo-81}{[2]} \hspace2ex &\text{Por cada vértice, multiplicar por el correspondiente factor de interacción.}\\
+          \href{#capitulo-81}{[3]} \hspace2ex &\text{Por cada propagador interno, integrar sobre el cuadrimomento.}\\
+          \href{#capitulo-81}{[4]} \hspace2ex &\text{Dividir el diagrama por el factor de simetría.}\\
+          \href{#capitulo-83}{[5]} \hspace2ex &\text{Sumar sobre todos los diagramas completamente conectados y amputados}\\
+          \href{#capitulo-83}{[6]} \hspace2ex &\text{El resultado del diagrama corresponde con:}\\
+                                              &\quad {}_{{\textstyle\mathstrut}\mathrm{out\!\!}}\braket{p_1\cdots p_n \vert q_1\cdots q_{n'}}_\mathrm{in}=
+                                               i\mathcal{M}\ (2\pi)^4\delta^{(4)}\Bigg(\sum_{j=1}^n p_j - \sum_{k=1}^{n'} q_k\Bigg)\\
         \end{aligned}
       </span>
     </div>

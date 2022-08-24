@@ -480,14 +480,14 @@ var feynmanDiagrams = {
   },
 
   FeynmanA11: {
-    width: 365, height: 60,
+    width: 200, height: 60,
     incoming: {i1: '10,40'},
     outgoing: {o1: '90,40'},
     fermion: {line: 'i1-o1', arrow: false},
     symbol: {s1: ['30,35', 0, 'arrow', 40, 0, false]},
     label: {
       t1: ['50,15', '$p$', 30, 30],
-      t3: ['115,25', '$=\\frac{i}{p^2-m^2+i\\varepsilon}$', 120, 70]
+      t3: ['115,25', '$=\\frac{i}{p^2-m^2+i\\varepsilon}$', 80, 40]
     },
     mathjax: mathjaxDefined,
   },
