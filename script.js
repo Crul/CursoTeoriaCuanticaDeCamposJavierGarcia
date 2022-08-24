@@ -33,18 +33,14 @@ function bootstrap() {
     .each(addGotoTopBtn)
     .map(addToggleBtn);
 
-  var menuLinks =  $('#menu li').map(getMenuLinks);
-  menuLinks.each(addVideoLink);
+  $('#menu li')
+    .map(getMenuLinks)
+    .each(addVideoLink);
 
   $('#foldAllBtn').click(foldAll);
   $('#unfoldAllBtn').click(unfoldAll);
-
   if (window.history) {
     window.addEventListener('hashchange', unfoldFromHash);
-  } else {
-    menuLinks.each(addUnfoldEvent);
-    $('.formulas-title').mousedown(unfoldTarget);
-    $('.formula-link').mousedown(unfoldTarget);
   }
 
   $('.spoiler-btn').click(showSpoiler);
@@ -125,22 +121,12 @@ function unfoldAll() {
   toggleFormulasBtnElems.html(closeSymbol);
 }
 
-function addUnfoldEvent(index, menuLinks) {
-  $(menuLinks.formulasLink).mousedown(unfoldTarget);
-}
-
 function unfoldFromHash() {
     var hash = document.location.hash;
     if (!hash) return;
     var formulasId = hash.substr(1);
     unfoldCapitulo(formulasId);
 }
-
-function unfoldTarget(ev) {
-  var formulasId = getIdFromHref(ev.currentTarget);
-  unfoldCapitulo(formulasId);
-}
-
 
 function unfoldCapitulo(formulasId) {
   var formulasElem = $('.' + formulasId);
