@@ -8334,7 +8334,92 @@
   <div class="capitulo-84 formulas">
     <div class="grupo-formulas">
       <span class="formula-titulo">
-        (84.1)
+        (84.1) Sistemas de referencia
+      </span>
+      <span class="formula formula-texto">
+        \text{Centro de Momentos (COM): } \sum_i \vec{p}_i = 0
+      </span>
+      <span class="formula formula-texto">
+        \text{Centro de Laboratorio (LAB): } \vec{p}_b = 0
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (84.2) Transformación COM
+      </span>
+      <span class="formula formula-texto">
+        \text{Sean dos cuadrimomentos arbitrarios } p_a \text{ y } p_b
+      </span>
+      <span class="formula formula-texto">
+        \text{La velocidad del sistema centro de momentos viene dada por } \vec{v} = \frac{\vec{p}_a + \vec{p}_b}{E_a+E_b}
+      </span>
+      <span class="formula formula-texto">
+        \text{La energía total en el sistema COM viene dada por} E^{\mathrm{COM}} = \sqrt{(E_a+E_b)^2-(\vec{p_a}+\vec{p_b})^2}
+      </span>
+      <span class="formula formula-texto">
+        \text{En una dimensión, los cuadrimomentos en el sistema de COM vienen dados por}
+      </span>
+      <span class="formula">
+        p_a^{\mathrm{COM}} = \frac{1}{\sqrt{(E_a+E_b)^2-(p_a+p_b)^2}}\begin{pmatrix}E_a(E_a+E_b) - p_a(p_a+p_b)\\ p_a(E_a+E_b) - E_a(p_a+p_b)\end{pmatrix}
+      </span>
+      <span class="formula">
+        p_b^{\mathrm{COM}} = \frac{1}{\sqrt{(E_a+E_b)^2-(p_a+p_b)^2}}\begin{pmatrix}E_b(E_a+E_b) - p_b(p_a+p_b)\\ p_b(E_a+E_b) - E_b(p_a+p_b)\end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (84.3) Transformación LAB
+      </span>
+      <span class="formula formula-texto">
+        \text{Sean dos cuadrimomentos arbitrarios } p_a \text{ y } p_b
+      </span>
+      <span class="formula formula-texto">
+        \text{La velocidad del sistema de Laboratorio viene dada por } \vec{v} = \frac{\vec{p}_b}{E_b}
+      </span>
+      <span class="formula formula-texto">
+        \text{En una dimensión, los cuadrimomentos en el sistema de LAB vienen dados por}
+      </span>
+      <span class="formula">
+        p_a^{\mathrm{LAB}} = \frac{1}{\sqrt{E_b^2-p_b^2}}\begin{pmatrix}E_aE_b - p_ap_b\\ p_aE_b - E_ap_b\end{pmatrix}
+      </span>
+      <span class="formula">
+        p_b^{\mathrm{LAB}} = \begin{pmatrix}\sqrt{E_b^2-p_b^2}\\ 0\end{pmatrix}
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (84.4) Variables de Mandelstam
+      </span>
+      <span class="formula">
+        s = (p_a + p_b)^2 = (p_c+p_d)^2
+      </span>
+      <span class="formula">
+        t = (p_a - p_c)^2 = (p_b-p_d)^2
+      </span>
+      <span class="formula">
+        u = (p_a-p_d)^2 = (p_b-p_c)^2
+      </span>
+      <span class="formula">
+        s + t + u = m_a^2 + m_b^2 + m_c^2 + m_d^2
+      </span>
+    </div>
+    <div class="grupo-formulas">
+      <span class="formula-titulo">
+        (84.5) Ejercicio
+      </span>
+      <span class="formula">
+        \begin{aligned}
+          &&&\text{Sean } p_a^\mu \text{ y } p_b^\mu \text{ dos cuadrimomentos arbitrarios.} \\
+          &&1.a) \hspace2ex &\text{Calcular la velocidad del sistema centro de momentos } \vec{v}.\\
+          &&1.b) \hspace2ex &\text{Calcular } p_a^{\mathrm{COM}} \text{ y } p_b^{\mathrm{COM}}.\\
+          &&1.c) \hspace2ex &\text{Calcular } E^{\mathrm{COM}}.\\
+          &&2.a) \hspace2ex &\text{Calcular la velocidad del sistema de laboratorio } \vec{v}.\\
+          &&2.b) \hspace2ex &\text{Calcular } p_a^{\mathrm{LAB}} \text{ y } p_b^{\mathrm{LAB}}.\\
+          &&3) \hspace2ex &\text{Demostrar la relación } s + t + u = m_a^2 + m_b^2 + m_c^2 + m_d^2\\
+        \end{aligned}
+      </span>
+      <span class="formula-titulo">
+        Soluciones enviadas
       </span>
     </div>
   </div>
