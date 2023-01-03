@@ -1,3 +1,6 @@
+// Complete Reference of Options: https://photino.github.io/jquery-feyn/manual/options.html
+// Examples: https://photino.github.io/jquery-feyn/examples.html
+
 var mathjaxDefined = (typeof MathJax !== 'undefined');
 var feynmanDiagrams = {
 
@@ -477,6 +480,27 @@ var feynmanDiagrams = {
     },
     node: {show: 'v', type: 'dot', fill: 'red', radius: 1.2},
     mathjax: mathjaxDefined,
+  },
+
+  Feynman832: {
+    width: 100, height: 80,
+    incoming: {i1: '30,70', i2: '90,70', i3: '30,10', i4: '90,10'},
+    vertex: {v1: '60,40'},
+    fermion: {line: 'v1-i1,v1-i2,v1-i3,v1-i4', arrow: false},
+    symbol: {
+      s1: ['66,29', -45, 'arrow'],
+      s2: ['71,46', 45, 'arrow'],
+      s3: ['40,15', 45, 'arrow'],
+      s4: ['35,60', -45, 'arrow'],
+    },
+    node: {show: 'v', type: 'dot', fill: 'red', radius: 2},
+    label: {
+      t2: ['62,1', '$p_c$', 20, 20],
+      t3: ['45,1', '$p_a$', 20, 20],
+      t4: ['23,37', '$p_b$', 20, 20],
+      t5: ['83,37', '$p_d$', 20, 20],
+    },
+    mathjax: mathjaxDefined
   },
 
   FeynmanA11: {
