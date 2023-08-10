@@ -45,8 +45,6 @@ function bootstrap() {
 
   $('.spoiler-btn').click(showSpoiler);
 
-  $('html, body').css('min-height', 0);
-
   renderFeynmanDiagrams();
 
   handleInitialSection();
