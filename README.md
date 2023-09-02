@@ -2,7 +2,7 @@
 
 Sitio web: [https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia](https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia)
 
-Formulario creado por [Crul](https://github.com/Crul), [Roger](https://github.com/Gaussian-art) y [sware](https://github.com/swaree).
+Formulario creado por [Crul](https://github.com/Crul), [Roger](https://github.com/rogerbalsach) y [sware](https://github.com/swaree).
 
 ## Librerías utilizadas
 
