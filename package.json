@@ -6,7 +6,7 @@
   "homepage": "https://crul.github.io/CursoTeoriaCuanticaDeCamposJavierGarcia",
   "dependencies": {
     "jquery": "3.5.1",
-    "katex": "0.16.10",
+    "katex": "0.16.18",
     "https://github.com/photino/jquery-feyn": "1.0.1",
     "mathjax": "2.7.5"
   }
